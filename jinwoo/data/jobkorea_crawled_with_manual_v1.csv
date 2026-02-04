@@ -1,0 +1,2777 @@
+﻿채용제목,근무지,경력,학력,고용형태,상세게시글id,회사,상세url,주요업무,자격요건,우대사항,스킬,채용절차,급여,업종,복지 및 혜택
+AI 에이전트 엔지니어,경기 성남시 분당구 판교역로192번길 12  3층,경력5년~15년,학력무관,정규직,48396374.0,㈜에스투더블유,https://www.jobkorea.co.kr/Recruit/GI_Read/48396374?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=2&sc=630,"이런 업무를 해요
+ㆍHybrid Research Loop 설계: 사용자의 질문을 분석하여 사내 DB(Elasticsearch)와 외부 웹(Web Search) 중 어디를 탐색할지 결정하는 지능형 라우팅(Intelligent Routing) 알고리즘 구현
+ㆍMulti-Source 정보 통합: 정형화된 사내 문서(JSON/Text)와 비정형 웹 데이터(HTML)를 LLM이 이해하기 쉬운 형태로 표준화하고, 문맥에 맞게 통합(Synthesis)하는 파이프라인 개발
+ㆍDeep Research 에이전트 고도화: 단답형 검색이 아닌, '계획(Plan) → 다단계 검색 → 검증(Critic) → 수정' 과정을 거치는 순환형 에이전트 아키텍처 설계 (LangGraph 활용)
+ㆍSearch Relevance 최적화: Hybrid Search(Keyword + Semantic) 결과와 웹 검색 결과를 통합 랭킹(Re-ranking)하여 환각(Hallucination)을 최소화하고 정확도를 높임
+ㆍ인용(Citation) 시스템 구현: 최종 답변의 각 문장이 '사내 문서'에서 왔는지 '외부 기사'에서 왔는지 명확히 출처를 표기하는 Grounding 로직 구현","이런 분들을 찾고 있어요
+ㆍ학력 : 학력무관
+ㆍPython 및 LLM 프레임워크 숙련자: LangChain, LangGraph 등을 활용한 Multi-Agent 시스템 구축 경험
+ㆍ검색 엔진(Elasticsearch/OpenSearch) 이해도: 역색인 구조, BM25, Vector Search에 대한 이해 및 Python 클라이언트 연동 경험
+ㆍ웹 데이터 수집 및 처리 능력: Playwright, Firecrawl 등을 이용한 동적 웹 스크래핑 및 데이터 정제 경험
+ㆍ비동기 프로그래밍(AsyncIO): 다수의 검색 소스를 병렬로 처리하고 응답 속도를 최적화할 수 있는 분","이런 분이면 더 좋아요
+ㆍRAG 심화 기술 보유: Self-RAG, Adaptive RAG, Corrective RAG (CRAG) 등의 논문을 코드로 구현해 본 경험
+ㆍ오픈소스 분석: GPT-Researcher, Storm 등의 리서치 에이전트 구조를 깊이 파악하고 있는 분
+ㆍ데이터 파이프라인 구축: 이기종 데이터(PDF, Web, DB)를 벡터화하고 관리해 본 경험","Agent, BM25, Elasticsearch, GPT-Researcher, JSON, LangChain, LangGraph, LLM, OpenSearch, Python, RAG",,"",시스템 소프트웨어 개발 및 공급업,""
+AI 에이전트 개발자 정규직 채용,서울 강남구 테헤란로2길 27  9층,경력,대졸이상,정규직 (수습 3개월),48512285.0,㈜애딥,https://www.jobkorea.co.kr/Recruit/GI_Read/48512285?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=4&sc=630,"
+담당업무
+
+ㆍ멀티모달 + 광고 소재를 융합하는 파이프라인 개발
+
+ㆍ생성된 AI 콘텐츠의 자연스러운 광고/상품 매칭 로직 구현
+
+ㆍGPT-4o, Gemini Vision Pro, Stable Diffusion, Sora 계열 모델 등 멀티모달 API 적용
+
+ㆍLangChain/LangGraph 기반 에이전트 워크플로우 설계 및 파이프라인 구축
+
+ㆍLangSmith 기반 실험 관리·평가·관찰(Observability) 환경 운영
+
+ㆍ광고·커머스·SNS 문맥 기반 생성 Agent 설계
+
+ㆍ멀티모달 입력을 처리 가능한 Agent Orchestration 구조 개발
+
+ㆍAgent 자동 의사결정·추론·행동 로직을 위한 백엔드 모듈 설계
+
+ㆍ이미지/오디오/비디오 인코딩·임베딩 처리 백엔드 개발
+
+ㆍ대규모 멀티모달 모델 추론 서버 운영(Triton, TorchServe 등)","핵심역량
+
+ㆍPython 숙련 필수
+
+ㆍFastAPI 또는 Django/Flask 등 Python 기반 프레임워크 능숙
+
+ㆍOpenAI API 또는 Google Gemini API 연동 경험 필수
+
+ㆍ마이크로서비스 아키텍처(MSA) 이해 및 경험
+
+ㆍLangChain·LangGraph 기반 Agent Pipeline 구성 능력
+
+ㆍLangSmith를 활용한 Eval/Debugging/Tracing 경험
+
+ㆍ멀티모달 에이전트 시스템 설계 경험","우대사항
+
+ㆍStreamming API 연동 경험 (실시간 콘텐츠 생성 피드백 제공).
+
+ㆍVector Database (Pinecone, ChromaDB)를 활용한 RAG 시스템 구축 경험
+
+ㆍTypeScript/Node.js 등 다국어 백엔드 개발 경험
+
+ㆍMLOps 또는 AI 모델 배포 관련 경험.
+ㆍLangChain/LangGraph 기반의 멀티모달 Agent 개발 경험
+ㆍLangSmith로 대규모 실험 관리·프롬프트 최적화 경험
+ㆍLLM·Vision·Audio 모델을 혼합한 복합 에이전트 구축 경험
+ㆍ다중 Step·상태 기반(Stateful) Agent 설계 경험","Agent, ChromaDB, Django, Flask, Gemini, LangGraph, Node.js, Pinecone, Python, RAG, Stable Diffusion, 멀티모달",,회사 내규에 따름,"",""
+[플랫폼본부] AX-Tech실 AI 에이전트 엔지니어,경기 성남시 분당구 판교로256번길 7  넥슨코리아,경력,학력무관,정규직 (수습 3개월),48481370.0,㈜넥슨,https://www.jobkorea.co.kr/Recruit/GI_Read/48481370?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=5&sc=630,"주요 업무
+AI 기반 개발자 서비스 개발 및 운영
+- 개발자의 온보딩과 업무 효율을 돕는 서비스를 주도적으로 개발합니다.
+- LLM 등 외부 AI 서비스를 활용하여 서비스의 핵심 기능을 설계하고 직접 구현합니다.
+- 서비스 목적에 맞춰 효과적인 프롬프트와 에이전트 파이프라인을 설계하고 지속적으로 고도화합니다.
+
+AI 기술 리서치 및 가치 검증
+- 개발 생산성을 극대화할 최신 AI 기술, 모델, 프레임워크를 리서치하고 기술 검증을 통해 실효성을 검증합니다.","지원 자격
+개발 경력 3년 이상이신 분
+Python, TypeScript, C++, C# 중 하나 이상의 언어로 능숙하게 개발 가능하신 분
+특정 기술 스택에 얽매이지 않고, 웹 프론트엔드부터 백엔드, 게임 엔진까지 유연하게 넘나들며 개발할 수 있는 풀스택 역량을 갖추신 분
+AI 기술과 서비스에 대한 깊은 관심과 열정을 바탕으로 스스로 문제를 정의하고 해결하며 빠르게 학습하고 성장하시는 분","우대 사항
+게임 개발 과정을 경험해보셨거나, 이에 대한 이해도가 높으신 분
+Cursor, GitHub Copilot 등 AI 기반 개발 도구 활용에 능숙하며, 이를 통해 실제 개발 생산성을 크게 향상 시켜본 경험이 있으신 분
+LLM 기반의 챗봇, RAG 시스템 등 AI Agent 서비스 개발을 처음부터 끝까지 경험해보신 분
+프롬프트 최적화 경험이 있으신 분
+AWS 운영 경험 또는 DevOps 경험이 있으신 분
+처음 접하는 분야나 코드도 두려움 없이 파악하고 빠르게 기여할 수 있으신 분","Agent, AWS, DevOps, GitHub, LLM, Python, RAG, TypeScript","전형 절차
+서류전형 → 과제전형 → 면접전형 → 최종합격
+*해당 절차는 각 포지션 및 후보자에 따라 변동이 있을 수 있습니다.",회사 내규에 따름,"",""
+[핀테크 스타트업] AI 에이전트 엔지니어 모십니다.,서울 송파구 법원로 128  B동 1211호,경력,초대졸이상,정규직 (수습 3개월) 직급/직책,48447364.0,㈜와이에스메타,https://www.jobkorea.co.kr/Recruit/GI_Read/48447364?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=6&sc=630,"
+담당업무
+
+ㆍLLM 기반 Agent / RAG / Pipeline 설계 및 개발
+
+ㆍ외부 API, 웹데이터, DB를 연결하는 AI 서비스 구축
+
+ㆍA2A 파이프라인 설계 및 개선
+
+ㆍ모델 성능/비용/로깅 등 LLMOps 체계화
+
+ㆍ벡터화·Retrieval·프롬프팅 등 데이터 파이프라인 자동화","자격요건
+
+ㆍ학력 : 학력무관
+
+ㆍ경력 : 경력2년↑","우대사항
+
+ㆍ스타트업 재직 경험이 있으신 분
+
+ㆍ학습/LLM 파인튜닝 경험이 있으신 분
+
+ㆍ0 to 1 프로덕션 설계부터 운영까지 경험이 있으신 분
+
+ㆍ작은 팀에서의 독립적 문제 해결 및 프로젝트 기여 경험이 있으신 분
+
+ㆍPython으로 FastAPI, LangChain 등을 다뤄본 경험이 있는 분
+
+ㆍLLM 기반 애플리케이션(예: RAG, Chatbot, Agent) 경험이 있는 분
+
+ㆍPrompt 버전 관리, Token 사용 모니터링 등 운영 자동화 경험
+
+ㆍLangGraph, Qdrant, Redis, PostgreSQL 등 실무 경험
+
+ㆍ새 기술을 빠르게 흡수하고 바로 실험해보는 분
+
+ㆍgit / docker 환경에서 협업 가능한 분
+
+ㆍ아키텍처, 코드 품질(테스트 코드  포함) 및 표준의 중요성을 인지하고 있으신 분","Agent, docker, FastAPI, LangChain, LLM, PostgreSQL, RAG, Redis, 데이터 파이프라인","","연봉 5,000만원 이상","",""
+AI 에이전트 개발 및 빌더 채용,경남 창원시 의창구 중동중앙로 47  타워동 1902호,경력무관,학력무관,정규직,48524694.0,㈜솔체인,https://www.jobkorea.co.kr/Recruit/GI_Read/48524694?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=7&sc=630,"담당업무
+
+ㆍ영업, 생산, 재고, 보고 등 현장 업무용 AI 에이전트 기획
+
+ㆍLLM 기반 AI 에이전트 빠른 구현 및 실험
+
+ㆍ노코드/로우코드 도구를 활용한 자동화 설계
+
+ㆍ아이디어를 실제 사용 가능한 AI 에이전트로 발전
+
+","자격요건
+
+ㆍChatGPT, Claude 등 LLM을 업무 자동화 용도로 활용한 경험
+
+ㆍAI 에이전트 또는 업무 자동화 사례를 직접 만들어본 경험
+
+ㆍ완벽한 설계보다 빠른 실행과 개선을 선호하는 태도","우대사항
+
+ㆍ다양한 AI 툴 활용 경험
+
+ㆍ기획·마케팅·운영 중 하나 이상의 실무 경험
+
+ㆍ“이건 AI로 처리할 수 있다”는 관점으로 일을 바라보는 분",Claude,"",회사 내규에 따름 (면접 후 결정),"",""
+[서울지사] AI 에이전트 및 워크플로우 엔지니어 모집,서울 금천구 디지털로 178  -,경력무관,대졸이상,정규직,48459155.0,㈜인사이트온,https://www.jobkorea.co.kr/Recruit/GI_Read/48459155?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=8&sc=630,"
+1. 주요업무
+
+  ? LLM 기반 자율 에이전트 설계
+
+  ? Agentic Workflow 구축
+
+  ? RAG(검색 증강 생성) 최적화
+
+  ? 외부 도구 및 API 연동
+
+  ? 에이전트 성능 모니터링 및 평가
+
+","2. 지원요건
+
+? Python 혹은 Node.js에 능숙하며, 비동기 프로그래밍에 대한 이해도가 높으신 분
+
+?  LangChain, LangGraph, LlamaIndex 중 하나 이상의 프레임워크를 활용해 보신 분
+
+? OpenAI, Anthropic, Google Gemini 등 다양한 LLM API의 특성을 이해하시는 분
+
+? Pinecone, Milvus, Weaviate 등 Vector DB 활용 경험 및 RDBMS와의 연동 경험자","3. 우대사항
+
+? Dify, n8n 등을 활용해 Low-code 기반의 자동화 워크플로우를 구축 경험자
+
+? AutoGen, CrewAI 등을 사용해 다수의 에이전트 간 협업 구조 설계 경험자
+
+? LangSmith 등을 활용한 에이전트 트레이싱(Tracing) 및 디버깅 경험자
+
+? LLM 관련 오픈소스 프로젝트에 기여, 본인만의 AI 사이드 프로젝트 운영 경험자","Anthropic, Gemini, LangChain, LangGraph, LLM, OpenAI, Pinecone, Python, RAG","",회사 내규에 따름 (면접 후 결정),"",""
+[부산 / 장기] LLM 기반 RAG 챗봇·AI 에이전트 개발 경력자 채용,부산 연제구 중앙대로 1001  연산동,경력,대졸이상,계약직 (근무기간 2년),48516670.0,㈜디지털엠엔씨,https://www.jobkorea.co.kr/Recruit/GI_Read/48516670?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=9&sc=630,"담당업무
+
+LLM(OpenAI, Azure OpenAI 등) 기반 RAG 챗봇 및 AI 에이전트 설계·개발
+
+LangChain, LangGraph 등 프레임워크를 활용한 에이전트 아키텍처 구현
+
+데이터 수집·전처리·임베딩을 포함한 RAG 데이터 파이프라인 구축
+
+프롬프트 엔지니어링 및 튜닝을 통한 LLM 응답 품질 개선
+
+RAG 성능 평가, 검증 및 운영 고도화
+
+서비스 운영 환경에서의 챗봇/에이전트 유지보수 및 개선","자격요건
+
+학력: 대졸 이상
+
+경력: 총 경력 6년 이상 / 관련 경력 2년 이상
+
+OpenAI, Azure OpenAI 등 LLM API 활용 RAG 챗봇 또는 AI 에이전트 개발·운영 경험
+
+LangChain, LangGraph 등 LLM 프레임워크 사용 경험
+
+데이터 수집·전처리·임베딩을 포함한 데이터 파이프라인 구축 경험
+
+프롬프트 엔지니어링 및 튜닝을 통한 응답 품질 개선 경험
+
+RAG 성능 평가 및 검증 경험
+
+","우대사항
+
+Docker, Kubernetes 기반 AI 서비스 개발·운영 경험
+
+LLM Fine-tuning 또는 SLM 학습/서빙 경험
+
+데이터 엔지니어링 및 MLOps(DVC, MLflow 등) 이해 또는 실무 경험
+
+대규모 언어모델 기반 서비스의 실제 운영 경험","Azure, Docker, Kubernetes, LangChain, LangGraph, LLM, MLOps, OpenAI, RAG, 데이터 파이프라인","",월급 700만원 이상 (면접 후 결정),"",""
+에이전트 서비스(AI Agent) 백엔드 개발자 채용,서울 강남구 언주로 535  역삼동 662-15,경력,학력무관,정규직 직급/직책,48314028.0,㈜골든플래닛,https://www.jobkorea.co.kr/Recruit/GI_Read/48314028?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=10&sc=630,"주요업무
+
+1. AI 에이전트 워크플로우 고도화
+
+ㆍLangGraph를 활용한 Text-to-SQL, RAG, 데이터 분석 에이전트 워크플로우 설계 및 구현
+
+ㆍLLM의 Tool Calling을 활용한 Agentic Workflow 구축
+
+ㆍ복잡한 사용자 의도(Intent) 분류 및 Context 관리 로직 최적화
+
+2. SaaS 백엔드 API 개발 및 운영
+
+ㆍFastAPI 기반의 RESTful API 설계 및 구현
+
+ㆍ사용자, 조직, 권한 관리 등 B2B SaaS 필수 기능 개발
+
+3. 데이터베이스 설계 및 운영
+
+ㆍ서비스 요건에 따른 PostgreSQL/Firestore 데이터 모델링 및 마이그레이션 관리
+
+ㆍ쿼리 성능 튜닝 및 데이터 무결성/일관성 최적화
+
+ㆍRLS(Row Level Security)를 활용한 안전한 멀티테넌시 데이터 격리 구현
+
+4. 클라우드 인프라 및 보안 엔지니어링
+
+ㆍGCP 기반의 고가용성 인프라(Cloud Load Balancer, Cloud Armor, IAP) 운영 및 관리
+
+ㆍCloud Build와 Artifact Registry를 활용한 Docker 컨테이너 CI/CD 파이프라인 최적화
+
+ㆍCloud Monitoring/Logging을 활용한 시스템 관측 가능성(Observability) 확보 및 장애 대응
+
+ㆍZero Trust 보안 모델 적용(IAP) 및 감사 로그(Audit Logs) 정책 수립 및 운영","자격 요건
+
+ㆍPython 기반 백엔드 개발 경력 3년 이상으로, FastAPI와 SQLAlchemy(Async)를 활용한 비동기 아키텍처 설계/운영 경험이 있으신 분
+
+ㆍLangChain / LangGraph 등 LLM 오케스트레이션 도구를 활용하여 실제 AI 에이전트 서비스를 구축해 본 경험이 있으신 분
+
+ㆍB2B SaaS 서비스 개발 경험: 멀티테넌시(Multi-tenancy) 환경에서의 데이터 격리(RLS 등) 및 아키텍처 설계 경험이 있으신 분
+
+ㆍ확장성을 고려한 RDBMS 데이터 모델링 및 쿼리 튜닝 역량을 보유하신 분
+
+ㆍ클라우드 인프라(GCP/AWS 등) 운영 경험: IAM, VPC 네트워크, 컨테이너 기반 배포 환경을 이해하고 구성할 수 있으신 분
+
+ㆍ단순 개발을 넘어, 비즈니스 문제를 정의하고 기획부터 배포, 운영까지 End-to-End로 주도하여 임팩트를 만드는 과정을 즐기시는 분","우대 사항
+
+ㆍLangGraph, LangChain, FastAPI 등 당사 기술 스택을 활용한 프로젝트 경험이 있으신 분
+
+ㆍGoogle Cloud Platform(GCP) 환경에서의 실무 경험이 있으신 분
+
+ㆍGoogle BigQuery 쿼리 작성 및 비용 구조에 대한 이해가 있으신 분
+
+ㆍ데이터 스키마에 대한 이해도가 있으신 분","AWS, CI/CD, Docker, FastAPI, GCP, LangChain, LangGraph, LLM, PostgreSQL, RAG, SQL","",회사 내규에 따름 (면접 후 결정),"",""
+Hi-Tech 제조 산업을 위한 생성형 AI 플랫폼 및 에이전트 개발 팀장 모집,경기 성남시 분당구 판교역로 230  삼환하이펙스 B동 309호,경력,대졸이상,정규직 직급/직책,48511735.0,㈜브릭,https://www.jobkorea.co.kr/Recruit/GI_Read/48511735?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=11&sc=630,"
+담당업무
+
+-생성형 AI 플랫폼 및 LLM 기반 Agent Service 개발
+- LLMOps 기반 운영 자동화 및 성능 최적화
+-RAG(Retrieval-Augmented Generation) 기반 파이프라인 설계 및 구현
+-벡터 DB 이해와 활용
+-고객 도메인 요구 기반의 LLM 파인튜닝 및 커스터마이징
+-Agent 기반 아키텍처 설계 및 AI 서비스 구현
+- MLOps 파이프라인 구축","자격요건
+
+ㆍ학력 : 대졸이상
+
+
+
+ㆍ경력 : 경력10년↑
+
+  - 백엔드 / 프론트엔드 개발 경력 7년 이상
+  - LLM 모델 실무 경험
+  - RESTful API 설계 및 서비스 구축
+  - Spring Boot / Spring Framework 기반 백엔드 개발 경험
+  - React 등 프론트엔드 프레임워크 기반 UI 개발 경험
+  - TensorFlow, PyTorch, Keras와 같은 라이브러리 및 프레임워크 실무 경험
+  - AWS 등 클라우드 인프라 환경 실무 경험","우대사항
+
+ 기술 및 도메인 전문성 :
+  - DB 설계 및 운영 경험자 (DBA 경험자 포함)
+  - LangChain, LlamaIndex 등 LLM 프레임워크 활용 경험
+  - RAG 기반 설계 및 구현 경험
+  - Hugging Face, OpenAI API 기반 모델 파인튜닝/배포 자동화 경험
+  - NLP, 챗봇, 지식그래프 등 AI 기술 적용 경험
+  - 검색, 멀티모달 AI, 음석/영상 인식 융합 시스템 개발 경험
+  - 시스템 성능 최적화 및 아키텍처 설계 역량","Agent, AWS, Hugging Face, LangChain, LLM, MLOps, NLP, OpenAI, PyTorch, RAG, React, Spring, TensorFlow, 멀티모달","",회사 내규에 따름 (면접 후 결정),"",""
+AI엔지니어(AI Agent),서울 중구,경력무관,대학원(박사)이상,정규직,48449514.0,㈜에스원,https://www.jobkorea.co.kr/Recruit/GI_Read/48449514?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=20&sc=630,"이런 업무를 해요
+ㆍSVMS 에 활용 가능한 AI 에이전트 아이템 및 사례 발굴
+ㆍAI 에이전트 아키텍쳐 설계 및 개발
+ㆍMCP(Model Context Protocol) 설계 및 개발
+ㆍAI 에이전트 평가 지표 정의 및 자동화 평가 시스템 구축
+ㆍ다양한 언어 모델 및 데이터 연동
+ㆍAI 에이전트 성능 모니터링 및 디버깅
+ㆍAI 에이전트 배포 및 운영 환경 구축","이런 분들을 찾고 있어요
+ㆍ학력 : 대학원(박사)이상
+ㆍ학력 : 박사학위 이상(컴퓨터, 전산, AI 관련)
+
+[전문지식]
+ㆍPython 및 관련 라이브러리 활용 능력
+　- Langchain, Langgraph, FastAPI, OpenAI 등
+ㆍRAG, Agent, MCP 전체 워크플로우에 대한 기본 지식
+ㆍRESTFul API 등 외부 연동 기술 개발 능력
+ㆍModel(LLM, Embedding, Re-ranking) 및 VectorDB 활용 경험
+ㆍ프롬프트 엔지니어링
+ㆍGit, Jira 등 협업 도구 활용 능력","이런 분이면 더 좋아요
+ㆍ경력 : AI 엔지니어 경력 3년 이상 (석사기간 제외)
+ㆍEnd-to-End 에이전트 설계 및 운영 경험
+ㆍAI 에이전트 워크플로우에 대한 설계 및 개발 경험
+ㆍMCP 도구의 제작, 배포 적용 경험
+ㆍ에이전트 평가 지표 수립 및 자동화 평가 시스템 구축 경험
+ㆍ에이전트 고도화를 적용한 성능 향상 경험
+ㆍ온프레미스, 클라우드 플랫폼을 활용한 프로젝트 경험
+","Agent, FastAPI, Jira, Langchain, Langgraph, LLM, OpenAI","","","",""
+[한국정보공학] AI 개발 부문 경력직 채용,경기 성남시 분당구 황새울로359번길 7  8층,경력,대졸이상,정규직,48439697.0,한국정보공학㈜,https://www.jobkorea.co.kr/Recruit/GI_Read/48439697?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=21&sc=630,"
+담당업무
+
+ㆍLLM 기반 RAG 챗봇 및 AI 에이전트 설계, 개발, 운영","자격요건
+
+ㆍ학력 : 대졸이상
+
+ㆍ경력 : 경력
+
+ㆍLLM(OpenAI, Azure OpenAI 등) API를 활용한 RAG 기반 챗봇 또는 에이전트 개발 및 운영 경험
+(LangChain, LangGraph 등 관련 프레임워크 사용 경험)
+ㆍ데이터 수집, 전처리, 임베딩을 위한 데이터 파이프라인 구축 경험
+ㆍ프롬프트 엔지니어링 및 튜닝을 통한 LLM 응답 품질 개선 및 RAG 성능 평가/검증 경험","우대사항
+
+ㆍDocker/Kubernetes 환경에서 AI 개발 및 운영 경험자
+
+ㆍLLM Fine-tuning 또는 SLM 학습/서빙 경험
+ㆍ데이터 엔지니어링 및 MLOps(DVC, MLflow 등)에 대한 이해와 경험
+ㆍ보안이 중요한 규제 산업 도메인에서의 프로젝트 개발 경험
+ㆍ최신 AI 관련 논문이나 기술 트렌드를 학습하고, 이를 실제 프로-젝트에 적용하는 것을 즐기시는 분
+ㆍ다양한 직군과 협업하여 문제를 정의하고 기술적 해결책을 제시하는 데 능숙하신 분","Azure, Kubernetes, LangChain, LangGraph, LLM, MLOps, OpenAI, RAG, 데이터 파이프라인","",회사 내규에 따름 (면접 후 결정),"",""
+[플랫폼본부] 프랜차이즈시너지그룹 AI 리서치 엔지니어 (AI 어시스턴트),경기 성남시 분당구 판교로256번길 7  넥슨코리아,경력,학력무관,정규직 (수습 3개월),48424636.0,㈜넥슨,https://www.jobkorea.co.kr/Recruit/GI_Read/48424636?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=24&sc=630,"주요 업무
+LLM 및 Agent 기반 AI 어시스턴트의 파이프라인·알고리즘 설계
+라이브 서비스 개발 워크플로우 자동화를 위한 AI 파이프라인 연구
+프롬프트 및 에이전트 파이프라인 설계, 평가 지표 정의 및 성능 개선
+게임 기획자 및 AI 에이전트 엔지니어와 긴밀히 협업하여 실제 개발·운영 병목을 AI 관점에서 문제 해결","지원 자격
+만 3년 이상의 LLM/Agent 관련 프로젝트 수행 경험이 있거나 AI 관련 석사 이상의 학위를 보유하신 분
+RAG, Fine-tuning, RL 등 LLM 핵심 기술 및 자연어 처리(NLP)에 대한 이해도가 높으신 분
+AI 기술에 대한 높은 이해도를 바탕으로 NeurIPS, ICML, ICLR 등 탑티어 학회에 논문을 게재한 경험이 있으신 분","우대 사항
+AI 프로덕트의 전체 생애 주기 (문제 정의, 데이터 수집/분석/가공, 모델링, 배포, 운영 등)를 경험이 있으신 분
+캐글 등 AI 경진대회나 알고리즘 공모전 수상, 국외 학술 발표 경험이 있으신 분
+게임 데이터 포맷(스크립트, 기획서, 리소스 등)에 대한 이해도가 높거나 게임 개발 프로세스를 경험이 있으신 분","Agent, LLM, NLP, RAG, 자연어 처리","",회사 내규에 따름,"",""
+AI 풀스택 개발자 (경력),경기도 성남시 분당구 백현동 532 카카오 판교 아지트,경력,학력무관,정규직,48301938.0,㈜카카오,https://www.jobkorea.co.kr/Recruit/GI_Read/48301938?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=25&sc=630,"
+담당업무
+
+ㆍ최신 거대 언어 모델(LLM)과 멀티모달 모델을 활용하여 아이디어를 신속하게
+
+    웹/앱 서비스로 구현하고 검증합니다.
+
+ㆍ복잡한 태스크를 자율적으로 수행하고, 사용자와 지능적으로 상호작용하는
+
+    AI 에이전트의 워크플로우를 설계하고 개발합니다.
+
+ㆍ텍스트, 이미지, 코드 등 다양한 결과물을 생성하고 편집하는 과정에 최적화된 동적이고
+
+    직관적인 사용자 인터페이스와 새로운 인터랙션을 연구하고 구현합니다.
+
+ㆍ국내외 최신 AI 기술, 프레임워크, 논문 등을 지속적으로 리서치하고
+
+    실제 프로젝트에 신속하게 도입하여 기술 경쟁력을 확보합니다.","자격요건
+
+ㆍJava, Kotlin, Node.js, Python 등 하나 이상의 언어와 LangGraph, Spring AI 등의
+
+    AI 프레임워크를 사용하여 LLM 기반의 백엔드 시스템을 능숙하게 개발할 수 있는 분
+
+ㆍReact (Next.js), Svelte 등 모던 프론트엔드 프레임워크를 사용하여 동적인
+
+    AI 서비스를 개발한 경험이 있는 분
+
+ㆍAI 기술과 서비스에 대한 깊은 관심과 열정을 바탕으로, 스스로 문제를 정의하고
+
+    해결하며 빠르게 학습하고 성장하는 분
+
+ㆍ다양한 직군의 동료들과 명확하고 효율적으로 소통하며, 적극적으로 협력하여
+
+    공동의 목표를 달성하는 데 기여하는 분
+
+","우대사항
+
+ㆍgRPC, WebSocket 등 실시간 및 비동기 통신 환경에 대한 깊은 이해와 RESTful API 설계 및
+
+    구현 경험이 풍부한 분
+
+ㆍAI 챗봇, AI 기반 콘텐츠 에디터, RAG 시스템 등 AI 관련 서비스를 처음부터 끝까지 개발하고
+
+    운영해 본 경험이 있는 분
+
+ㆍClaude Code, Cursor 등 Agentic 워크플로우 개발 경험이 있는 분
+
+ㆍTensorFlow.js, ONNX Runtime Web 등을 활용하여 웹 브라우저 환경에서 모델 추론을
+
+    구현하고 최적화해 본 경험이 있는 분
+
+ㆍWeb AI, WebLLM 등 브라우저 자체의 AI API 활용 경험 또는 AI 네이티브 브라우저의
+
+    기술적 아키텍처에 대한 깊은 이해를 갖춘 분","Kotlin, LangGraph, LLM, Next.js, Node.js, Python, RAG, Spring, WebSocket, 멀티모달","",회사 내규에 따름,"",""
+[라이브본부] AI 엔지니어,경기 성남시 분당구 판교로256번길 7  넥슨코리아,경력,학력무관,정규직 (수습 3개월),48455722.0,㈜넥슨,https://www.jobkorea.co.kr/Recruit/GI_Read/48455722?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=26&sc=630,"주요 업무
+전 세계에서 개발/서비스 중인 게임/IP에 대한 데이터 수집/관리와 인사이트 추출
+게임/IP 관련 정형/비정형 데이터를 이용한 게임 시장성과 가치를 평가하는 모델 개발
+데이터 기반 퍼블리시에 필요한 AI 활용 생성/평가 모델 개발","지원 자격
+AI/ML 등 데이터 기반의 예측/분류 등 모델 개발 업무를 3년 이상 진행하신 분
+데이터 과학에 기반한 문제 해결과 사고에 능숙하신 분
+데이터 정제/시각화/분석에 필요한 프로그래밍 능력과 머신러닝/딥러닝 등의 주요 프레임워크 경험이 있는 분 (Python, Snowflake, scikit learn 등)
+LLM/AI 에이전트를 활용한 실무 프로젝트 경험이 있으신 분
+DB 구조에 대한 이해가 있으시고 적재/추출 등 활용에 능숙하신 분","우대 사항
+게임과 게임 데이터에 대한 도메인 이해가 있으신 분
+문제 해결과 도전을 위해 자기 주도적 업무가 가능하신 분
+다양한 직군의 사람들과 유연한 커뮤니케이션이 가능하신 분
+다양한 플랫폼의 게임을 즐기고 게임 문화/커뮤니티에 익숙하신 분
+다양한 시각화 툴을 통해 간단한 대시보드/리포트 개발이 가능하신 분
+Azure, GCP 등 클라우드 환경에서의 LLM API 활용 경험이 있으신 분
+데이터 기반의 문제 정의를 통해 기존 모델의 기술적 한계를 극복하고 개선한 경험이 있으신 분
+영문 데이터를 다루는데 문제가 없으신 분","Azure, GCP, LLM, Python","",회사 내규에 따름,"",""
+[플랫폼본부] AI Hub실 AI 엔지니어,경기 성남시 분당구 판교로256번길 7  넥슨코리아,경력,학력무관,정규직 (수습 3개월),48469775.0,㈜넥슨,https://www.jobkorea.co.kr/Recruit/GI_Read/48469775?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=27&sc=630,"주요 업무
+멀티 플랫폼 AI 인터페이스 개발 및 통합
+- AI Hub의 핵심 자산인 Context DB 및 AI 에이전트 기능을 Slack, Web, 내부 AI Studio 등 다양한 채널에서 일관된 경험으로 제공합니다.
+- Slack 봇, 웹 UI, 내부 도구 간의 사용 흐름을 설계하고, 환경별 UX 차이를 고려한 인터페이스를 구현합니다.
+- MCP, A2A 프로토콜 등과 연계하여 AI 모델 프론트엔드 간 상호작용 구조를 설계합니다.
+
+Context 관리 및 운영 플랫폼 구축
+- 게임 현업 부서에서 별도의 개발 지식 없이도 데이터를 업로드·관리·개선할 수 있는 AI 운영용 웹 인터페이스를 개발합니다.
+- 데이터 업로드, AI 생성 결과물 확인, 수정 피드백 입력 등 AI 학습 데이터의 선순환을 위한 UI/UX를 구현합니다.
+
+ 사용자 중심의 AI UX 설계 및 최적화
+- 복잡한 AI 기술을 현업 사용자가 직관적으로 이해하고 제안할 수 있도록 시각화하고, 사용성을 개선합니다.
+- 프론트엔드 관점에서 API 응답 속도 최적화 및 안정적인 서비스 환경을 제공합니다.
+- 프론트엔드 관점에서 응답 지연, 스트리밍 처리, 실패/재시도 UX 등을 설계하여 안정적인 AI 사용 경험을 제공합니다.","지원 자격
+프론트엔드 개발 실무 경력 3년 이상 보유하신 분
+React, Vue, Next.js 등 모던 프레임워크를 활용한 SPA 개발 및 운영 경험이 있으신 분
+REST API 및 실시간 통신(WebSocket, SSE 등)을 활용한 인터페이스 구현 경험이 있으신 분
+디자이너, 기획자, 백엔드 개발자와 원활하게 협업할 수 있는 커뮤니케이션 역량을 보유하신 분","우대 사항
+AI 서비스 또는 LLM 기반 제품의 프론트엔드 설계 경험이 있으신 분
+프론트엔드에 국한되지 않고, BFF(Backend for Frontend) 기반 설계 및 경량 백엔드까지 함께 구현한 경험이 있으신 분
+Slack Bot(Slack Bolt SDK) 기반 인터페이스 개발 경험이 있으신 분
+MCP(Model Context Protocol), 멀티 에이전트 아키텍처 등 AI 인터페이스 구조에 대한 이해도가 높으신 분
+Admin Tool, CMS, 내부 운영 도구를 제품 관점에서 설계 및 개선한 경험이 있으신 분
+AI 서비스(LLM 기반 서비스)의 인터페이스 설계 및 최적화 경험이 있으신 분
+게임 산업에 대한 높은 관심과 넥슨 게임에 대한 이해도가 높으신 분","LLM, Next.js, React, REST API, Vue, WebSocket","",회사 내규에 따름,"",""
+해커스교육그룹 [경력] AI풀스택 개발자 채용,"서울 서초구 서초4동 1316-15 현대성우빌딩 1층, 2층,",신입·경력,학력무관,정규직,48405321.0,㈜해커스어학원,https://www.jobkorea.co.kr/Recruit/GI_Read/48405321?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=28&sc=630,"LLM 기반 서비스 개발 : LLM(Large Language Model)을 활용한
+교육 서비스 기획 및 개발
+AI 에이전트 개발 : 학습자와 상호작용하는 AI 챗봇, 튜터링 시스템 개발
+업무 자동화 : 사내 LLM을 활용한 자동화 프로세스 적용 및 개선","학력/전공 무관
+Python, Java, Node.js 중 하나 이상의 언어로 백엔드 개발 경험이 있는 분
+React, Vue.js 등 모던 프론트엔드 프레임워크 사용 경험이 있는 분
+AI/ML 기술에 관심이 많고 새로운 기술 습득에 적극적인 분
+실질적인 LLM관련 프로젝트 수행경험 및 결과물(포트폴리오)이 있는 분","LangChain, LangGraph 등 LLM 프레임워크 활용 경험
+AI 챗봇 또는 RAG 시스템 개발 경험
+교육 서비스 또는 EdTech 분야 개발
+업무 프로세스 자동화 구축 경험","Java, LangChain, LangGraph, LLM, Node.js, Python, RAG, React, Vue","",회사 내규에 따름 (면접 후 결정),"",""
+AI 머신 러닝 엔지니어 (대리급 이상),서울 서초구,경력2년~10년,학력무관,정규직,48379333.0,메타넷디지털㈜,https://www.jobkorea.co.kr/Recruit/GI_Read/48379333?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=31&sc=630,"이런 업무를 해요
+ㆍ고객사 요구사항 분석 후 맞춤형 기능 구현 및 통합 개발
+ㆍAgent Framework(LangChain, LlamaIndex 등)를 활용한 AI 워크플로우 구축
+ㆍAI Agent 및 LLM 기반 서비스의 모델 설계·개발·배포 지원
+ㆍ내부 데이터 및 외부 API를 활용한 RAG / 파인튜닝 환경 구성
+ㆍ클라우드 환경에서의 모델 배포 및 성능 최적화
+ㆍ테크 리더와 협업하여 서비스 고도화 및 운영 자동화 지원
+ㆍ고객사 기술팀과의 실무 협의 및 기술 검증(PoC) 수행","[자격요건]
+ㆍ관련 경력 2~5년 이상 (또는 이에 준하는 프로젝트 경험)
+ㆍPython 기반 AI/ML 개발 경험
+ㆍOpenAI, Anthropic, Mistral 등 LLM API 활용 경험
+ㆍLangChain, RAG, Vector DB, Embedding 모델 등의 이해 및 실습 경험
+ㆍGit, Docker, REST API 등 기본적인 개발 환경 이해
+ㆍ새로운 기술을 빠르게 학습하고 실무에 적용할 수 있는 실행력
+ㆍ원활한 커뮤니케이션 및 협업 역량","이런 분이면 더 좋아요
+ㆍAI Agent 시스템 또는 대화형 서비스 개발 경험
+ㆍ모델 파인튜닝, 프롬프트 엔지니어링 실무 경험
+ㆍ클라우드 환경에서의 MLOps 경험 (SageMaker, Vertex AI 등)
+ㆍ대형 고객사(B2B) 프로젝트 또는 외부 커뮤니케이션 경험
+ㆍ스타트업/테크 기업 환경에 익숙한 분","Agent, Anthropic, Docker, LangChain, LLM, MLOps, RAG, REST API","","","",""
+Agentic AI Platform 개발자 (경력),경기도 성남시 분당구 백현동 532 카카오 판교 아지트,경력,학력무관,정규직,48300757.0,㈜카카오,https://www.jobkorea.co.kr/Recruit/GI_Read/48300757?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=32&sc=630,"
+담당업무
+
+ㆍ카카오 Agent Builder
+
+    - AI와 Web Streaming 기술을 통해 웹, 톡, 챗봇, 카카오맵 등 다양한 플랫폼과의 연동을 진행합니다.
+
+ㆍAgent Network
+
+    - A2A를 통해 카카오 에이전트와 내?외부 에이전트를 연동하여 유기적인
+
+       에이전트 네트워크를 구성할 수 있는 플랫폼을 구축합니다.
+
+","자격요건
+
+ㆍAI Prompt Engineering, Function Call, Agent 기반 아키텍처 설계 및 개발 경력을 보유하신 분
+
+ㆍJava/Kotlin 및 Spring 기반 웹 서비스 개발 경력을 3년 이상 보유하신 분
+
+ㆍKubernetes 인프라 환경에서의 개발 및 DevOps 운영 경력을 보유하신 분
+
+ㆍRDB, NoSQL, Queue, 캐시 등 미들웨어 활용 경력을 보유하신 분","우대사항
+
+ㆍn8n, make, dify 등 Agent Builder를 활용하여 에이전트를 제작해보신 분
+
+ㆍA2A, MCP 등의 에이전트 프로토콜을 활용한 에이전트 개발 경력을 보유하신 분
+
+ㆍ웹 스트리밍 (WebSocket, SSE) 서비스 아키텍처 설계 및 개발 운영 경력을 보유하신 분
+
+ㆍ새로운 언어, 기술에 관심과 학습 의지가 높으신 분","Agent, DevOps, Kotlin, Spring, WebSocket","",회사 내규에 따름,"",""
+"경력사원 채용(연구개발, 전략기획, IFM, SI영업)",서울특별시 중구 세종대로7길 25,경력,학력무관,정규직,48428391.0,에스원,https://www.jobkorea.co.kr/Recruit/GI_Read/48428391?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=33&sc=630,"수행업무
+ㆍAI에이전트 개발
+ㆍ - 지능형 영상 관제 시스템에 적용 가능한 AI에이전트 아키텍쳐 설계 및 개발
+ㆍ - AI에이전트 성능 모니터링 및 디버깅
+ㆍ - MCP 설계 및 개발","지원자격
+ㆍAI 엔지니어 업무 등 4년 이상 유관경력 보유하신 분","우대사항
+ㆍ컴퓨터공학, 전산, AI 등 유관전공 박사 학위 보유하신 분/취득 예정이신 분
+ㆍEnd to End 에이전트 설계 및 운영 경험 보유하신 분
+ㆍAI에이전트 고도화를 적용한 성능 향상 경험 보유하신 분
+ㆍMCP 도구 제작 및 배포 적용 경험 보유하신 분
+ㆍ온프레미스, 클라우드 플랫폼을 활용한 프로젝트 경험 보유하신 분",,"",회사 내규에 따름,"",""
+"[서비스개발센터] 경력 개발자, 웹디자이너 채용",서울 서대문구 충정로 29  10층,경력4년,학력무관,"정규직 (수습 3개월) , 계약직 (근무기간 1년)",48493295.0,㈜동아사이언스,https://www.jobkorea.co.kr/Recruit/GI_Read/48493295?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=34&sc=630,"프론트엔드 개발 및 품질 개선(Next.js, React 등)","프론트엔드 개발 경험 4년 또는 7년 이상 또는 이에 준하는 경험을 보유하신 분
+Next.js, TypeScript등 모던 웹 개발 기술 숙련도가 높으신 분
+Figma 등 디자인 협업 툴을 통한 업무가 능숙하신 분","안드로이드/iOS 앱 개발 경험
+커머스 서비스 개발/운영 경험
+코드 리뷰, 유닛 테스트, 문서화 등의 소프트웨어 개발에 적극적인 분
+개발팀 내부의 개발 방향 및 기준 수립에 관심이 많으신 분
+MCP, AI Worlflow 등 AI 에이전트를 활용하는 환경에 익숙하신 분
+사용자의 긍정적 경험을 위한 UI/UX 설계에 적극적으로 고민하시는 분
+대규모 트래픽 대응 및 성능 최적화 경험을 보유하신 분
+CI/CD 파이프라인(Jenkins, GitHub Actions 등)을 활용한 자동화된 빌드, 테스트, 배포 경험이 있으신 분
+크로스 브라우징 호환성 및 반응형 웹 디자인에 대한 경험","CI/CD, GitHub, Jenkins, Next.js, React","",회사 내규에 따름 (면접 후 결정),"",""
+인공지능(AI) 솔트룩스 - 백엔드 개발자 채용,서울 송파구 올림픽로35길 123,경력,대졸이상,정규직 (수습 3개월),48455112.0,주식회사 솔트룩스,https://www.jobkorea.co.kr/Recruit/GI_Read/48455112?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=35&sc=630,,"[필수요건]
+- 인공지능/머신러닝/데이터 분야 실무 경력 6년 이상 또는 이에 준하는 고급 개발·리드 경험
+
+- 최소 3명 이상의 개발자로 구성된 프로젝트를 기술적으로 리딩하고 성공시킨 경험
+
+- 엘라스틱서치 유경험자로써 이를 활용해 검색, 분류, 관련 서비스 등을 개발하고 성공시킨 경험","[경험요건]
+
+- 비즈니스 요구사항에 최적화된 AI 모델 아키텍처 및 데이터 파이프라인 설계
+
+- LLM을 기반으로 스스로 판단하고 도구를 사용하는 자율형 에이전트(Agent) 및 Multi-agent 워크플로우 설계
+
+- 문제 정의 → 데이터 전략 → 모델링/평가 → 배포/모니터링 → 지속 개선의 엔드투엔드(End-to-End) 리드","agent, Agent, 데이터 파이프라인","",회사 내규에 따름 (면접 후 결정),"",""
+AI 개발자,대한민국 경기도 성남시 분당구 분당로 55 퍼스트타워 9층,경력,초대졸이상,정규직,48469835.0,㈜다날,https://www.jobkorea.co.kr/Recruit/GI_Read/48469835?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=36&sc=630,"금융 거래 데이터를 활용한 모델 개발 및 고도화
+데이터 수집·전처리, feature engineering, 모델 실험 설계 및 반복 학습
+RAG(Retrieval-Augmented Generation) 기반 AI 서비스 설계 및 운영
+단일 서비스 단위를 넘어 전사 AI 플랫폼/에이전트 아키텍처 설계","2년 이상의 AI/데이터/백엔드 관련 실무 경험 또는 이에 준하는 프로젝트 경험
+Python 기반 ML/DL 개발 경험
+데이터 기반 문제를 모델링 관점에서 정의하고 해결한 경험
+모델의 성능뿐 아니라 운영 환경에서의 제약(속도, 비용, 안정성)을 고려할 수 있는 역량
+새로운 도메인에 대한 빠른 학습 능력과 문제 해결력","금융/결제/거래 데이터 기반 모델 연구·개발·서비스 경험
+
+RAG 기반 AI 서비스 설계 및 운영 경험
+
+LLM(OpenAI, Claude, Gemini 등) 활용 서비스 개발 경험
+
+AI, 컴퓨터공학 등 관련 석사 이상 학위 보유자
+
+글로벌 컨퍼런스의 논문 게재 경험 또는 논문에 기재된 기술 검토나 적용 경험이 있으신 분
+원활한 커뮤니케이션 능력과 강단 있는 의사결정 역량을 보유하신 분","Claude, Gemini, LLM, OpenAI, Python, RAG","",회사 내규에 따름,"",""
+[도시락eSIM] 업무자동화 개발·운영 담당자,서울 서대문구 충정로2가 충정빌딩 6층,경력,학력무관,정규직 (수습 3개월) 직급/직책,48489961.0,와이드모바일,https://www.jobkorea.co.kr/Recruit/GI_Read/48489961?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=38&sc=630,"[담당 업무]
+
+1. 자동화·AI 신규 과제 발굴
+
+  - 사내 다양한 부서의 업무 프로세스 분석 및 자동화 후보 과제 발굴
+
+  - 사람의 작업 방식을 분석·해체하여 AI와 시스템이 안정적으로 수행할 수 있는 작업으로 재구성
+
+  - RPA / 스크립트 / API / 에이전트 등을 조합한 최적의 자동화 방식 설계
+
+
+
+2. 자동화 설계 및 개발
+
+  - RPA 솔루션, 스크립트, API 연계 기반 자동화 개발
+
+  - 문서도구, 외부 시스템, 내부 전산, 웹 등 다양한 환경 연동
+
+
+
+
+3. 운영 및 고도화
+
+  - 운영 중인 자동화 서비스 관련 요청처리, 장애 대응 및 성능 개선
+
+  - 자동화 로그, 실행 이력, 오류 패턴 분석 및 개선
+
+  - 자동화 프로세스와 관련된 다양한 내/외부 변동에 대응","[자격요건]
+
+- 위 담당 업무를 수행할 수 있는 기술을 갖추었으며 본인의 이력 방향성과 일치하시는 분
+
+- Python 등 스크립트 기반 업무 자동화 또는 API활용 백엔드 개발 경험
+
+- 업무 프로세스를 이해하고 구조화하는 능력을 보유하신 분
+
+- 타 부서와의 협업을 위한 원활한 커뮤니케이션 역량
+
+
+","[우대사항]
+
+- RPA 솔루션 사용 경험
+
+- LLM, 에이전트 기반 서비스 설계 또는 운영 경험
+
+- IT 서비스 기획, PM, 업무 시스템 구축 경험
+
+  (기획 경험만이 아닌, 실제 자동화 개발 수행 경험 필수)","LLM, Python","",회사 내규에 따름 (면접 후 결정),"",""
+2026년 미국 Battery Tech Conference 채용전형 모집 - AI/빅데이터(비전AI),서울 영등포구 여의대로 108,신입·경력,대학원(석사)이상,정규직,48467513.0,LG에너지솔루션,https://www.jobkorea.co.kr/Recruit/GI_Read/48467513?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=39&sc=630,"
+이런 일을 해요
+
+ㆍ제조 공정에서 수집되는 대규모 영상 데이터를 활용하여 불량 검출 및 분석 알고리즘 개발을
+
+    통한 적기에 출하 및 생산 공정 최적화를 수행해요.
+
+ㆍ그리고 멀티 에이전트, Agentic AI 기반의 Vision AI 시스템을 구축하고 고도화하여
+
+    생산성을 향상시키는 등 스마트 팩토리 시스템 구축에 필수적인 역할을 해요.
+
+ㆍ저희는 비전 Foundation Model, LVLM 등의 최신 기술 기반 연구 개발 경험과 지식을
+
+    쌓아서 AI 비전 전문가로서의 가치를 극대화할 수 있어요.","필수사항
+
+ㆍVision AI 관련 석사 이상(박사 우대) 학위 보유를 하셨거나, 관련 실무 3년 이상 보유하신
+
+    분들을 찾고 있어요.
+
+ㆍOpenCV 기반의 컨벤셔널 알고리즘, Classification/Detection/Segmentation 등 딥러닝
+
+    관련 전문 지식과 경험, 혹은 Python/C++ 기반의 시스템 개발 역량도 갖춘 분이면 좋아요.
+
+ㆍ제조/공정 이미지 분석 및 Anomaly Detection, Robot Vision 관련 프로젝트 경험과
+
+     Generative Model, VLM, Agentic AI 등의 최신 기술에도 관심 또는 경험이 있으신
+
+     분이면 더 좋아요.",,Python,"",회사 내규에 따름,"",""
+[CDO] AI/빅데이터 연구개발 경력 상시 모집 - 비전AI기술개발,서울 서초구 양재대로11길 19,경력,대학원(석사)이상,정규직,48359125.0,LG에너지솔루션,https://www.jobkorea.co.kr/Recruit/GI_Read/48359125?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=41&sc=630,"담당업무
+
+ㆍ생산라인에서 수집되는 대규모 영상 데이터를 활용하여 불량 검출, 분석을 통한 적기에
+
+    출하 및 생산 공정 최적화
+
+ㆍ범용적인 처리가 가능한 VLM 개발 및 고도화, 그리고 서비스 적용을 통해 생산성을
+
+    향상시키고 중장기적으로 스마트 팩토리 시스템 구축
+
+ㆍ멀티 에이전트, Agentic AI 기반 Vision AI 시스템 구축 및 고도화","자격요건
+
+ㆍ전공 : 전자공학, 컴퓨터공학, 산업공학 등 AI, Vision 관련 전공
+
+ㆍVision AI 관련 석사 이상(박사 우대) 학위 보유 및 관련 실무 3년 이상 보유자
+
+ㆍ비전 검사 장비 등 스마트 팩토리 현장에 Vision 딥러닝/Rule 기반 알고리즘/SW,
+
+    서비스 적용 기술 보유 혹은 경험자
+
+ㆍVision AI System Architecture 설계 기술 보유 혹은 경험자","우대사항
+
+ㆍClassification/Object Detection/Segmentation 등 Vision Deep Learning 전문
+
+    지식/기술 보유
+
+ㆍOpenCV 등 Conventioinal Computer Vision 역량, 딥러닝 프레임워크(Pytorch,
+
+    Tensorflow, Keras) 및 S/W 개발(Python, C++) 고급 역량 보유
+
+ㆍ제조 이미지 분석 및 이상감지 분석 프로젝트 유경험자, Robot Vision 및 Camera Geometric
+
+    관련 프로젝트 유경험자
+
+ㆍEdge 또는 Cloud 기반 Vision AI System Architecture 설계 유경험자
+
+ㆍVLM, Generative AI 등의 거대 모델 학습/고도화 유경험자
+
+ㆍAgentic AI 기반 시스템 설계/운영 및 고도화 유경험자
+
+ㆍ프로젝트 PM, PL 유경험자","Computer Vision, Deep Learning, Keras, Python, Pytorch, Tensorflow","",회사 내규에 따름,"",""
+[플랫폼본부] AI 리서치 사이언티스트 (Image / Video Generation),경기 성남시 분당구 판교로256번길 7  넥슨코리아,경력무관,학력무관,정규직 (수습 3개월),48196529.0,㈜넥슨,https://www.jobkorea.co.kr/Recruit/GI_Read/48196529?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=42&sc=630,"이미지 및 동영상 생성 AI 모델 및 서비스 개발
+이미지 및 동영상 생성 AI 관련 신기술 리서치","지원 자격
+2년 이상의 Image Generation 관련 프로젝트 수행 경험이 있거나 AI 관련 석사 이상의 학위를 보유하신 분
+AI 기술에 대한 높은 이해도를 바탕으로 학회 논문 게재 경험이 있으신 분
+Python, C/C++ 등 하나 이상의 프로그래밍 언어를 능숙하게 활용할 수 있으신 분
+딥러닝 및 AI 기술에 대한 높은 관심과 열정이 있으신 분
+실데이터로 실제 사용자에게 적용하고 프로덕트화를 진행하실 분","우대 사항
+딥러닝 최적화 라이브러리 활용 및 Diffusion 모델 학습 경험이 있으신 분
+AI 프로덕트의 생애 주기 (문제 정의, 데이터 수집 및 가공, 분석, 모델링, 실험 단계의 전체 프로세스) 경험을 보유하신 분
+캐글/알고리즘/공모전 수상, 학술 발표 등의 경험이 있으신 분",Python,"",회사 내규에 따름,"",""
+[기술본부] AI 데이터 엔지니어,경기 성남시 분당구 판교로256번길 7  넥슨코리아,경력,학력무관,정규직 (수습 3개월),48293274.0,㈜넥슨,https://www.jobkorea.co.kr/Recruit/GI_Read/48293274?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=43&sc=630,"주요 업무
+메시지 큐 기반 아키텍처로 대용량 트래픽 서비스와 분산 시스템 개발
+Kafka, Flink, Airflow, Snowflake 등 잘 알려진 데이터 솔루션과 자체 개발한 고성능 NoSQL 데이터베이스 FastDB, 스트림 복합 처리 솔루션 FastJoin을 결합하여 다양한 데이터 기술 과제 해결
+실시간 게임 데이터를 AI 활용이 가능한 형태(AI-Ready Data)로 정제 및 모델링하고 임베딩, RAG, 에이전트 서비스로 확장 가능한 데이터 파이프라인 설계 및 개발","지원 자격
+실시간 데이터 스트리밍 처리에 대한 이해와 실무 경험을 보유하신 분
+대용량 트래픽 또는 분산 시스템 환경에서 개발 경험을 보유하신 분
+신기술에 대한 호기심과 학습 의지가 있고 동료들과 열린 마음으로 소통 가능하신 분","우대 사항
+대규모 분산 시스템의 고가용성과 확장성을 고려한 아키텍처 설계 경험이 있으신 분
+대규모 사용자 대상 MCP 서버 개발 경험, 또는 벡터 임베딩 기반 RAG 구현 경험이 있으신 분","Airflow, Kafka, RAG, 데이터 파이프라인","",회사 내규에 따름,"",""
+[그루비] ML Backend Engineer,서울 송파구,경력3년~20년,대졸이상,정규직,48333794.0,㈜플래티어,https://www.jobkorea.co.kr/Recruit/GI_Read/48333794?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=44&sc=630,"이런 업무를 해요
+1. 에이전트 플랫폼 개발
+ㆍGoogle ADK, LangChain / LangGraph 기반 플랫폼 설계 및 운영
+ㆍ백엔드 아키텍처 설계·구현·운영
+ㆍMCP 클라이언트·서버 개발 및 실시간 대화 세션 관리, 로깅, 모니터링
+ㆍ내부 마이크로서비스 통신을 위한 gRPC 인터페이스 설계·운영
+
+2. 생성형 AI 검색 서빙 API 개발
+ㆍGraphQL 또는 FastAPI 기반 검색 엔드포인트 설계·구현·운영
+ㆍRedis, CDN을 활용한 캐싱 전략 수립 및 운영
+
+3. 추천 추론·서빙 API 개발
+ㆍBentoML / KServe 이용한 모델 패키징 및 서빙
+ㆍFastAPI 또는 Rust / gRPC 기반 추론 API 설계·구현·운영
+ㆍOpenAPI / Swagger / GraphQL 스키마 문서화 및 유지보수
+ㆍ파이썬 개발자 포지션 운영 계획 포함
+
+4. 추천·검색 시스템 운영
+ㆍVertex AI Search / FAISS 기반 인덱싱, 쿼리 최적화 및 운영
+ㆍLaunchDarkly 등 Feature Flag 기반 A/B 샘플링 프레임워크 구축·운영
+ㆍ실험 자동화 시스템 운영
+
+5. 인프라 및 성능 최적화
+ㆍNGINX / Envoy, Redis 기반 아키텍처 설계·운영
+ㆍDocker, Kubernetes 기반 무중단 배포 설계·운영
+ㆍPrometheus, Grafana를 통한 모니터링 및 알림 설정
+
+6. 데이터베이스 설계·튜닝
+ㆍMySQL, PostgreSQL 스키마 설계 및 운영
+ㆍ쿼리 최적화, 파티셔닝 전략 수립 및 운영","이런 분들을 찾고 있어요
+ㆍ학력 : 대졸이상
+　- 컴퓨터공학(CS)
+　- 소프트웨어공학(SE)
+　- 전산학
+　전공(또는 이와 동등 수준의 지식 보유)
+ㆍPython 백엔드 개발 3년 이상 (FastAPI, FastMCP 필수)
+ㆍ대규모 트래픽 API 설계·운영 경험
+ㆍRESTful API 설계 원칙, OpenAPI/Swagger 활용 능력
+ㆍVertex AI Search / ElasticSearch / FAISS 등 검색엔진 활용 경험
+ㆍDocker·Kubernetes 등 컨테이너 오케스트레이션 경험
+ㆍ네트워크·로드밸런싱·캐시 설계 및 성능 튜닝 역량
+ㆍ데이터베이스 스키마 설계·튜닝 경험
+ㆍGoogle ADK(MCPToolset) 활용 경험","이런 분이면 더 좋아요
+ㆍLangChain 또는 LangGraph 기반 에이전트 개발 경험
+ㆍPython 백엔드 개발 5년 이상
+ㆍSaaS·이커머스·게임·홈쇼핑 등 높은 동시 접속 서비스 운영 경험
+ㆍ메시지 큐(RabbitMQ, Kafka 등) 활용 경험
+ㆍCI/CD 파이프라인 구축 및 자동화 스크립팅 경험
+ㆍPrometheus·Grafana 등 모니터링·로깅 도구 활용 경험","ElasticSearch, FastAPI, GraphQL, gRPC, Kafka, Kubernetes, LangChain, LangGraph, PostgreSQL, Redis, Rust, 검색엔진","","","",""
+[메이플스토리] AI 엔지니어,경기 성남시 분당구 판교로256번길 7  넥슨코리아,경력,학력무관,정규직,48366731.0,㈜넥슨,https://www.jobkorea.co.kr/Recruit/GI_Read/48366731?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=45&sc=630,"주요 업무
+프롬프트, 컨텍스트 엔지니어링 연구를 기반으로 게임 플레이에 적용
+게임 리소스, 컨텐츠 기반의 RAG 시스템 개발
+AI 서비스를 이용한 게임 플레이 및 서비스 PoC, 적용
+R&D실에서 진행하는 여러 연구과제의 기획, 개발, 분석, 리서치 등의 제반 업무
+언리얼 또는 유니티 엔진을 이용한 게임에 AI 서비스 융합","지원 자격
+프롬프트, 컨텍스트 엔지니어링 기법에 대한 연구와 최신 트렌드를 이해하고 계시는 분
+LLM 프롬프트 체이닝 또는 LangChain, Google-ADK 등 에이전트 프레임워크를 활용하신 분
+RAG 아키텍처에 대한 깊은 고민을 해보신 분
+Agentic AI 생태계에 대한 이해와 AI 시스템 디자인을 이해하고 계신 분
+빠른 주기로 변경되는 목표에 대응하기 위한 원활한 커뮤니케이션 능력과 협동적인 문제 해결 의지가 있으신 분
+객관적인 시각으로 상황을 판단하며 조직의 목표를 더 우선적으로 생각하시는 분
+논리적 사고를 기반으로 문제 해결 경험이 있으신 분
+[필수제출] 포트폴리오","우대 사항
+AI/ML 기술을 기반으로 실제 서비스를 출시해 본 경험이 있으신 분
+게임 개발 경험이 있거나 게임 개발 프로세스에 대한 이해가 있으신 분
+SFT, RL 등 LLM 튜닝을 서비스에 적용해보신 분
+다양한 업무 변화나 빠르고 유연한 개발 환경 및 새로운 도전을 즐길 수 있으신 분
+능동적이고 자기주도적인 업무 진행 능력을 가지고 자신의 업무 결과물에 대한 책임감이 있으신 분","LangChain, LLM, R, RAG","",회사 내규에 따름,"",""
+[CDO] AI/빅데이터 연구개발 경력 상시 모집,서울 영등포구 여의대로 108,경력,대졸이상,정규직,48354939.0,LG에너지솔루션,https://www.jobkorea.co.kr/Recruit/GI_Read/48354939?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=46&sc=630,"담당업무
+
+ㆍLLM 기반 AI Agent 아키텍쳐 설계 및 개발
+
+ㆍ지식 검색 및 RAG(Retrieval-Augmented Generation) 설계 및 개발
+
+ㆍ모델 프롬프트 엔지니어링 및 성능 최적화
+
+ㆍLLM 기반 AI 서비스 개발 및 배포","자격요건
+
+ㆍ전공 : 산업공학/AI/데이터융합/통계/빅데이터 관련 전공
+
+ㆍLangChain 기반 오케스트레이터 개발 역량 보유
+
+ㆍ지식 검색 및 RAG(Retrieval-Augmented Generation) 설계 및 개발 경험 보유
+
+ㆍFastAPI 기반 백엔드 구축 경험 보유
+
+ㆍNLP관련 AI 서비스 개발 경험 보유","우대사항
+
+ㆍLangGraph 기반 AI Agent 개발 및 서비스 경험 보유
+
+ㆍLLM 파인튜닝 경험 보유(SFT, DPO)
+
+ㆍMCP 관련 어플리케이션 개발 경험 보유","Agent, RAG","",회사 내규에 따름,"",""
+"AIR Platform(Backend Developer, 플랫폼 기획) 채용",경기 과천시 과천대로7길 74  메가존산학연센터,경력,학력무관,정규직 (수습 3개월),48472014.0,메가존클라우드㈜,https://www.jobkorea.co.kr/Recruit/GI_Read/48472014?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=47&sc=630,"· 해외 법인의 요구사항에 대한 대응 개발 및 고도화
+
+· AI agent 배포, 실행, 모니터링 백엔드 개발
+
+· RAG 시스템 백엔드 개발
+
+· AI/ML 워크플로우 및 파이프라인 연동 백엔드 개발
+
+· Kubernetes 기반 AI Job scheduler (Kueue) 확장 개발
+
+· Job 제출, 모니터링, 미터링 및 빌링, 관리 기능을 위한 백엔드 개발
+
+· 분산 환경에서의 학습 작업 스케줄링 로직, 우선순위 큐, 리소스 관리 기능 개발","[필수조건]
+
+· Python, Java, Go 언어 등을 사용한 서버 애플리케이션 개발 경험이 3년 이상 있으신 분
+
+· RESTful API 설계 및 개발 경험이 있으신 분
+
+· Kubernetes 환경에서의 애플리케이션 개발 또는 운영 경험이 있으신 분
+
+· 데이터베이스 및 ORM 사용 경험이 있으신 분
+
+· LLM 도메인(Agent, RAG)에 대한 이해 또는 관심이 있으신 분
+
+· AI의 전반적인 라이프사이클에 대한 이해 또는 관심이 있으신 분
+
+· 단순 연차나 경험보다는, 팀웍에 기반한 문제 해결과 지속적인 학습 및 전파에 익숙하신 분
+
+· 영어로 커뮤니케이션이 가능하신 분
+","[우대사항]
+
+· LLM 도메인(Agent, RAG)과 연계된 개발 경험
+
+· MLOps 플랫폼 (Kubeflow, MLflow 등) 개발 또는 연동 경험
+
+· Kueue, Volcano 등 Kubernetes 기반 스케줄러 개발 또는 커스터마이징 경험
+
+· Kubernetes Custom Controller 또는 Operator 개발 경험
+
+· 대용량 트래픽 처리 및 분산 시스템 개발 경험","agent, Agent, Go, Java, Kubernetes, LLM, MLOps, Python, RAG","",회사 내규에 따름 (면접 후 결정),"",""
+"[AI·빅데이터] AI 엔지니어, R&D, 데이터 사이언티스트, 인프라",서울 강서구 마곡중앙8로5길 40  엑셈,경력,대졸이상,정규직 (수습 1개월),48489693.0,㈜엑셈,https://www.jobkorea.co.kr/Recruit/GI_Read/48489693?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=48&sc=630,"· 엑셈 AI 제품군에 AI 모델 적용 및 운영
+
+· 이상탐지/예측 모델의 서비스 연동, 실시간 서빙 및 MLOps/LLMOps 파이프라인 구축
+
+· LLM 기반 RAG/Agent 시스템 개발 (검색, 임베딩, 평가 모듈 구현)
+
+· 데이터 파이프라인, 전처리, API 백엔드 개발 및 운영 자동화
+
+· GPU 리소스 및 AI 워크로드 모니터링 시스템 개발
+
+· 실시간 이상 탐지 이벤트의 시각화 및 대시보드화","자격요건
+
+· 경력 : 2년 이상
+
+· 컴퓨터공학, AI, 소프트웨어공학 관련 전공 학사 이상
+
+· Python 기반 AI/ML/DL 개발 경험 (PyTorch, TensorFlow, Scikit-learn 등)
+
+· REST API, FastAPI, Flask, Django 등 백엔드 개발 경험
+
+· Docker, Kubernetes, CI/CD 등 DevOps 환경 이해 및 적용 경험
+
+· 데이터베이스 (PostgreSQL, ClickHouse, ElasticSearch, Redis 등) 이해
+
+※ 수습기간 1개월 (최대 3개월까지 수습기간 연장 가능)","우대사항
+
+· LLM 서비스 및 RAG/Agent Builder 구현 경험
+
+· MLOps/LLMOps 환경 구축 경험 (MLflow, Kubeflow, AutoRAG 등)
+
+· GPU 리소스 모니터링 및 AI 이상탐지 시스템 경험
+
+· 클라우드 (AWS, GCP, Naver Cloud 등) 또는 온프레미스 인프라 구축 경험","Agent, AWS, CI/CD, DevOps, Django, Docker, ElasticSearch, FastAPI, Flask, GCP, Kubernetes, LLM, MLOps, PostgreSQL, Python, PyTorch, RAG, Redis, REST API, TensorFlow, 데이터 파이프라인","",회사 내규에 따름,"",""
+AI Agent 개발 테크 리더(차장-이사급),"서울 서초구, 서울 마포구",경력5년~20년,학력무관,정규직,48379326.0,메타넷디지털㈜,https://www.jobkorea.co.kr/Recruit/GI_Read/48379326?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=49&sc=630,"이런 업무를 해요
+ㆍAI Agent 및 LLM 기반 서비스의 설계, 개발, 운영 총괄
+ㆍ고객사 환경에 맞춘 맞춤형 모델 커스터마이징 및 통합 개발
+ㆍ주요 Big Account(대형 고객, 주로 그룹사) 대상 기술 PoC 및 솔루션 제안
+ㆍ팀 내 개발자들과 함께 직접 코드를 작성하고 문제를 해결하는 핸즈온 리더 역할 수행
+ㆍ프로젝트 일정, 품질, 리소스 관리 등 엔드투엔드(End-to-End) 개발 리드
+ㆍ고객사 기술 담당자와의 커뮤니케이션 및 기술 협상 주도
+ㆍ기술 문서화 및 내부 개발 가이드 표준화","[자격요건]
+ㆍ머신러닝/딥러닝 관련 경력 5년 이상
+ㆍAI Agent, LLM Application, 혹은 Chat/Action 기반 서비스 개발 경험
+ㆍPython, Node.js, TypeScript 등 하나 이상의 프로그래밍 언어에 능숙
+ㆍOpenAI API, LangChain, RAG, Vector DB 등 AI Framework 활용 경험
+ㆍ고객사 기술 담당자 및 내부 조직과의 원활한 커뮤니케이션/조율 능력
+ㆍAI 솔루션 개발 스타트업 또는 대규모 프로젝트에서의 핸즈온 개발 리딩 경험
+ㆍ시스템 아키텍처 설계, MLOps, API 연동에 대한 이해","이런 분이면 더 좋아요
+ㆍB2B 대형 고객(BIG ACCOUNT) 프로젝트 수행 경험
+ㆍ멀티 에이전트 시스템 또는 Agent Orchestration 경험
+ㆍ모델 파인튜닝 및 Prompt Engineering 경험
+ㆍAWS, GCP, Azure 등 클라우드 환경에서의 배포 및 운영 경험
+ㆍ스타트업/테크 기업의 초기 AI 서비스 빌드업 경험
+ㆍ영어 커뮤니케이션 또는 글로벌 협업 경험","Agent, Azure, GCP, LangChain, LLM, MLOps, Node.js, RAG, TypeScript","","","",""
+2026년 미국 Battery Tech Conference 채용전형 모집,대전 유성구 문지로 188,신입·경력,대학원(석사)이상,정규직,48467357.0,LG에너지솔루션,https://www.jobkorea.co.kr/Recruit/GI_Read/48467357?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=52&sc=630,"이런 일을 해요
+
+ㆍ엔솔의 자체 Agentic AI플랫폼을 활용하여 사내 다양한 업무를 AI Agent 기반으로
+
+    자동화할 수 있도록 서비스를 설계/개발합니다.
+
+ㆍLLM기반 AI 서비스의 아키텍처를 설계하고, 개발하며, 좋은 품질의 답변이 만들어 질 수
+
+    있도록 모델 프롬프트 엔지니어링 및 성능 최적화작업을 수행합니다.
+
+ㆍLLM 기반 AI 서비스를 배포/운영하면서 사용자의 피드백을 받아 엔솔의 AI 플랫폼과
+
+    서비스를 더 나은 모습으로 개선해 나갑니다.
+
+ㆍ엔솔의 Agentic AI 플랫폼에 대한 오너십을 가지고 가장 좋은 성능을 낼 수 있도록 최신
+
+     LLM모델을 테스트해 가며 적용/운영하는 업무도 중요한 축을 담당합니다.","이런 일을 해요
+
+ㆍ엔솔의 자체 Agentic AI플랫폼을 활용하여 사내 다양한 업무를 AI Agent 기반으로
+
+    자동화할 수 있도록 서비스를 설계/개발합니다.
+
+ㆍLLM기반 AI 서비스의 아키텍처를 설계하고, 개발하며, 좋은 품질의 답변이 만들어 질 수
+
+    있도록 모델 프롬프트 엔지니어링 및 성능 최적화작업을 수행합니다.
+
+ㆍLLM 기반 AI 서비스를 배포/운영하면서 사용자의 피드백을 받아 엔솔의 AI 플랫폼과
+
+    서비스를 더 나은 모습으로 개선해 나갑니다.
+
+ㆍ엔솔의 Agentic AI 플랫폼에 대한 오너십을 가지고 가장 좋은 성능을 낼 수 있도록 최신
+
+     LLM모델을 테스트해 가며 적용/운영하는 업무도 중요한 축을 담당합니다.
+
+
+
+필수사항
+
+ㆍ단순한 챗봇을 넘어 Agentic AI 시대에 맞게 엔솔의 일하는 방식을 혁신해 나가실 분이
+
+    필요해요.
+
+ㆍ다양한 LLM모델을 활용하여 지식 검색 및 RAG(Retrieval-Augmented Generation)
+
+    설계 및 개발하실 수 있는 분이나, LangChain기반 오케스트레이터 개발경험이 있으신 분,
+
+    MCP 관련 어플리케이션 개발 경험 보유하신 분이면 더 좋아요.
+
+ㆍ스스로 답답한 업무 환경을 바꾸기 위해 Generative AI서비스를 활발하게 활용하면서
+
+    업무 성과를 창출했던 분도 환영하니 AI Agent시대의 전도사가 되어주세요!",,"Agent, RAG","",회사 내규에 따름,"",""
+[도이치모터스㈜] AX실 경력 채용,"서울 동대문구 답십리동 530-19 도이치모터스빌딩, 12층",신입·경력,대졸이상,"정규직 (수습 6개월) , 계약직 (근무기간 12개월, 정규직 전환 가능) 직급/직책",48465310.0,도이치모터스㈜,https://www.jobkorea.co.kr/Recruit/GI_Read/48465310?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=53&sc=630,"[담당업무]
+
+API 개발 : 사내 솔루션 및 플랫폼의 비즈니스 로직 구현 및 RESTful API 개발
+
+데이터 파이프라인 : 데이터 웨어하우스(DW) 구축을 위한 데이터 수집/가공(ETL) 파이프라인 개발 및 운영
+
+AI 연동 : LLM(OpenAI, Claude 등) API 연동 및 랭체인(LangChain) 등을 활용한 사내 AI 에이전트/챗봇 기능 구현
+
+시스템 운영 : 레거시 시스템 유지보수 및 성능 최적화","[자격요건]
+
+백엔드 개발 경력 3년 이상 (Python, Java 등)
+
+Python(FastAPI, Django, Flask) 또는 Java(Spring Boot) 개발 역량 보유
+
+DB 모델링 경험이 있는 분
+
+Git, Docker 등 형상 관리 및 컨테이너 환경 사용 경험
+
+AI 도구(Copilot, Cursor 등)를 활용하여 코드 품질을 높이고, 반복적인 개발 업무(Boilerplate code)를 자동화할 수 있는 분","[우대사항]
+
+Python 및 데이터 처리에 강점이 있는 분
+
+Airflow 등을 활용한 데이터 파이프라인 구축/운영 경험
+
+LLM, RAG(검색 증강 생성) 등 최신 AI 기술을 활용한 프로젝트 경험
+
+새로운 기술 습득에 거부감이 없고 빠르게 학습하여 적용하는 분","Airflow, Claude, Django, Docker, ETL, FastAPI, Flask, Git, Java, LangChain, LLM, OpenAI, Python, RAG, Spring, 데이터 파이프라인","",회사 내규에 따름 (면접 후 결정),"",""
+AI Platform 엔지니어 모집 공고,"경기 성남시 분당구 백현로101번길 17  511호, 512호",경력,대졸이상,정규직,48452408.0,인포그랩 유한회사,https://www.jobkorea.co.kr/Recruit/GI_Read/48452408?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=55&sc=630,"○ 합류하면 이런 업무를 하게 돼요.
+
+
+▶ 내부 플랫폼 운영 및 개선
+
+- AWS 클라우드 인프라 운영 및 최적화
+
+- OnPrem 환경 인프라 관리 및 하이브리드 아키텍처 설계
+
+- GitLab, Mattermost, n8n 등 내부 서비스 운영
+
+- Kubernetes 클러스터 운영 및 고도화
+
+- Terraform 기반 Infrastructure as Code 관리
+
+▶ 고객사 플랫폼/SRE 설계 및 운영 지원
+
+- 고객 환경에 맞는 플랫폼 아키텍처 설계
+
+- SRE 원칙 기반 신뢰성 개선 컨설팅
+
+- SLI/SLO 설계 및 Error Budget 관리 지원
+
+- Grafana Stack (Prometheus, Loki, Tempo) 기반 관측성 플랫폼 구축
+
+- 장애 대응 프로세스 수립 및 포스트모템 문화 정착 지원
+
+▶ Platform/SRE 관련 AI 에이전트 구현
+
+- n8n 기반 플랫폼 운영 자동화 에이전트 개발
+
+- 장애 탐지 및 자동 복구 AI 에이전트 구현
+
+- Mattermost ChatOps 기반 운영 에이전트 개발
+
+- 인프라 프로비저닝 자동화 에이전트 구축
+
+- 비용 최적화 및 리소스 관리 AI 에이전트 개발
+
+▶ 보안 및 접근 관리
+
+- Keycloak 기반 SSO 및 통합 인증 시스템 운영
+
+- Teleport Zero Trust 기반 인프라 접근 관리
+
+- Policy as Code (OPA) 기반 보안 정책 자동화","○ 이런 분을 찾고 있어요.
+▶ 보안 및 접근 관리
+
+- 플랫폼/SRE 경험 1년 이상 또는 이에 준하는 역량
+
+- AWS 또는 OnPrem 환경 운영 경험
+
+- Kubernetes 운영 경험
+
+- Infrastructure as Code: Terraform, Ansible 등
+
+- Python 또는 TypeScript 프로그래밍 능력","○ 이런 분이면 더 좋아요.
+- AWS Professional 레벨 자격증 보유
+
+- n8n, Airflow 등 워크플로우 자동화 도구 경험
+
+- LLM API 활용 또는 AI 에이전트 개발 경험
+
+- VSRE 실무 경험 (Google SRE 원칙 이해 및 적용)
+
+- Grafana Stack 운영 경험
+
+- 오픈소스 기여 경험","Airflow, AWS, GitLab, Kubernetes, LLM, Python, Terraform, TypeScript","",회사 내규에 따름 (면접 후 결정),"",""
+"[정규직] 밥게이트 AI 번역 엔진 IT 기획자 (LLM, AI Agent)",서울 금천구 두산로 70  A동 609호,경력,학력무관,정규직 (수습 3개월),48414777.0,㈜밥게이트,https://www.jobkorea.co.kr/Recruit/GI_Read/48414777?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=58&sc=630,"[담당업무]
+
+ㆍAI 에이전트 기획: BITS 엔진 내 LLM 기반 AI 에이전트의 추가 기능 정의 및 로드맵 수립
+
+ㆍ프롬프트 엔지니어링: 번역 품질 최적화를 위한 프롬프트 생성, 테스트 및 재구성(Refining)
+
+ㆍ서비스 고도화: 기존 BITS 에이전트의 성능 분석 및 UX/UI 개선 기획
+ㆍ협업 및 관리: 긴밀한 소통을 통한 기술 요구사항 정의(PRD 작성) 및 일정 관리","[자격요건]
+
+ㆍ학력 : 학력무관
+
+ㆍ경력 : IT 서비스 기획 경력 2년↑
+
+ㆍ기술 이해도: LLM(ChatGPT, Claude 등) 및 AI Agent 작동 원리에 대한
+
+                        실무적 이해가 있으신 분
+
+ㆍ프롬프트 역량: 다양한 페르소나와 목적에 맞는 프롬프트 설계 및 고도화 경험이 풍부하신 분
+
+ㆍ문제 해결력: 논리적인 사고를 바탕으로 복잡한 번역 프로세스를 구조화할 수 있는 분","[우대사항]
+
+ㆍ언어 지식: 외국어(언어 가리지 않음) 능통자 또는 언어학적 지식을 보유하신 분
+
+ㆍ도메인 경험: 게임 산업 또는 번역/로컬라이징 워크플로우에 대한 이해도가 높으신 분
+
+ㆍ기술 경험: API 연동 기획 또는 RAG(검색 증강 생성) 관련 프로젝트 경험자
+
+","Agent, Claude, LLM, RAG","",회사 내규에 따름 (면접 후 결정),"",""
+(병역특례) 증권 AI Agent 엔지니어,서울 영등포구 국제금융로 70  17층,경력,대학원(석사)이상,"정규직 , 병역특례 (전문연구요원) 직급/직책",48419334.0,㈜씽크풀,https://www.jobkorea.co.kr/Recruit/GI_Read/48419334?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=61&sc=630,"주요 업무
+
+   ㆍ 실적·뉴스·공시 기반 투자 콘텐츠 자동화(요약·정제·품질검수)
+
+   ㆍ 트레이딩 신호/룰 엔진, 백테스트·시뮬레이션, 모니터링·리스크 체크 모듈 설계
+
+   ㆍ 실시간 마켓데이터 ETL 파이프라인 및 평가 지표 설계
+
+   ㆍ 필요 시 LangChain·LangGraph·LangFlow와 프롬프트 설계/튜닝을 활용해 콘텐츠 생성·검증 및 내부 도구 고도화","자격 요건
+
+ㆍClaude Code/Codex/Cursor AI를 활용한 프로젝트 수행 경험 필수
+
+ㆍ컴퓨터 공학, 통계학 또는 관련 분야 학사 이상
+
+ㆍPython 기반 데이터 분석 및 AI 개발 능력
+ㆍLLM 활용 및 프롬프트 최적화 경험
+ㆍ기본적인 금융/증권 도메인 지식 또는 습득 의지","우대 사항
+
+ㆍ Langchain, Langgraph, Langflow 활용 경험
+
+ㆍ 금융권/증권사 AI 프로젝트 경험
+ㆍ 대화형 AI 에이전트 개발 경험
+ㆍ 증권 데이터 처리 및 분석 경험
+ㆍ 금융 관련 자격증 보유자 (증권투자상담사, 펀드투자상담사 등)
+ㆍ 오픈소스 AI 프로젝트 기여 경험","ETL, LangChain, Langchain, LangGraph, Langgraph","",회사 내규에 따름,"",""
+DevSecOps AI 개발자 모집,서울 송파구 법원로8길 8  1314호,경력,대졸이상,정규직 직급/직책,48464300.0,㈜에이디알에프코리아,https://www.jobkorea.co.kr/Recruit/GI_Read/48464300?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=63&sc=630,"담당업무
+
+ㆍAI 인프라 구축: Ollama 기반 로컬 LLM(Qwen, Llama 등) 서빙 최적화 및 고가용성 인프라 구축.
+ㆍ에이전트 워크플로우 설계: OpenCode 및 MCP(Model Context Protocol)를 활용한 사내 맞춤형 코딩 에이전트 개발.
+ㆍSSDF 보안 통합: 코드 리뷰 자동화, 취약점 스캐닝, SBOM 관리 프로세스에 AI 에이전트를 통합하여 DevSecOps 강화.
+ㆍ모델 튜닝: 특정 도메인(T-Mobile 프레임워크)에 최적화된 프롬프트 엔지니어링 및 RAG(검색 증강 생성) 시스템 구축.","자격요건
+
+ㆍ학력 : 대졸이상
+
+ㆍ경력 : 경력3년↑
+
+ㆍPython, C/C++ 등 프로그래밍 언어 숙련자
+
+ㆍDevOps/SRE 경력: Docker, Kubernetes 기반의 서비스 운영 경험 3년 이상.
+
+ㆍMLOps 이해도: GPU 가속화(NVIDIA CUDA), Ollama/vLLM 등 로컬 LLM 추론 엔진 최적화 경험.
+ㆍ언어 숙련도: Go, Python, Node.js 중 2개 이상의 언어에 능숙하며 TUI 기반 도구 개발 경험자.
+ㆍ보안 인식: 소프트웨어 보안 수명 주기(SDLC) 및 보안 프레임워크(NIST SSDF 등)에 대한 깊은 이해.","우대사항
+
+ㆍAnthropic의 MCP(Model Context Protocol) 서버 구현 경험자.
+ㆍ오픈소스 코딩 에이전트(OpenCode, Aider, Plandex 등) 기여 경험.
+ㆍ로컬 LLM 양자화(Quantization) 및 하드웨어 가속 성능 튜닝 경험.","Docker, Go, Kubernetes, LLM, Node.js, Python, RAG","","연봉 5,000만원 이상 (면접 후 결정)","",""
+[IT기업] LLM 엔지니어,서울 성동구 성수일로 111  311호,경력3년,대졸이상,정규직 (수습 3개월),48375086.0,㈜인포유앤컴퍼니,https://www.jobkorea.co.kr/Recruit/GI_Read/48375086?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=64&sc=630,"
+● 주요 업무
+
+
+
+- LLM 기반 AI 에이전트 및 RAG 시스템 개발·운영
+
+- AI 애플리케이션 품질 관리 및 프롬프트 엔지니어링
+
+- 사용자 피드백 기반 품질 성능 개선
+
+- 최신 AI 기술 동향 파악 및 도입 검토","● 자격 요건
+
+
+
+- Elasticsearch/Cosmos DB(vCore)등 벡터 DB 기반 RAG 시스템 구현 경험 보유자
+
+- LLM API 및 프레임워크(LangChain/LlamaIndex 등) 기반 AI 에이전트 개발 경험
+
+- LLM 애플리케이션 성능 최적화(토큰/속도/정확도) 및 프로덕션 운영 경험
+
+- 프롬프트 개선 및 생성형 AI 품질 검증 경험 보유자
+
+- Hugging Face/Ollama 등 오픈소스 모델 활용 및 최신 NLP 기술 스택 전문가
+
+- Git 기반 협업 및 코드 리뷰 경험
+
+- AI Coding Assistant(Claude Code, Cursor 등) 실무 활용 경험
+
+- 요구사항을 기술 문서로 구체화하고 효과적으로 커뮤니케이션하는 능력","● 우대 사항
+
+
+
+- 최신 AI 연구를 빠르게 습득하고 팀에 효과적으로 전파할 수 있는 커뮤니케이션 스킬
+
+- 최신 AI 논문을 신속하게 이해하고 비즈니스 관점에서 평가할 수 있는 능력
+
+- AI/ML 관련 오픈소스 프로젝트 기여 또는 개인 연구 프로젝트 경험
+
+- AI Coding Assistant의 한계를 이해하고 적절히 활용할 수 있는 분
+
+- 확장 가능하고 유지보수 용이한 코드 구조 설계 능력","Claude, Elasticsearch, Git, Hugging Face, LangChain, LLM, NLP, RAG","",회사 내규에 따름 (면접 후 결정),"",""
+AE팀 Account Executive,서울 강남구,경력3년~10년,대졸이상,정규직 (수습 3개월),48517677.0,팔레트㈜,https://www.jobkorea.co.kr/Recruit/GI_Read/48517677?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=65&sc=630,"이런 업무를 해요
+ㆍ신규 프로젝트 문의 응대 및 기존 클라이언트 커뮤니케이션과 프로젝트 관리
+ㆍ클라이언트의 광고 캠페인 목표 및 니즈 파악, 핵심 과제 도출
+ㆍAI 에이전트 및 AI 영상 제작 기술을 활용한 맞춤형 광고 전략 및 솔루션 제안
+ㆍ프로젝트 제안서 작성, 경쟁 프로젠테이션 수행 및 계약 진행
+ㆍ크리에이티브팀과 긴밀하게 협업하여 프로젝트 관리 및 광고주 커뮤니케이션
+ㆍ자사 AI에이전트 서비스의 성공적인 구축과 운영을 위한 유관부서(플랫폼팀, 마케팅팀) 협업
+ㆍ캠페인 성과 분석 및 인사이트 도출, 후속 전략 제안","이런 분들을 찾고 있어요
+ㆍ학력 : 대졸이상
+ㆍ광고대행사 AE 경력 (3년 이상)
+ㆍAI 기술(생성형 AI, AI 에이전트 등)과 AI 트렌드에 대한 관심과 이해도를 보유하신 분
+ㆍ생성형 AI 툴을 실제 광고 기획/제작 업무에 적극적으로 활용하고 성과를 낸 경험이 있으신 분
+ㆍ탁월한 커뮤니케이션 및 프로젠테이션 스킬을 보유하신 분
+ㆍ유연한 사고를 문제 해결을 위한 방법을 찾아가는 분
+ㆍ논리적이고 전략적인 사고를 바탕으로 문제를 해결하는 능력이 뛰어나신 분","이런 분이면 더 좋아요
+ㆍ광고대행사 AE 경험
+ㆍ테크 기반 스타트업 또는 IT 업계 광고 캠페인 수행 경험
+ㆍAI 기술을 활용한 프로젝트 리딩 경험
+ㆍ신규 클라이언트 발굴 및 비즈니스 개발(BD) 역량을 갖추신 분",,"","","",""
+GIS 데이터 라벨러 채용,서울 서대문구 연세로 50  공학원 250B호,경력무관,대졸이상,계약직 (근무기간 3개월),48519047.0,코드비전㈜,https://www.jobkorea.co.kr/Recruit/GI_Read/48519047?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=68&sc=630,"-  QGIS를 활용한 데이터 가공
+
+- 라벨링 가이드라인에 따른 데이터 전처리
+
+- 프로젝트 일정에 맞춰 작업 완료","자격요건
+
+- 신입 지원 가능
+
+- 대학교졸업(4년)이상
+
+- 세부 사항을 꼼꼼히 확인하는 능력이 있는분
+
+-  기본적인 컴퓨터 활용 능력을 보유한 분
+
+-  팀워크와 소통 능력을 갖춘 분","우대사항
+
+- 공학계열전공자
+
+- QGIS를 이용한 실무 유경험자
+
+- 데이터 라벨링 유경험자
+
+- 의사소통이 원활한 분",,"",월급 230~230만원,"",""
+AI 서비스 플랫폼 백앤드 개발자,서울 구로구 디지털로34길 43  701호,신입·경력,학력무관,정규직 (수습 3개월) 직급/직책,48440660.0,㈜지산소프트,https://www.jobkorea.co.kr/Recruit/GI_Read/48440660?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=71&sc=630,"담당업무
+
+ㆍ서비스 또는 사내 시스템에 AI 모델 연동(API 서버 구축 등)
+
+ㆍAI 에이전트 설계 및 개발
+ㆍRAG 시스템 구축 및 최적화
+ㆍ관련 기술 리서치 및 신규 AI 기술 검토","자격 요건
+ㆍ경력 : 경력무관
+ㆍPython 기반 개발 경험
+ㆍDjango, Flask, FastAPI 중 1개 이상 프레임워크로 API 서버 개발 경험
+ㆍREST API 설계 및 구현 경험
+ㆍLinux 환경에서의 서버 운영 및 기본 명령어 사용 가능자","우대 조건
+ㆍFastAPI 기반 비동기 처리 및 성능 최적화 경험
+ㆍDocker를 이용한 서비스 배포 및 운영 경험
+ㆍPostgreSQL, MySQL 등 RDB 사용 경험
+ㆍ자격증 : 정보처리기사","FastAPI, Flask, MySQL","","연봉 3,500~8,000만원 (면접 후 결정)","",""
+백엔드 개발자 채용,서울 성북구 화랑로 211  208호,경력,학력무관,정규직 (수습 3개월),48488927.0,키키코드㈜(KeykyCode,https://www.jobkorea.co.kr/Recruit/GI_Read/48488927?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=72&sc=630,자사 및 외부 서비스 개발,"자격요건
+
+- java/kotlin으로 spring framework, python으로 fastapi를 사용하여 프로젝트를 진행해보신 분
+- k8s 환경에서 프로젝트 경험이 있고 helm, terraform 등의 기술을 사용한 경험이 있으신 분
+- 데이터 모델링에 대한 이해가 있으신 분
+- RAG나 agent를 다룰 수 있으신 분
+- 팀의 가치를 이해하는 분
+- 팀 협업 능력이 뛰어나고 커뮤니케이션이 원활하신 분
+ㆍ경력 : 3년↑","우대사항
+
+- 정보처리기사 이상의 자격증 보유자
+- 머신러닝/딥러닝에 관심과 이해도가 높으신 분
+- 개발에 대한 열정이 가득하신 분","java, k8s, spring, terraform","",회사 내규에 따름 (면접 후 결정),"",""
+AI Agent Engineer (전문연구요원 가능),서울 강남구 테헤란로4길 28  8층,경력무관,대학원(박사)이상,정규직 (수습 3개월),48454208.0,㈜히츠,https://www.jobkorea.co.kr/Recruit/GI_Read/48454208?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=73&sc=630,"이런 업무를 맡게 돼요.
+
+단순한 질의응답을 넘어, AI for Science의 새로운 패러다임을 제시하고 글로벌 최고 수준의 AI 에이전트를 개발합니다. 히츠의 에이전트는 신약 개발 및 생명과학 연구 과정에서 발생하는 복잡한 데이터들을 스스로 분석하고 전략을 세우며, 과학적 발견의 속도를 혁신적으로 가속화합니다.
+
+
+
+글로벌 Top-tier AI for Science 멀티 에이전트 시스템 구축:
+
+- 수천 편의 학술 논문을 분석하여 가설을 세우고, 수만 줄의 연구용 코드를 스스로 작성하는 에이전트 체계를 설계합니다.
+
+- 생성된 방대한 코드와 텍스트의 컨텍스트를 과학적 정합성 관점에서 완벽하게 검증하는 고차원 자동화 워크플로우를 구현합니다.
+
+대화형 생물정보학 분석 에이전트 개발: 유전체 (genomics), 전사체 (transcriptomics) 등 다양한 오믹스 데이터와 실험 데이터를 통합적으로 이해하고, 연구자와의 대화를 통해 분석 및 가설 검증을 수행합니다. 출판 논문 수준의 그림·표 생성 및 통계 분석 결과 도출을 목표로 합니다.
+
+도메인 특화 지식 & 연구 에이전트 고도화: 범용 AI 서비스가 닿지 못하는 바이오/화학 도메인의 깊숙한 정보를 정확하게 탐색하며, 수많은 문헌과 내부 데이터에서 필요한 정보를 찾아 전문적인 분석 리포트를 생성합니다.
+
+에이전틱 워크플로우 기획 및 구현: LLM 및 에이전트 기술의 한계를 선제적으로 극복하여 가까운 미래에 가능해질 기능을 제품화합니다. 제약산업의 밸류체인을 연결하여 새로운 비즈니스 가치를 창출합니다.","이런 동료를 찾고 있어요.
+
+뛰어난 이해력과 도전 정신: 앞선 내용으로부터 어떤 연구와 개발을 해야 하는지 구체적으로 상상하고 이를 실현할 수 있는 분.
+학술적 기반: 인공지능, 전산학, 전산공학 또는 관련 분야 석사/박사 학위 소지자 혹은 졸업 예정자.
+에이전트 구현 역량: LLM/에이전트 기반 애플리케이션의 설계·구축·배포 경험이 있으며, LangChain, LangGraph, LlamaIndex 등의 프레임워크와 RAG, MCP 등의 기술 스택을 갖추신 분.
+도메인 융합 역량: Bioinformatics 또는 cheminformatics 분야의 데이터를 다룬 경험이 있거나 이를 빠르게 학습할 수 있는 분.
+명료한 소통: 다양한 구성원과 투명하게 소통하며 기록과 문서화를 중요하게 생각하는 분.","이런 역량이 있으면 더 좋아요.
+
+전문 소프트웨어 활용: BioNeMo, AIDDISON, Pharma.ai 등 제약/바이오 특화 소프트웨어 활용 경험.
+시스템 엔지니어링: MLOps, LLMOps 또는 확장성 있는 백엔드 시스템 개발 경험.
+우수한 연구 성과: ICLR, ICML, NeurIPS, ACL 등 탑 티어 AI 학회 논문 게재 혹은 Kaggle/Dacon 수상 기록.
+클라우드 활용: AWS (Bedrock, SageMaker, Lambda 등) 제품 활용 및 개발 경험.","AWS, LangChain, LangGraph, LLM, MLOps, RAG","",회사 내규에 따름,"",""
+"생성형AI(LLM, RAG) R&D(석사이상)",서울 강남구 테헤란로 217  3층,경력1년~10년,대학원(석사이상),정규직 (수습 3개월),48436528.0,㈜비전스페이스,https://www.jobkorea.co.kr/Recruit/GI_Read/48436528?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=74&sc=630,"이런 업무를 해요
+[로봇산업 분야 생성형 AI (LLM, RAG) R&D]
+ㆍ로봇산업 분야 AI 멀티에이전트 / RAG / LLM 파인튜닝 시스템 구현(모델 설계/학습)
+ㆍ클라우드 기반 MLOps 개발과 운영
+ㆍOpenAI의 LLM API를 활용한 애플리케이션 개발 및 배포(LLM 모델 타입 다양성)
+ㆍ개발한 모델을 유지보수 및 성능 모니터링
+","이런 분들을 찾고 있어요
+ㆍ학력 : 대학원(석사)이상
+ㆍ보유기술(활용/개발 가능 하신 분)
+ㆍllm 파인튜닝과 RAG구현 (모델 설계/학습)
+ㆍllm 오케스트레이션 프레임워크 (Crew ai, Langchain, Llamaindex)
+ㆍPython, C#, C++, javascript 등 서비스 개발에 관련 언어 활용 개발에 거부감이 없는 분
+ㆍFastAPI/FLASK/Django/NodeJS 프레임워크/라이브러리 활용 개발에 거부감이 없는 분","이런 분이면 더 좋아요
+ㆍ로봇, 기계, 전자, 컴퓨터 공학 등 관련 분야 석사 이상 학위자 우대
+ㆍ휴머노이드 로봇 설계/학습에 대한 이해와 개발 가능자
+ㆍ로봇 하드웨어 설계 제어 관련 경험자
+ㆍLLM 파인튜닝 경험 및 ChatGPT 또는 유사한 LLM을 활용한 프로젝트 경험자
+ㆍ빅데이터와 대용량실시간 처리 서비스 구현 경험자
+ㆍPrivate Cloud, AWS, Kubernetes 운영 경험자
+ㆍ문제 해결 능력 및 디버깅 스킬
+ㆍAI LLM 분야 R&D 가능하신분
+ㆍ시뮬레이션 또는 서비스 기반 플랫폼 개발 경험자
+ㆍAI, 디지털 트윈 프로젝트 개발 경험 (관련 경력 2년 이상 보유하신 분)
+ㆍCI/CD: Docker, Git 형상관리 경험
+ㆍ유관분야 현업 경험자","AWS, Django, Docker, FLASK, Git, javascript, Kubernetes, Langchain, LLM, MLOps, R, RAG","","","",""
+DevOps 엔지니어 (FDE) 모집 공고,"경기 성남시 분당구 백현로101번길 17  511호, 512호",경력,학력무관,정규직,48452312.0,인포그랩 유한회사,https://www.jobkorea.co.kr/Recruit/GI_Read/48452312?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=75&sc=630,"○ 합류하면 이런 업무를 하게 되요.
+업무는 고객사를 위한 기술 서비스와 인포그랩 내부 제품 개발을 위한 기술 서비스 2가지를 중심으로 진행됩니다.
+
+
+
+▶ 고객사 DevOps 환경 구축 및 운영
+
+- GitLab 기반 CI/CD 파이프라인 구축을 포함해 다양한 DevOps 문제 식별 및 해결
+- 고객 환경에 맞는 브랜치 전략 및 배포 프로세스 설계
+- 컨테이너 기반 빌드/배포 환경 구성 (Docker, Kubernetes)
+- 인프라 자동화 (Terraform, Ansible) 적용
+▶ DevOps 성숙도 향상
+
+- DevOps 솔루션 교육 및 Best Practice 전파
+
+- DevOps 지표(DORA Metrics) 측정 및 개선 활동
+
+▶ 기술 지원 및 문제 해결
+
+- DevOps 도구셋 업그레이드, 마이그레이션, 장애 대응
+
+- DevOps 솔루션 고가용성 아키텍처 설계, 성능 최적화 및 보안 최적화
+
+▶ AI DevOps 구현
+
+- AI 기반 반복 업무 자동화를 위한 워크플로우 구축
+
+- AI를 활용한 문서화 및 릴리즈 노트 생성 효율화","○ 이런 분을 찾습니다
+▶ 필수 역량
+
+- DevOps/SRE 실무 경력 1년 이상 또는 이에 준하는 역량
+
+- Linux 시스템 관리 및 트러블슈팅 경험
+
+- Git 기반 버전 관리 및 협업 경험
+
+- CI/CD 파이프라인 구축 경험 (GitLab CI, Jenkins 등)
+
+- Docker 기반 컨테이너 환경 경험
+
+- 고객 대응 및 기술 커뮤니케이션 역량","▶ 우대 사항
+
+- GitLab 운영 또는 관리자 경험
+
+- Kubernetes 운영 경험
+
+- Terraform, Ansible 등 IaC 도구 경험
+
+- 금융권/대기업 SI/SM 프로젝트 경험
+
+- 기술 교육 또는 발표 경험
+
+- DevOps 관련 자격증 (AWS, CKA 등)","AWS, CI/CD, DevOps, Docker, Git, GitLab, Jenkins, Kubernetes, Linux, Terraform","",회사 내규에 따름 (면접 후 결정),"",""
+AI 영상 자동화 SaaS 플랫폼 풀스택 개발자 (MVP 중심),경기 화성시 병점노을5로 20  골든스퀘어 2차 4층 YDMCN,경력,학력무관,"정규직 , 계약직 (근무기간 3개월, 정규직 전환 가능)",48493778.0,㈜와이디엠씨엔,https://www.jobkorea.co.kr/Recruit/GI_Read/48493778?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=79&sc=630,"담당업무
+
+▶ MVP 개발 및 조기 출시: 아이디어를 빠르게 프로토타입으로 구현하고,
+
+ 실제 고객이 사용할 수 있는 수준으로 배포(Production-ready)합니다.
+
+▶ AI 워크플로우 자동화: Google Veo, Grok, Kling 등 최신 영상 생성 AI 모델을 서비스 엔진에 연동하고 최적화합니다.
+
+▶ End-to-End 개발: 기획 단계부터 아키텍처 설계, 풀스택 개발, 클라우드 배포까지 전 과정에 주도적으로 참여합니다.","자격요건
+
+▶ 실전형 Full-stack 포지션: 기획을 빠르게 코드로 옮기고, 프론트와 백엔드 모두를 막힘없이 구축할 수 있는 분
+
+▶ 핵심 기술 스택:
+
+   - Backend: FastAPI기반의 효율적인 API 서버 구축 및 비동기 처리 숙련자
+
+   - Frontend:**React(TS/JS)**를 활용해 직관적이고 반응이 빠른 유저 인터페이스를 구현하실 분
+
+▶ AI 모델 연동: OpenAI, Google Gemini/Veo, xAI(Grok) 등 다양한 생성형 AI API 연동 및 파이프라인 구축 경험
+
+▶ 인프라 및 배포: AWS, Supabase, Vercel 등을 활용해 서비스를 실제 환경에 즉시 배포하고 운영해 본 경험
+
+▶ DB 설계: SQL 기반의 효율적인 데이터 모델링 및 관리 능력을 갖추신 분","우대사항
+
+▶ 속도 지향형 개발: 완벽한 설계를 고민하기보다, 빠르게 실행(MVP)하고 피드백을 통해 개선하는 방식을 즐기시는 분
+
+▶ Product-Minded: 단순히 코드를 짜는 것을 넘어, 실제 고객에게 제공될 서비스의 가치와 사용자 경험을 고민하시는 분
+
+▶ 자기 주도적 문제 해결: 기술적 난관 앞에서 Claude, Gemini 등 AI 에이전트를 도구로 활용해 최적의 해답을 찾아내시는 분
+
+▶ 유지보수 책임감: 빠른 개발 속도 속에서도 실제 배포 후의 안정성과 확장성을 놓치지 않는 분
+
+▶ AI 영상 제작 툴 활용 경험 및 유튜브 등 영상 플랫폼 생태계에 대한 이해도가 높으신 분
+
+▶ 소규모 프로젝트의 초기 멤버로 참여하여 서비스 런칭까지 성공시킨 경험이 있으신 분","AWS, Claude, Gemini, OpenAI, React, SQL","","연봉 6,000~8,500만원","",""
+JH솔루션(주) 개발본부 프론트엔드 개발자 채용,서울 금천구 가산디지털2로 135  1동 1701~1703호,경력,대졸이상,정규직 (수습 3개월),48493142.0,㈜제이에이치솔루션,https://www.jobkorea.co.kr/Recruit/GI_Read/48493142?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=80&sc=630,"
+담당업무
+
+ㆍ 클라이언트 아키텍처 구축 및 개발
+
+ㆍ 백엔드 연계 및 데이터 인터페이스 개발
+
+ㆍ 성능 최적화 및 유지보수
+
+ㆍ 개발환경 및 프로세스 관리","자격요건
+
+ㆍ 대학교 졸업(4년)이상
+
+ㆍ 웹어플리케이션 개발 및 운영 경력 7년 이상
+
+ㆍ 바이브 코딩 (AI 에이전트 코딩) 경험 있는 분
+
+ㆍ 반응형 웹 및 크로스 브라우징 최적화 경험 있는 분
+
+ㆍ React, Next.js 숙련자 ( 상태관리 SSR/CSR , 성능 최적화 경험)
+
+ㆍ 프론트 서비스 아키텍처 설계 경험 있는 분
+
+ㆍ IoT 관련업계에서 관리 화면 개발 경험 있으신 분
+
+ㆍ AI를 통한 개발경험 있으신 분","우대조건
+
+ㆍ 다양한 클라우드(AWS, 공공 등)에서 설계, 개발 운영 경험 있는 분
+
+ㆍ 연구/비연구 과제 개발 사업 참여 경험 있는 분
+
+ㆍ 신기술에 대한 호기심을 가지고 끊임없이 자기개발을 하고 계신 분
+
+ㆍ xEMS (BEMS, HEMS, FEMS, CEMS 등) 개발 경험 있으신 분
+
+ㆍ 설계 도면 ( 전기, 기계,소방설비 등)에 대한 이해가 있으신 분
+
+ㆍ 전기기사 자격증 소지자","AWS, Next.js, React","",회사 내규에 따름 (면접 후 결정),"",""
+[대화형AI기업] LLM 엔지니어 (경력),서울 강남구 도곡로8길 6  5층,경력,대졸이상,정규직 (수습 3개월),48413417.0,㈜라피치,https://www.jobkorea.co.kr/Recruit/GI_Read/48413417?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=81&sc=630,"담당업무
+
+- LLM 기반 프로젝트 수행
+
+- 생성형 AI 플랫폼 및 LLM 기반 Agent Service 개발
+
+- Agent 기반 아키텍처 설계 및 AI 서비스 구현","자격요건
+
+- 컴퓨터공학 관련 학사 이상 또는 그에 준하는 실무 경력
+
+- CS 기초 지식이 탄탄하고 Git을 활용한 버전 관리 및 코드 협업 경험이 있는 분
+
+- 백엔드 개발 경력 2년 이상
+
+- Python, Langchain, RAG 등 AI 에이전트개발 경험이 있으신분
+
+- 벡터 DB에 대한 이해 및 경험이 있으신분
+
+- LLM 에 대한 이해 및 openAI, Gemma 모델에 대한 이해도
+
+- RESTful API 설계 및 서비스 구축
+
+- AI 기반 데이터 분석 또는 시스템 구축 경험
+
+- LLM 모델에 대한 기본적인 이해를 가지고 있으며 추론 프레임워크를 다뤄본 경험이 있는 분","우대사항
+
+- LLM 관련 프로젝트 경험(LLM 플러그인 구현 경험)
+
+- LLM API 연동 경험
+
+- 네트워크 관련 지식 및 경험
+
+- vLLM 구현 경험
+
+- 인터페이스 프로세스 구축 경험","Agent, Langchain, LLM, openAI, Python, RAG","",회사 내규에 따름 (면접 후 결정),"",""
+JH솔루션(주) 개발본부 백엔드 개발자 채용,서울 금천구 가산디지털2로 135  1동 1701~1703호,경력,대졸이상,정규직 (수습 3개월),48493202.0,㈜제이에이치솔루션,https://www.jobkorea.co.kr/Recruit/GI_Read/48493202?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=82&sc=630,"
+담당업무
+
+ㆍ비즈니스 로직 및 시스템 아키텍쳐 설계 및 구현
+
+ㆍAPI 인터페이스 설계 및 개발
+
+ㆍ대용량 파이프라인 구축
+
+ㆍ빅데이터 시스템 설계 및 구축
+
+ㆍIoT 통신 프로토콜을 이용한 플랫폼 구축
+
+ㆍ인프라 서비스 운영 (Devops 수준)","자격요건
+
+ㆍ대학교 졸업(4년)이상
+
+ㆍ백엔드 서비스 개발 및 운영 경력 7년 이상
+
+ㆍ바이브 코딩 (AI 에이전트 코딩) 경험 있는 분
+
+ㆍ백엔드 프레임워크( SpringBoot 등) 개발 경험 있는 분
+
+ㆍxEMS (BEMS, HEMS, FEMS, CEMS 등) 플랫폼 개발 경험 있으신 분
+
+ㆍIoT, IIoT 통신 프로토콜(Modbus, BACNet, KNX )에 대한 개발 경험 있으신 분","우대조건
+
+ㆍDB 최적화 ( 설계 및 쿼리튜닝)에 능숙하신 분
+
+ㆍ대용량 트래픽 처리 및 분산 시스템 구축 경험 있으신 분
+
+ㆍ협업의 즐거움을 아시는 분
+
+ㆍML Framework로 공개된 모델 경험 있으신 분
+
+ㆍ블록체인 기술 활용 경험 있으신분
+
+ㆍ다양한 클라우드(AWS, 공공 등)에서 설계, 개발 운영 경험 있으신 분
+
+ㆍ설계 도면 ( 전기, 기계,소방설비 등)에 대한 이해가 있으신 분
+
+ㆍ전기기사 자격증 소지자","AWS, Devops","",회사 내규에 따름 (면접 후 결정),"",""
+AI 영상 자동화 SaaS 플랫폼 풀스택 개발자 (MVP 중심),경기 화성시 병점노을5로 20  골든스퀘어,경력,학력무관,"정규직 , 계약직 (근무기간 3개월, 정규직 전환 가능)",48493686.0,야타,https://www.jobkorea.co.kr/Recruit/GI_Read/48493686?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=83&sc=630,"담당업무
+
+▶MVP 개발 및 조기 출시: 아이디어를 빠르게 프로토타입으로 구현하고,
+
+ 실제 고객이 사용할 수 있는 수준으로 배포(Production-ready)합니다.
+
+▶ AI 워크플로우 자동화: Google Veo, Grok, Kling 등 최신 영상 생성 AI 모델을 서비스 엔진에 연동하고 최적화합니다.
+
+▶ End-to-End 개발: 기획 단계부터 아키텍처 설계, 풀스택 개발, 클라우드 배포까지 전 과정에 주도적으로 참여합니다","자격요건
+
+▶ 실전형 Full-stack 포지션: 기획을 빠르게 코드로 옮기고, 프론트와 백엔드 모두를 막힘없이 구축할 수 있는 분
+
+▶ 핵심 기술 스택:
+
+   - Backend: FastAPI기반의 효율적인 API 서버 구축 및 비동기 처리 숙련자
+
+   - Frontend:**React(TS/JS)**를 활용해 직관적이고 반응이 빠른 유저 인터페이스를 구현하실 분
+
+▶ AI 모델 연동: OpenAI, Google Gemini/Veo, xAI(Grok) 등 다양한 생성형 AI API 연동 및 파이프라인 구축 경험
+
+▶ 인프라 및 배포: AWS, Supabase, Vercel 등을 활용해 서비스를 실제 환경에 즉시 배포하고 운영해 본 경험
+
+▶ DB 설계: SQL 기반의 효율적인 데이터 모델링 및 관리 능력을 갖추신 분","우대사항
+
+▶ 속도 지향형 개발: 완벽한 설계를 고민하기보다, 빠르게 실행(MVP)하고 피드백을 통해 개선하는 방식을 즐기시는 분
+
+▶ Product-Minded: 단순히 코드를 짜는 것을 넘어, 실제 고객에게 제공될 서비스의 가치와 사용자 경험을 고민하시는 분
+
+▶ 자기 주도적 문제 해결: 기술적 난관 앞에서 Claude, Gemini 등 AI 에이전트를 도구로 활용해 최적의 해답을 찾아내시는 분
+
+▶ 유지보수 책임감: 빠른 개발 속도 속에서도 실제 배포 후의 안정성과 확장성을 놓치지 않는 분
+
+▶ AI 영상 제작 툴 활용 경험 및 유튜브 등 영상 플랫폼 생태계에 대한 이해도가 높으신 분
+
+▶ 소규모 프로젝트의 초기 멤버로 참여하여 서비스 런칭까지 성공시킨 경험이 있으신 분","AWS, Claude, Gemini, OpenAI, React, SQL","","연봉 6,000~8,500만원","",""
+로봇산업 생성형 AI LLM RAG R&D개발,서울 강남구 테헤란로 217  3층,경력1년~10년,대졸이상,정규직 (수습 3개월),48436522.0,㈜비전스페이스,https://www.jobkorea.co.kr/Recruit/GI_Read/48436522?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=85&sc=630,"이런 업무를 해요
+[로비틱스 분야 생성형 AI LLM R&D 어플리케이션 플랫폼 SW 개발]
+ㆍOpenAI의 LLM API를 활용한 애플리케이션 개발 및 배포(LLM 모델 타입 다양성)
+ㆍ개발한 애플리케이션의 유지보수 및 성능 모니터링
+ㆍ백엔드 API와 클라이언트 애플리케이션 간 통합 작업(Web/Mobile/Unreal 클라이언트 시뮬레이션 기반)
+ㆍ로보틱스 분야 AI 멀티에이전트 / RAG / LLM 파인튜닝 시스템 구현
+ㆍ클라우드 기반 MLOps 개발과 운영","이런 분들을 찾고 있어요
+ㆍ학력 : 대졸이상
+
+[보유기술(활용/개발 가능하신 분)]
+ㆍPython, #C, C++, Javascript 등 서비스 개발에 관련 언어 학습과 활용에 거부감이 없는 분
+ㆍFastAPI/FLASK/Django/NodeJS AI서비스플랫폼 개발
+ㆍllm 오케스트레이션 프레임워크 (Crew ai, Langchain, Llamaindex)
+ㆍllm 파인튜닝과 RAG구현
+ㆍelasticsearch / opensearch / pinecone /chroma / faiss","이런 분이면 더 좋아요
+ㆍLLM 파인튜닝 경험 및 ChatGPT 또는 유사한 LLM을 활용한 프로젝트 경험자
+ㆍ빅데이터와 대용량실시간 처리 서비스 구현 경험자
+ㆍPrivate Cloud, AWS, Kubernetes 운영 경험자
+ㆍ문제 해결 능력 및 디버깅 스킬
+ㆍAI LLM 분야 R&D 가능하신분
+ㆍ로봇 하드웨어 설계 제어 관련 경험자
+ㆍ컴퓨터공학, 로봇공학, 인공지능 관련 석박, 박사 보유자
+ㆍ휴머노이드 로봇 설계/학습에 대한 이해와 개발 가능자
+ㆍ시뮬레이션 또는 서비스 기반 플랫폼 개발 경험자
+ㆍAI, 디지털 트윈 프로젝트 개발 경험 (관련 경력 2년 이상 보유하신 분)
+ㆍCI/CD: Docker, Git 형상관리 경험
+ㆍ로봇, 기계, 전자, 컴퓨터 공학 등 관련 분야 석사 이상 학위자 우대
+ㆍ유관분야 현업 경험자","AWS, Django, Docker, FLASK, Git, Javascript, Kubernetes, Langchain, LLM, MLOps, opensearch, pinecone, R, RAG","","","",""
+[아이브릭스] AI 웹 서비스 분야 경력 채용 공고,경기 성남시 분당구 판교로255번길 74  5층,경력1년,대졸이상,정규직 (수습 3개월),48486366.0,㈜아이브릭스,https://www.jobkorea.co.kr/Recruit/GI_Read/48486366?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=88&sc=630,AI 웹 서비스 ,"자격요건
+
+ㆍ1년 이상의 AI 프로젝트 진행 경험
+
+ㆍPython, FastAPI 백엔드 개발 경험이 있으신분
+
+ㆍLangchain, RAG, Langgraph를 활용한 AI 에이전트개발 경험이 있으신분
+
+ㆍQdrant, Milvus와 같은 벡터 데이터베이스에 대한 이해 및 경험이 있으신분
+
+ㆍLLM 에 대한 이해 및 openAI, Gemma 모델에 대한 API 호출을 해보신분","우대사항
+
+ㆍ문서 표 인식, OCR등에 대한 이해 및 경험이 있으신분
+
+ㆍ지식그래프, 강화학습, 멀티에이전트에 대한 이해가 있으신분
+
+ㆍ엘라스틱서치에 대한 이해 및 경험이 있으신분
+
+ㆍLLM 파인튜닝 경험이 있으신분
+
+ㆍDocker, Kubernate 컨테이너 활용이 가능하신분
+
+ㆍpytorch, Hugging face 에 대한 이해 및 활용 가능하신분
+
+ㆍ오픈소스 LLM모델 서빙 경험이 있으신분
+
+ㆍ자연어처리에 대한 이해가 있으신분","FastAPI, Hugging face, openAI, RAG","",회사 내규에 따름,"",""
+풀스택 개발자 채용,서울 서대문구 연세로 50  연세대학교 공학원 242호,신입·경력,대졸이상,"인턴 (근무기간 3개월, 정규직 전환 가능)",48508557.0,코드비전㈜,https://www.jobkorea.co.kr/Recruit/GI_Read/48508557?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=92&sc=630,"담당업무
+
+ㆍAI 기반 SaaS 플랫폼 아키텍처 설계 및 핵심 기능 개발
+
+ㆍ 풀스택 개발팀 리딩: 목표 설정, 코드 리뷰, 멘토링
+
+ㆍ AI·머신러닝 등 최신 기술 검토 및 서비스 적용
+
+ㆍ CI/CD 구축, 테스트 자동화 등 개발 프로세스 개선","자격요건
+
+ㆍ2년 이상의 웹 서비스 개발 경력 또는 그에 준하는 실력을 갖춘 분
+
+ㆍ React, Vue, Angular 등 하나 이상의 최신 프론트엔드 프레임워크에 대한 깊은 이해
+
+ㆍPython, Node.js, Java, Go 등 백엔드 언어 및 프레임워크 사용에 능숙한 분
+
+ㆍAWS, GCP, Azure 등 클라우드 환경에서의 서비스 개발 및 운영 경험
+
+ㆍDocker, Kubernetes 등 컨테이너 기술에 대한 이해와 사용 경험
+
+ㆍ팀을 이끌고 프로젝트를 성공적으로 이끈 경험이 있는 분
+
+ㆍ원활한 커뮤니케이션 능력과 동료와 함께 성장하는 것을 즐기는 분","우대사항
+
+ㆍAI/ML 모델을 활용한 서비스 개발 또는 상용화 경험
+
+ㆍ대용량 데이터 처리 및 분산 시스템 설계 경험
+
+ㆍSaaS(Software-as-a-Service) 비즈니스 및 아키텍처에 대한 높은 이해도
+
+ㆍ오픈소스 프로젝트 참여 또는 기술 블로그 운영 경험
+
+ㆍ애자일/스크럼 등 유연한 개발 문화에 대한 경험","Angular, Azure, CI/CD, GCP, Go, Java, Kubernetes, Node.js, React, Vue","",회사 내규에 따름 (면접 후 결정),"",""
+[모비데이즈] AI/AX 개발자,서울 강남구 언주로 417  모비빌딩,신입,학력무관,정규직 (수습 3개월),48463130.0,㈜모비데이즈,https://www.jobkorea.co.kr/Recruit/GI_Read/48463130?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=93&sc=630,"1. 실전형 AI 솔루션 구축 (70%)
+문제 해결 중심의 기획:
+마케팅 현장의 비효율을 포착하고, 이를 해결하기 위한 RAG(검색 증강 생성) 기반 지식 베이스 , AI 에이전트 등을 설계합니다.
+
+직접적인 구현과 배포:
+프로그래밍 언어나 AI 툴을 활용해 아이디어를 실제 작동하는 프로토타입으로 구현하고 현장에 즉시 적용합니다.
+2. 전사 AI 역량의 내재화 (30%)
+AX 가이드라인 설계:
+동료들이 업무에서 바로 활용할 수 있는 수준 높은 프롬프트 엔지니어링 가이드와 AI 활용 매뉴얼을 제작합니다.
+
+변화의 촉진:
+최신 AI 기술을 조직의 언어로 재해석해 전파하며, 누구나 스스로 업무를 자동화할 수 있는 `AI 우선(AI-First)` 문화를 만듭니다.","이런 분과 함께하고 싶습니다
+구현 가능한 상상을 하시는 분: 프로그래밍 언어(1개 이상)를 활용하여 자신의 아이디어를 코드로 실현해 본 경험이 있으신 분.
+AI의 구조를 이해하시는 분: LLM을 단순히 사용하는 것을 넘어, 비즈니스 목적에 맞게 구조(RAG, Prompt Logic 등)를 설계할 수 있는 분.
+완결성을 경험해 본 프로젝트 오너: 기획부터 실행, 실제 공유(또는 배포)까지 프로젝트의 전체 사이클을 끝까지 책임져 본 경험이 있으신 분.
+기술을 언어로 번역하시는 분: 복잡한 기술적 개념을 동료들이 이해하기 쉬운 비즈니스 언어로 바꾸어 설득할 수 있는 분.","우대 사항
+RAG 프레임워크(LangChain, LlamaIndex 등)나 Vector DB에 대한 이해도가 있으신 분.
+Cursor, Claude Code 등 최신 AI 코딩 툴을 활용해 생산성을 극대화해 본 경험이 있으신 분.
+광고/마케팅 도메인에 대한 이해가 있거나 데이터 기반의 의사결정 경험이 있으신 분.","Claude, LangChain, RAG","",회사 내규에 따름 (면접 후 결정),"",""
+석박사 인공지능 개발자,서울 서대문구 연세로 50  연세대학교 공학원 242호,신입·경력,대학원(석사)이상,"인턴 (근무기간 3개월, 정규직 전환 가능)",48508532.0,코드비전㈜,https://www.jobkorea.co.kr/Recruit/GI_Read/48508532?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=94&sc=630,"
+담당업무
+
+- 연구개발  R&D 참여 (연구소 소속), 인공지능(AI) 기반 프로젝트 참여(개발 소속)
+
+- 구축 된 데이터기반의 인공지능 모델을 학습 평가  할 수 있는 분
+
+- CNN, LLM 등 이미지 기반 모델과 언어모델 기반을 다룰 수 있는 분
+
+- Python 기반의 PyTorch, OpenCV 등 개발 라이브러리를 쉽게 사용할 수 있는 분
+
+- 과제 보고서(글쓰기), 논문, 발표가 가능한 분
+
+- 다양한 업무 경험을 통해 성장하실 수 있도록, 배정 업무는 상황과 역량에 따라 유연하게 조정됩니다.","자격요건
+
+- 신입 / 경력 2년 이상 ~ 5년 이하
+
+- 석사졸업이상
+
+- 남성의 경우, 병역필 또는 면제자인 분
+
+- 해외여행에 결격 사유가 없는 분","우대사항
+
+- 딥러닝 프레임워크(Tensorflow, PyTorch 등) 활용 가능하신 분
+
+- 오픈소스를 찾고 이해하며 스스로 적용할 수 있는 분
+
+- 논문을 읽고 이해하며 구현할 수 있는 능력을 보유하신 분
+
+- 객체인식, 객체탐지, GAN, LLM 모델 학습·개발 경험이 있으신 분
+
+- 머신러닝 및 딥러닝을 활용한 서비스 및 프로젝트 경험을 보유하신 분
+","LLM, Python, PyTorch, R, Tensorflow","",회사 내규에 따름 (면접 후 결정),"",""
+[IT기업] 벡엔드 엔지니어(AI Domain),서울 성동구 성수일로 111  311호,경력,대졸이상,정규직 (수습 3개월),48375266.0,㈜인포유앤컴퍼니,https://www.jobkorea.co.kr/Recruit/GI_Read/48375266?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=95&sc=630,"● 주요 업무
+
+
+
+- 고객사 요구사항 기반 AI/LLM 솔루션 설계 및 개발
+- Azure OpenAI, LangGraph 등을 활용한 백엔드 개발
+- 클라우드 서비스(Azure, AWS, GCP 등)를 활용한 아키텍처 설계","● 자격 요건
+
+
+
+- 백엔드 개발 경력 2년 이상
+
+- FastAPI 또는 Django를 활용한 REST API 설계, 개발 및 운영 경험
+
+- PostgreSQL, MySQL, MongoDB 등 데이터베이스 설계 및 연동 경험
+
+- 상용 LLM 서비스(Claude, OpenAI 등) 기반 AI 에이전트 시스템 연동 경험
+
+- 요구사항을 기술 문서로 구체화하고 효과적으로 커뮤니케이션하는 능력
+
+- Git 기반 협업 및 코드 리뷰 경험","● 우대 사항
+
+
+
+- AWS, GCP, Azure 중 1개 이상의 클라우드 아키텍처 구성 및 운영 경험
+
+- AI Coding Assistant의 한계를 이해하고 적절히 활용할 수 있는 분
+
+- 확장 가능하고 유지보수 용이한 코드 구조 설계 능력
+
+- RAG, Vector DB, Embedding 최적화 경험
+
+- CI/CD 파이프라인 구축 및 운영 경험
+
+- 컴퓨터 공학 혹은 그에 준하는 관련 분야 전공자
+
+- 프로젝트 리딩 또는 주니어 개발자 멘토링 경험
+
+- 프로젝트에 따라 고객사 현장 근무 가능한 분","AWS, Azure, CI/CD, Claude, FastAPI, GCP, Git, LangGraph, LLM, MongoDB, MySQL, OpenAI, PostgreSQL, RAG, REST API","",회사 내규에 따름 (면접 후 결정),"",""
+"웹 기반 SaaS 솔루션, AI 연구개발자 채용","서울 강남구 압구정로10길 27  신영빌딩 5,6층",경력,대졸이상,정규직 직급/직책,48316010.0,㈜에이아이지먼트,https://www.jobkorea.co.kr/Recruit/GI_Read/48316010?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=98&sc=630,"주요업무
+
+ㆍLLM 기반 에이전트 기능 개발
+
+     - 툴 호출(function calling), 멀티스텝 워크플로우, 상태 관리(메모리/컨텍스트) 구현
+
+ㆍRAG 기반 질의응답 및 문서/데이터 연동
+
+     - 임베딩, 벡터DB 연동, 검색 품질 개선
+
+ㆍ업무 시나리오 기반 Agent 플로우 설계
+
+     - Plan-Execute / ReAct / 라우팅 등의 패턴 적용
+
+ㆍ평가/모니터링/개선 루프 구축
+
+     - 오답 케이스 수집, 프롬프트/툴 스키마 개선, 테스트 및 품질 지표 관리
+
+ㆍ백엔드 API 및 데이터 파이프라인 연동
+
+     - 사내 DB/외부 SaaS/API/파일 시스템 등과의 연결 및 권한/보안 고려
+
+ㆍ운영 환경 배포 및 장애 대응(기본)
+
+     - 로그/트레이싱 기반 원인 파악, 비용/성능 최적화","자격요건
+
+ㆍLLM/Agent 개발에 대한 실무적 이해
+
+     - 프롬프트 구조화, tool schema 설계, 컨텍스트 구성/요약/메모리 관리 경험
+
+     - Langsmith 등 LLM 로깅 관련
+
+ㆍLocal sLLM Finetuning 경험
+
+     - LoRA/QLoRA 기반 도메인 적응, 데이터셋 구성, 학습/추론 서빙
+
+     - 양자화, distillation, 라우팅(상용+로컬 혼용), 비용 최적화
+
+ㆍPython 백엔드 개발 2~3년 경험 또는 그에 준하는 실력 (우대)
+
+ㆍREST API 설계/개발, DB(SQL) 기반 CRUD 및 성능 이슈 기본 대응 가능
+
+ㆍGit 기반 협업, 테스트/배포 프로세스에 익숙","우대사항
+
+ㆍRAG 운영 경험(벡터DB: Pinecone/FAISS 등)
+
+ㆍLangChain/LangGraph/LlamaIndex 등 프레임워크 사용 경험
+
+ㆍ비정형 데이터 처리 경험(PDF/문서 파싱, OCR 연동, 데이터 정제)
+
+ㆍ모니터링 경험(로그/트레이싱/메트릭)
+
+ㆍ비용 최적화 경험(캐싱, 배치 처리, 모델 라우팅, 토큰/latency 최적화)","Agent, LangGraph, LLM, Pinecone, ReAct, SQL, 데이터 파이프라인","",회사 내규에 따름 (면접 후 결정),"",""
+프론트엔드 & 백엔드 개발자 채용,서울 서대문구 연세로 50  연세대학교 공학원 242호,신입·경력,대졸이상,"인턴 (근무기간 3개월, 정규직 전환 가능)",48508542.0,코드비전㈜,https://www.jobkorea.co.kr/Recruit/GI_Read/48508542?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=99&sc=630,"담당업무
+
+- Node.js 또는 Python 기반 서버 개발
+
+- MySQL, PostgreSQL 등 관계형 데이터베이스 설계 및 최적화
+
+- REST API 및 WebSocket API 설계·구현
+
+- React, Typescript, Tailwind CSS에 대한 깊은 이해
+
+- Websocket, RESTful API 등 다양한 API 연동
+
+- 인공지능 모델과의 연동
+
+- Git, Jenkins, Firebase를 활용한 협업
+
+- 연구개발 R&D 및 프로젝트 참여
+
+- 과제 보고서 작성, 논문, 발표 등 문서화 및 커뮤니케이션
+
+- 다양한 업무 경험을 통해 성장할 수 있도록, 배정 업무는 상황과 역량에 따라 유연하게 조정","자격요건
+
+- 경력 2년 이상 ~ 5년 이하
+
+- 대학교졸업(4년)이상
+
+- 프론트앤드 및 백엔드에 관심이 있는 전공자
+
+- 인턴십 기간 풀타임 근무가 가능한 분
+
+- 인턴십 종료 후 정규직 입사가 가능한 분
+
+- 남성의 경우, 병역필 또는 면제자인 분
+
+- 해외여행에 결격 사유가 없는 분","우대사항
+
+- JavaScript(ES6+), TypeScript에 대한 깊은 이해
+
+- React, Vue.js, Angular 등 프론트엔드 프레임워크 활용 능력
+
+- HTML5, CSS3, Webpack, Vite 등 웹 표준 및 모던 프론트엔드 개발 환경에 대한 경험
+
+- REST API, GraphQL 기반의 서버 연동 및 비동기 통신에 대한 이해
+
+- 브라우저 렌더링, 성능 최적화, 반응형 UI/UX 구현 경험
+
+- 디자인 시스템, UI 라이브러리 활용 및 사용자 경험(UX)에 대한 감각
+
+- Node.js 또는 Python 기반 서버 개발 경험? MySQL, PostgreSQL 등 관계형 데이터베이스 설계 및 최적화 경험
+
+- REST API 및 WebSocket API 설계·구현 경험
+
+- 컴퓨터 관련 학부 및 관련 전공자
+
+- 원활한 커뮤니케이션 역량과 적극적인 문제 해결 태도를 지닌 분
+
+- 새로운 기술과 도구에 대해 열린 자세를 가지고, 빠르게 습득·활용 가능한 분","Angular, Git, GraphQL, JavaScript, Jenkins, MySQL, Node.js, PostgreSQL, Python, R, React, REST API, Typescript, Vue, Websocket, WebSocket","",회사 내규에 따름,"",""
+AI Machine Learning 엔지니어,서울 서초구,경력2년~10년,학력무관,정규직,48379371.0,㈜메타넷엑스,https://www.jobkorea.co.kr/Recruit/GI_Read/48379371?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=100&sc=630,"이런 업무를 해요
+ㆍ고객사 요구사항 분석 후 맞춤형 기능 구현 및 통합 개발
+ㆍAgent Framework(LangChain, LlamaIndex 등)를 활용한 AI 워크플로우 구축
+ㆍAI Agent 및 LLM 기반 서비스의 모델 설계·개발·배포 지원
+ㆍ내부 데이터 및 외부 API를 활용한 RAG / 파인튜닝 환경 구성
+ㆍ클라우드 환경(AWS, GCP 등)에서의 모델 배포 및 성능 최적화
+ㆍ테크 리더와 협업하여 서비스 고도화 및 운영 자동화 지원
+ㆍ고객사 기술팀과의 실무 협의 및 기술 검증(PoC) 수행","[자격요건]
+ㆍ관련 경력 2~5년 이상 (또는 이에 준하는 프로젝트 경험)
+ㆍPython 기반 AI/ML 개발 경험
+ㆍOpenAI, Anthropic, Mistral 등 LLM API 활용 경험
+ㆍLangChain, RAG, Vector DB, Embedding 모델 등의 이해 및 실습 경험
+ㆍGit, Docker, REST API 등 기본적인 개발 환경 이해
+ㆍ새로운 기술을 빠르게 학습하고 실무에 적용할 수 있는 실행력
+ㆍ원활한 커뮤니케이션 및 협업 역량","이런 분이면 더 좋아요
+ㆍAI Agent 시스템 또는 대화형 서비스 개발 경험
+ㆍ모델 파인튜닝, 프롬프트 엔지니어링 실무 경험
+ㆍ클라우드 환경에서의 MLOps 경험 (SageMaker, Vertex AI 등)
+ㆍ대형 고객사(B2B) 프로젝트 또는 외부 커뮤니케이션 경험
+ㆍ스타트업/테크 기업 환경에 익숙한 분","Agent, Anthropic, AWS, Docker, GCP, LangChain, LLM, MLOps, RAG, REST API","","","",""
+언리얼엔진 시뮬레이션 SW 개발,서울 강남구 테헤란로 217  3층,경력1년~10년,대졸이상,정규직 (수습 3개월),48436512.0,㈜비전스페이스,https://www.jobkorea.co.kr/Recruit/GI_Read/48436512?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=102&sc=630,"이런 업무를 해요
+물류/제조 산업군 로봇 - DX 매니퓰레이터 & 시뮬레이션 설계/개발
+
+[DX 자동화 로봇 제어 학습 & 물류/제조 공간 설계 SW 개발 파트]
+ㆍ자동화 로봇 최적화 PathPlan (로봇 인지 행동)
+ㆍ다중 로봇 관제 시스템
+ㆍ로봇 영상 통신 모니터링 시뮬레이션과 동기화(WebRTC 통신)
+ㆍ가상 센서((Lidar, Vision Camera)
+[실내외 공간 상에서 로봇의 위치를 추정하는 기술 개선 개발 (Lidar, Vision Camera 활용)]
+ㆍVisual SLAM 기술 기반의 원격제어 개발
+ㆍVision/객체인식 (ToF, Lidar, 3D Camera) 개발
+ㆍ무인 모바일 운송 로봇(AGV/AMR) 개발
+ㆍ가상/물리 공간 이미지 개체 영상 처리 학습
+ㆍ로봇 매니퓰레이터 자동화 학습
+ㆍ물류 데이터 최적화 처리 구현
+ㆍAI 에이전트를 통한 다중 로봇 학습 및 최적화 설계 구현","이런 분들을 찾고 있어요
+ㆍ학력 : 대졸이상
+ㆍUnrealEngine 기반 클라이언트 개발 경험 1년 이상
+ㆍC++, Python, C#, Javascript등 프로그래밍 언어에 대한 높은 이해와 숙련도
+ㆍ게임 프레임워크 및 UnrealEngine 내부 구조에 대한 깊은 이해
+ㆍ소켓통신, Restfull Api 활용, 멀티플레이 개발 가능
+ㆍ문제 해결 능력 및 디버깅 스킬","이런 분이면 더 좋아요
+ㆍVR/AR/XR 프로젝트 개발 경험
+ㆍ블루프린트 및 머터리얼 시스템에 대한 높은 이해도
+ㆍ기타 스크립트 언어 활용 능력
+ㆍ마스터 머터리얼 개발, 실시간 렌더링, 셰이더 및 머터리얼 작업
+ㆍ레벨디자인에 적합한 기능 설계와 R&D를 통한 기술 고도화
+ㆍAI 관련 기술 경험
+ㆍ로봇 하드웨어 설계 제어 관련 경험자
+ㆍ컴퓨터공학, 로봇공학, 인공지능 관련 석박, 박사 보유자
+ㆍ휴머노이드 로봇 설계/학습에 대한 이해와 개발 가능자
+ㆍ시뮬레이션 또는 서비스 기반 플랫폼 개발 경험자
+ㆍComputer Vision & lmage Geometry & Deep learning 관련 논문 이해 능력 및 활용 경험에 대한 이해
+ㆍAI, 디지털 트윈 프로젝트 개발 경험 (관련 경력 2년 이상 보유하신 분)
+ㆍDocker, Git 형상 관리 경험
+ㆍ로봇, 기계, 전자, 컴퓨터 공학 등 관련 분야 석사 이상 학위자 우대
+ㆍ유관 분야 현업 경험자","Deep learning, Git, Python, R","","","",""
+AI Product Data Manager,서울 용인시 수지구,경력3년~10년,학력무관,정규직,48278805.0,Upstage,https://www.jobkorea.co.kr/Recruit/GI_Read/48278805?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=105&sc=630,"이런 업무를 해요
+ㆍAI 제품 개발을 위한 데이터 수집, 분석, 가공, 평가, 관리 전반에 대한 작업 수행
+ㆍ데이터 수집부터 분석, 가공, 평가, 관리까지 전 과정을 지원하는 툴 및 파이프라인 개발
+ㆍ고품질 데이터셋 구축을 위한 내외부 협업 및 커뮤니케이션
+ㆍ프롬프트 설계 및 평가 프로세스 운영 등 AI 제품의 성능 개선을 위한 실험 및 분석 수행
+ㆍAI 제품의 핵심 기술(예: LLM, Agentic AI)에 대한 데이터 관점의 연구 및 분석 수행","이런 분들을 찾고 있어요
+ㆍ학력 : 학력무관
+ㆍ기본적인 AI 기술에 대한 이해를 보유하신 분
+ㆍ텍스트 및 이미지 전처리/후처리 라이브러리(OpenCV, KoNLPy, NLTK, SpaCy 등)를 활용한 데이터 처리 경험이 있으신 분
+ㆍPython 프로그래밍에 능숙하신 분
+ㆍ다양한 팀과의 협업에서 원활한 커뮤니케이션 및 협력할 수 있는 능력이 있으신 분","이런 분이면 더 좋아요
+ㆍAI 기술을 활용한 실제 제품 개발 경험이 있으신 분
+ㆍAI 모델 학습을 위한 데이터 구축 가이드라인 작성 경험이 있는 분
+ㆍAI 모델링 경험이 있는 분
+ㆍ문제 해결을 위한 정량적 및 정성적 평가를 설계하고 실제로 적용해본 경험이 있으신 분
+ㆍ기초적인 컴퓨터공학 지식 (Data Structure & Algorithm, Computer Network, Database, OS 등)을 보유하신 분",LLM,"","","",""
+온프레미스 AI 플랫폼 개발 연구소 슈퍼스타를 모십니다,서울 강동구 천호대로 1095  복합상가 3층 301호,경력,대졸이상,정규직 (수습 1개월) 직급/직책,48388513.0,두네모㈜,https://www.jobkorea.co.kr/Recruit/GI_Read/48388513?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=106&sc=630,"주요 업무
+- 온프레미스 AI 플랫폼(nemoAI ECO Platform) 백엔드/프론트엔드 개발
+
+- AI Agent 통합 인터페이스 및 LLM 서비스 연동
+
+- 도커 기반 클라우드 네이티브 환경 설계 및 배포 자동화
+
+- Cursor IDE를 활용한 코드 자동화, Agent/Rule 정의 및 운영
+
+- 신규 기능 PoC 및 기술 검증, AI 서비스화 기획 참여","자격 요건
+- Python(FastAPI) , NodeJS(Express, Nest) 기반 개발 경험
+
+- React 또는 Vue.js 프론트엔드 프레임워크 활용 가능
+
+- Docker Compose 구성 및 이미지 빌드 경험 필수
+
+- Cursor IDE 사용 경험 및 Agent/Rules 정의 가능자
+
+- 클라우드 네이티브 환경(컨테이너, 배포 자동화)에 대한 이해","우대사항
+
+- LLM, RAG, 벡터DB 등 AI 서비스 연동 경험
+
+- 온프레미스 또는 내부망 환경 프로젝트 수행 경험
+
+- 공공기관·SI 프로젝트 참여 경험
+
+- 스타트업 또는 초기 단계 기술기업 근무 경험
+
+- 자기 주도적 문제 해결 능력 및 빠른 습득 능력","Agent, Docker, Express, FastAPI, LLM, Python, RAG, React, Vue","","연봉 4,000만원 이상 (면접 후 결정)","",""
+머신러닝 엔지니어(경력),"대한민국 서울특별시 서초구 강남대로 311, 드림플러스 19층",경력,대졸이상,정규직,48173753.0,㈜휴레이포지티브,https://www.jobkorea.co.kr/Recruit/GI_Read/48173753?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=107&sc=630,"[ 머신러닝 개발자 담당 업무 ]
+AI 에이전트 시스템에 필요한 시멘틱 검색 기술 설계 및 개발 (RAG, Embedding 등)
+신뢰성 있는 언어 모델 기반 검색 서비스를 위한 검색 모델 성능 평가 방법론 연구 및 개발
+LLM을 활용한 검색 데이터 정제 기술 연구 및 개발고객을 위한 자연어 이해 및 생성 모델 연구 및 개발(NLP)","[ 머신러닝 개발자 필수 역량 ]
+머신러닝, 자연어 처리 또는 검색 관련 분야에서 3년 이상의 경력을 보유한 분
+언어 모델(LLM) 을 활용한 시멘틱 서치 경험이 있는 분
+PyTorch, Huggingface 등 AI Model 개발 및 추론을 위한 Framework에 익숙하신 분","[ 머신러닝 개발자 우대 사항 ]
+데이터 기반 의사 결정을 선호하고 즐기시는 분
+최신 논문을 빠르게 탐색하여 제품을 개발하거나 구축해 본 경험이 있는 분
+알고리즘/머신러닝/통계/수학 관련 석사 이상 학위를 보유한 분
+원활한 커뮤니케이션 역량을 갖춘 분","Huggingface, LLM, NLP, PyTorch, RAG, 자연어 처리","",회사 내규에 따름,"",""
+AI Agent 개발자,서울 강남구,경력5년~8년,학력무관,정규직,48400937.0,핀다,https://www.jobkorea.co.kr/Recruit/GI_Read/48400937?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=108&sc=630,"이런 업무를 해요
+ㆍLLM 기반 기능(AI Agent, Retrieval, Workflow 등)을 백엔드 서비스에 통합합니다.
+ㆍAI 서비스의 데이터 흐름, 파이프라인, API 아키텍처를 설계하고 운영합니다.
+ㆍ백엔드(FastAPI, Django, Node 등) 기반의 서비스를 개발하고 배포합니다.
+ㆍ모델 서버 및 외부 AI API를 연동하며, 프롬프트와 컨텍스트를 관리합니다.
+ㆍ서비스 성능 및 품질 개선을 위해 모니터링, 로깅, 옵티마이제이션을 수행합니다.","이런 분들을 찾고 있어요
+ㆍ학력 : 학력무관
+ㆍ백엔드 개발 경험을 기반으로 AI/LLM 관련 커리어를 쌓아오신 분
+ㆍAI 시스템과 백엔드 인프라의 연결 구조를 이해하고 직접 구현할 수 있는 분
+ㆍProduct/AI 팀과의 협업 및 기술 의사결정에 적극적으로 참여하여 비즈니스 임팩트를 창출하실 분","이런 분이면 더 좋아요
+ㆍAWS Cloud에서의 AI 서비스 프로젝트 경험을 가진 분
+ㆍLLM 성능이 데이터 품질과 직결됨을 깊이 이해하고 도메인 최적화 데이터셋을 직접 설계·구축해보신 분
+ㆍRAG 시스템의 핵심인 Vector DB의 스키마 설계 및 최적화 경험이 있으신 분
+ㆍ전통적인 머신러닝/딥러닝 영역에 대한 깊은 지식과 실무 경험을 갖춘 분
+ㆍ스타트업 환경에서 빠른 실험과 반복을 즐기시는 분
+","Agent, Django, FastAPI, LLM","","","",""
+`올림픽 국가대표급 몰입` AI와 함께 압축 성장할 Product Engineer,서울 관악구 관악로17길 9  라온2차 3층,경력,학력무관,정규직 (수습 3개월),48494594.0,㈜탄소중립연구원,https://www.jobkorea.co.kr/Recruit/GI_Read/48494594?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=109&sc=630,"Product Engineer의 역할 (R&R)
+당신은 부품처럼 일하지 않습니다. 제품의 PM(Product Manager) 권한을 가지고 주도적으로 일합니다.
+
+· VoC 청취 및 기획: 고객 미팅에 직접 참여하여 니즈를 파악하고, 이를 바탕으로 기능의 방향성을 결정합니다.
+· Design & Prototyping: 디자이너가 없는 환경에서 AI를 활용해 기획한 내용을 시각화하고 UI를 결정합니다.
+· Full-Cycle Development: 기획된 내용을 프론트엔드/백엔드 코드로 구현하고 배포까지 책임집니다.
+· Ownership: 모든 의사결정 권한은 PM(담당 엔지니어)에게 있습니다. PM에게는 권한과 책임이 모두 주어집니다.","Must Have (필수 요건)
+· 경력 2년 이상, 프로젝트 A to Z 수행 경험 또는 유사 역량 증명 가능한 분
+· 올림픽을 준비하는 운동 선수급 인텐시브한 업무 강도를 버틸 수 있는 분
+· 부정적 피드백을 성숙하고 확실하게 주고 받을 수 있는 분
+· Engineering Fundamentals: OOP, SOLID, 데이터베이스 정규화 및 쿼리 최적화 능력 등 탄탄한 CS 기본기를 갖추신 분
+· AI-Driven Design: 디자이너 부재 환경에서 AI와 함께 UI/UX 작업을 주도적으로 수행할 수 있는 분 (Atomic Design Pattern 이해)
+· AWS & Infra: AWS 환경에서 서비스를 직접 배포하고 운영할 수 있는 역량","Nice to Have (우대 사항)
+· Terraform 등을 활용하여 인프라를 코드로 관리(IaC)하고, 배포 파이프라인을 고도화해 본 경험.
+· 단순 코딩 보조를 넘어, AI 에이전트나 자동화 툴을 활용해 반복 업무를 제거하고 프로세스를 혁신해 본 경험.","AWS, R, Terraform","",회사 내규에 따름 (면접 후 결정),"",""
+AI Search & RAG Engineer,경기 성남시 분당구,경력5년~15년,학력무관,정규직,48396172.0,㈜에스투더블유,https://www.jobkorea.co.kr/Recruit/GI_Read/48396172?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=110&sc=630,"이런 업무를 해요
+""AI 검색 에이전트 고도화를 주도하며, 검색 정확도와 추론 품질을 책임집니다.""
+ㆍAdvanced Hybrid Search 구현: Elasticsearch의 BM25(키워드)와 Vector DB의 임베딩(의미) 검색을 결합하고, 도메인 특화된 가중치 전략을 수립하여 Recall과 Precision의 최적 균형점 달성
+ㆍRe-ranking 시스템 구축: 1차 검색된 결과의 연관성을 높이기 위해 Cross-Encoder 기반의 Re-ranker를 도입하거나, MMR/RRF 알고리즘을 적용하여 검색 품질 고도화
+ㆍSecurity-Specialized RAG 파이프라인: 보안 위협 지표(IoC), 해킹 그룹(Threat Actor) 정보 등을 LLM이 정확하게 요약하고 분석할 수 있도록, Factuality(사실성)가 보장된 생성 파이프라인 설계
+ㆍHallucination Control & Citation: AI가 생성한 분석 결과에 반드시 근거 문서(Source)를 매핑(Grounding)하여 환각을 최소화하고, 분석가가 원본을 즉시 검증할 수 있는 로직 구현
+ㆍPerformance Optimization: 대규모 위협 데이터의 실시간 처리를 위한 Semantic Caching 전략 수립 및 LLM 토큰 비용/속도 최적화","이런 분들을 찾고 있어요
+ㆍ학력 : 학력무관
+ㆍ검색/백엔드 개발 경력 5년 이상 (또는 이에 준하는 역량)
+ㆍ검색 엔진 심화 운영 경험: Elasticsearch, OpenSearch의 쿼리 튜닝, 인덱싱 최적화, 형태소 분석기 커스텀 경험이 필수적입니다.
+ㆍVector Search 및 RAG 구축 경험: Pinecone, Milvus, Weaviate 등을 활용한 벡터 검색 구현 및 LangChain/LlamaIndex를 이용한 실제 프로덕트 개발 경험
+ㆍ알고리즘 이해도 : Sparse vs Dense Embedding의 차이, Cosine Similarity, HNSW 인덱싱 알고리즘 등 검색 원리에 대한 깊은 이해
+ㆍPython & Backend: FastAPI 등을 활용한 비동기 API 서버 구축 및 대용량 데이터 처리 능력
+ㆍKubernetes 기반 배포 및 운영 경험 : 컨테이너 기반 애플리케이션의 배포, 스케일링, 롤링 업데이트 및 장애 대응 경험","이런 분이면 더 좋아요
+ㆍ보안 도메인(Security Domain) 이해도: CTI, 다크웹, IoC, TTPs 등 보안 용어에 익숙하거나 관련 데이터를 다뤄보신 분
+ㆍCross-lingual Search 경험: 다국어(영어, 러시아어, 중국어 등)가 혼재된 다크웹 데이터를 처리하기 위해 다국어 임베딩 모델을 튜닝하거나 적용해 본 경험
+ㆍLearning to Rank (LTR) 적용 경험: 사용자 클릭 로그나 피드백 데이터를 활용하여 랭킹 모델을 학습시키고 개선해 본 경험
+ㆍMLOps 및 모델 서빙: vLLM, TGI 등을 활용하여 On-premise 환경에서 LLM을 최적화하여 서빙해 본 경험","BM25, Elasticsearch, FastAPI, LangChain, LLM, Pinecone, RAG","","","",""
+[Hyconsoft] Agentic AI · Robotics 석/박사급 연구원 채용 (정규직),서울 강서구 마곡동 757-5 프라이빗타워타워1차 1304호,경력무관,대학원(석사)이상,"정규직 (수습 3개월) , 프리랜서 (근무기간 0개월)",48440825.0,㈜하이콘소프트,https://www.jobkorea.co.kr/Recruit/GI_Read/48440825?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=111&sc=630,"
+# 1. 우리가 만드는 것(미션)
+
+
+
+### Agentic AI
+
+
+
+* 사내/외부 시스템(API·DB·문서·업무툴)을 연결해 **계획→실행→검증→수정** 루프를 수행하는 **업무 자동화 에이전트**
+
+* RAG/검색·추론을 결합한 **Deep Research형 에이전트** 및 **품질/비용 최적화(평가·캐시·관측성)** 체계
+
+
+
+### Robotics
+
+
+
+* 실제 로봇에서 동작하는 **센서융합·SLAM/Localization·Perception** 기반 자율주행/자율작업 SW
+
+* Jetson 등 Edge 환경에서 **실시간 처리 파이프라인(추론/최적화/지연 관리)** 과 현장 검증 체계","# 3. 자격 요건
+
+
+
+* 관련 전공 **석사 이상(박사 우대)**
+
+  (컴퓨터공학/전기전자/기계/로봇/AI/산업공학/수학·통계 등)
+
+* 아래 중 1개 이상 실무/연구 경험
+
+
+
+  * (Agentic AI) LLM, RAG, 에이전트/툴 연동, 평가/운영(LLMOps/MLOps), 시스템 통합
+
+  * (Robotics) ROS/ROS2, SLAM/Localization, Perception, 센서융합, 경로계획/제어, 실시간 처리
+
+* Python/C++ 중 1개 이상으로 서비스/프로토타입을 끝까지 구현·개선해본 경험
+
+* 논문/프로젝트/오픈소스/특허 등으로 **본인 기여를 명확히 설명**할 수 있는 분","# 4. 우대 사항
+
+
+
+### Agentic AI 우대
+
+
+
+* LangChain/LangGraph/LlamaIndex 등 프레임워크 활용 경험
+
+* Vector DB(FAISS/Weaviate/Pinecone 등) 또는 검색/랭킹 최적화 경험
+
+* Evals 자동화(테스트셋, 채점 기준, 회귀 테스트), 프롬프트/정책 최적화
+
+* 운영 경험(트레이싱, 모니터링, 비용 최적화, 권한/보안, 장애 대응)
+
+
+
+### Robotics 우대
+
+
+
+* Visual/LiDAR SLAM, VIO, ICP/GICP, 맵 품질/오차 지표 설계 경험
+
+* Jetson/임베디드 Linux, GStreamer/카메라 파이프라인, 실시간 최적화 경험
+
+* 시뮬레이터(Isaac Sim/Gazebo/AWSIM 등) 기반 검증 및 Sim-to-Real 경험
+
+* 현장 실증/운영 경험(로그/리플레이/재현성/원인분석 체계 포함)","LangChain, LangGraph, Linux, LLM, MLOps, Pinecone, Python, RAG","",회사 내규에 따름 (면접 후 결정),"",""
+"[정규직, 계약직, 인턴][신입, 경력]AI 개발자/ML 엔지니어 채용",서울 영등포구 양평로21길 26  2301호,경력무관,초대졸이상,"정규직 (수습 3개월) , 계약직 (근무기간 3개월, 정규직 전환 가능) , 인턴 (근무기간 3개월, 정규직 전환 가능)",48367214.0,㈜랩큐(LabQ),https://www.jobkorea.co.kr/Recruit/GI_Read/48367214?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=113&sc=630,"담당업무
+
+- 산업 특화 AI 모델 및 에이전트 개발
+
+- LLM/RAG 기반 AI 서비스 설계·구현
+
+- ML/DL 모델 개발
+
+- 데이터 파이프라인, MLOps, 실서비스 운영","자격요건
+
+ㆍ학력 : 초대졸이상 (졸업예정자 가능)
+
+ㆍ경력 : 경력무관",,"LLM, MLOps, RAG, 데이터 파이프라인","",회사 내규에 따름,"",""
+[클루커스 부산캠퍼스] GEN AI Engineer 모집,부산 해운대구 센텀중앙로 55,경력,학력무관,정규직 (수습 3개월),48499838.0,㈜클루커스 부산캠퍼스,https://www.jobkorea.co.kr/Recruit/GI_Read/48499838?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=117&sc=630,"
+담당업무
+
+- LLM 기반 애플리케이션 및 에이전트 시스템 개발
+
+- 데이터 분석 및 전처리
+
+- 자연어의 이해 및 처리 업무
+
+- 프롬프트 엔지니어링
+
+- RAG(Retrieval-Augmented Generation) 개발
+
+- 검색 엔진 성능 평가 및 개선","자격요건
+
+- 관련 경력 1년 이상
+
+- LLM 기반 애플리케이션 및 에이전트 시스템 구축을 위한 오픈소스 프레임워크 활용 경험
+
+  (LangChain, LangGraph, OpenWebUI 등)
+
+- 관련 전공자 또는 관련 교육 이수자
+","우대사항
+
+- 챗봇 개발 경험자
+
+- 대용량 데이터 처리 경험자
+
+- 비정형 데이터 전처리 경험자
+
+- Azure 환경 경험자
+
+- 뛰어난 커뮤니케이션 및 협업 능력 보유자
+
+- 영어 의사소통 가능자","Azure, LangChain, LangGraph, LLM, RAG, 검색 엔진","",회사 내규에 따름 (면접 후 결정),"",""
+AI 서비스 개발자 채용,서울 서초구 강남대로 275  2층,경력,대졸이상,정규직 (수습 3개월) 직급/직책,48429987.0,엑스솔콥코리아㈜,https://www.jobkorea.co.kr/Recruit/GI_Read/48429987?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=120&sc=630,"주요 업무
+
+
+
+ㆍRAG (Retrieval-Augmented Generation) 기반 AI 서비스 아키텍처 설계 및 구현
+
+ㆍLangChain (또는 LlamaIndex) 기반 LLM 파이프라인 및 Agent Workflow 설계
+ㆍ벡터 데이터베이스 (Pinecone, ChromaDB, Milvus 등) 구축 및 검색 성능 최적화
+ㆍ멀티 에이전트 시스템 구축 및 복잡한 업무 흐름 자동화
+ㆍOCR 및 도메인 특화 AI 모델 파인튜닝 및 데이터 파이프라인 구성
+ㆍLLM 성능 평가 체계 구축 및 프롬프트/모델 튜닝
+ㆍSpringAI 또는 FastAPI/Flask 기반 AI 서비스 API 개발 및 기존 시스템 연동
+ㆍ실제 서비스 환경에서의 안정성, 응답속도, 품질 개선 작업","
+ㆍPython (또는 Java) 기반 AI/ML 또는 백엔드 개발 실무 경험 1년 이상 (또는 그에 준하는 역량)
+ㆍLLM API (OpenAI, Claude 등) 기반 서비스 개발 경험
+ㆍRAG 또는 벡터 검색 기반 시스템 구축 경험
+ㆍREST API 설계 및 운영 경험
+ㆍ서비스 품질, 성능, 안정성을 고려한 시스템 설계 경험
+ㆍ기술 문서화 및 협업 커뮤니케이션 능력","우대사항
+
+
+
+ㆍ실제 프로덕션 환경에서 LLM/RAG 서비스 운영 경험
+ㆍ멀티 에이전트 시스템 실무 적용 경험
+ㆍ대용량 데이터 처리 및 검색 최적화 경험
+ㆍMLOps, 모델 모니터링 환경 구축 경험
+ㆍOCR, 문서 AI, 금융/보험/엔터프라이즈 도메인 프로젝트 경험
+ㆍ클라우드 환경 (AWS/GCP/Azure) 기반 AI 서비스 운영 경험","Agent, AWS, Azure, ChromaDB, Claude, FastAPI, Flask, GCP, Java, LLM, OpenAI, Pinecone, RAG, 데이터 파이프라인","",회사 내규에 따름 (면접 후 결정),"",""
+[핀테크/금융/AI/정규] AI / LLM 엔지니어 채용,서울 중구 남대문로10길 9  14층,경력,학력무관,정규직 (수습 3개월),48358145.0,Fount,https://www.jobkorea.co.kr/Recruit/GI_Read/48358145?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=121&sc=630,"
+담당업무
+
+ㆍLangGraph 기반 멀티 에이전트 시스템 설계 및 구현
+
+ㆍGPT-4/5, Claude, Gemini 등 LLM 모델 통합 및 최적화
+
+ㆍRAG 시스템 개발 (Vector DB, Hybrid Search, Reranking)
+
+ㆍ금융 도메인 특화 AI Agent 개발 (가격 분석, 뉴스 분석, 재무제표 분석)
+
+ㆍPrompt Engineering 및 Chain-of-Thought 최적화
+
+ㆍLLM 성능 모니터링 및 비용 최적화
+
+ㆍSSE 기반 실시간 스트리밍 응답 구현","자격요건
+
+ㆍPython 3+ 실무 경험 3년 이상
+
+ㆍLangChain/LangGraph 프레임워크 사용 경험
+
+ㆍOpenAI API, Anthropic API, Google Vertex AI 중 2개 이상 사용 경험
+
+ㆍAsync/Await 비동기 프로그래밍 능숙
+
+ㆍPrompt Engineering 및 LLM Fine-tuning 경험
+
+ㆍRESTful API 설계 및 구현 경험
+
+ㆍGit을 통한 협업 경험","우대사항
+
+ㆍLangSmith, LangFuse 등 LLM Observability 도구 사용 경험
+
+ㆍVector Database (Pinecone, Weaviate, pgvector) 사용 경험
+
+ㆍRAG 시스템 구축 경험
+
+ㆍAI Agent Framework (AutoGPT, BabyAGI, CrewAI 등) 개발 경험
+
+ㆍFastAPI, SQLAlchemy 경험
+
+ㆍ금융 도메인 지식 (주식, ETF, 재무제표 등)
+
+ㆍ논문 구현 또는 오픈소스 기여 경험","Agent, Anthropic, Claude, Gemini, LangGraph, LLM, Pinecone","",회사 내규에 따름 (면접 후 결정),"",""
+데이터엔지니어(경력직) 채용,세종 집현중앙7로 6  B 618호,경력,대졸이상,"계약직 (근무기간 12개월, 정규직 전환 가능) 직급/직책",48446396.0,㈜페블러스,https://www.jobkorea.co.kr/Recruit/GI_Read/48446396?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=122&sc=630,"담당업무
+
+ㆍ 인공지능관련  프로젝트
+
+ㆍ Python 및 주요 데이터 분석/머신러닝 패키지, PyTorch 프레임워크 활용
+
+ㆍ LLM 기반 서비스 개발
+
+ㆍ LangGraph, LangChain 등 멀티 에이전트 구조 설계 및 운영
+
+ㆍ 딥러닝 모델을 학습·튜닝·평가","자격요건
+
+ㆍ학력 : 대졸이상
+
+ㆍ경력 : 경력5년↑
+
+","우대사항
+
+ㆍ석사학위 수여자
+
+ㆍ유관업무 경력자 (5년)","LangChain, LangGraph, LLM, Python, PyTorch","",회사 내규에 따름 (면접 후 결정),"",""
+Python Backend /AI Application Developer 모집,"서울 강남구 역삼로17길 51  B2~2F, 4F",경력,학력무관,정규직 (수습 3개월) 직급/직책,48365675.0,아이피아,https://www.jobkorea.co.kr/Recruit/GI_Read/48365675?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=123&sc=630,"AI 서버(Backend for Frontend) 개발 및 운영 관리
+ComfyUI 기반 이미지 생성 파이프라인 개발 및 최적화
+백엔드개발팀(AWS, Java 기반)과 협업하여 서비스 고도화
+LLM 엔지니어링 및 파이프라인 구축 보조
+AI 모델 추론 최적화 개발
+최신 AI 기술의 Python 기반 응용 개발
+내부 테스트 환경 개발","Python 개발 경력 1~5년
+Linux 환경에서의 개발 및 운영 경험
+AWS 또는 GCP 클라우드 환경 사용 경험
+FastAPI 등 Python 웹 프레임워크 경험
+생성형 AI(이미지 생성, LLM)에 대한 관심과 기본 이해
+Git 기반 협업 경험","다양한 AI 도구 사용 경험 및 AI를 활용한 개발 경험
+ComfyUI 등 이미지 생성 도구 사용 경험
+LangChain, LangGraph 등 LLM 프레임워크 경험
+클라우드 AI 플랫폼 사용 경험 (GCP Vertex AI 등)
+AI 모델 추론 최적화 경험 (TensorRT, Quantization)
+Docker, Kubernetes 활용 경험
+GPU 서버 운영 경험
+TypeScript 개발 경험","AWS, Docker, FastAPI, GCP, Git, Java, Kubernetes, LangChain, LangGraph, Linux, LLM, Python, TypeScript","",회사 내규에 따름 (면접 후 결정),"",""
+웹/AI 개발자 (풀스택 리드급 3년 이상),서울 중구 을지로 55  5층,경력,초대졸이상,정규직 (수습 3개월) 직급/직책,48385838.0,㈜첫장컴퍼니,https://www.jobkorea.co.kr/Recruit/GI_Read/48385838?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=128&sc=630,"담당업무
+
+- B2C 웹 플랫폼 개발 및 아키텍처 설계
+
+- LangChain, LangGraph 기반 지능형 에이전트 시스템 구축
+
+- OpenAI, Claude 등 LLM API 연계 서비스 설계 및 운영
+
+- RAG 기반 서비스 설계 및 최적화
+
+- 벡터 데이터베이스를 활용한 검색 엔진 구축
+
+- PHP 레거시 유지보수","자격요건
+
+- 3년 이상 혹은 그에 준하는 웹/AI 서비스 개발 및 리딩 경험
+
+- Python 및 LLM 프레임워크(LangChain 등) 실무 활용 능력
+
+- OpenAI API, Claude API 등 LLM 서비스 API 사용 경험이 있으신 분
+
+- 기술적 의사결정을 비즈니스 언어로 소통할 수 있는 분","우대사항
+
+- Python, FastAPI, TypeScript, NestJS, Next.js, Node.js, MySQL, PostgreSQL 등
+
+- RAG 기반 서비스 설계 및 벡터 데이터베이스 구축 경험
+
+- LLM 파인튜닝, 프롬프트 엔지니어링 등 모델 최적화 경험자(Hugging Face 등)
+
+- 초기 스타트업에서 기술 기틀을 잡고 성장을 주도한 경험
+
+- 자기개발과 역량 개발에 소홀히 하지 않는 분","Claude, FastAPI, Hugging Face, LangChain, LangGraph, LLM, MySQL, Next.js, Node.js, OpenAI, PostgreSQL, Python, RAG, TypeScript, 검색 엔진","","연봉 4,500~5,500만원 (면접 후 결정)","",""
+(주)퓨멕스 AI혁신 서비스 기획 및 업무 자동화 담당자 모집합니다,경기 고양시 일산동구 설문동 796-5 퓨멕스빌딩,경력무관,초대졸이상,정규직 (수습 3개월),48485416.0,㈜퓨멕스(PUMEX),https://www.jobkorea.co.kr/Recruit/GI_Read/48485416?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=134&sc=630,"담당업무
+
+ㆍAI 기반 서비스 기획 및 설계
+
+ㆍAI 비 대면 견적 시스템 및 지능형 상담 챗봇 도입, 운영
+
+ㆍ업무 자동화 솔루션 개발
+
+ㆍAI OCR을 활용한 글로벌 이사 서류(통관) 자동 처리 프로세스 구축
+
+ㆍ사내 지식 자산화 를 위해 AI 지식 베이스 구축
+
+ㆍ데이터 분석 및 인사이트 도출
+
+ㆍ 고객 요구사항 분석 및 반영
+
+ㆍ 프로젝트 일정 관리 및 조율","자격요건
+
+ㆍ생산형 AI(CHATGPT 등)을 실무에 활용하여 성과를 내본 경험이 있으신 분
+
+ㆍIT 및 데이터 분야 경험 보유자
+
+ㆍ전통적인 업무 프로세스를 분석하고 디지털로 전화하는 기획력이 있으신 분
+
+ㆍ팀 협업 및 커뮤니케이션 능력
+
+ㆍ문제 해결 능력과 창의적 사고
+
+ㆍ프로젝트 관리 경험자 환영
+
+
+
+ㆍ학력 : 초대졸이상
+
+ㆍ경력 : 경력무관","우대사항
+
+ㆍ물류,해외이사,포워딩 업계 경력자
+
+ㆍ데이터 시각화 도구 사용 가능자
+
+ㆍAI 관련 자격증 보유자
+
+ㆍ프로그래밍 언어 활용 능력 우대
+
+ㆍ기술문서 작성 능력자 우대
+
+ㆍ비즈니스 영어 가능자
+
+ㆍ유관업무 경험자(인턴·알바)
+
+ㆍ유관업무 경력자
+
+ㆍ인근거주자
+
+ㆍ즉시출근 가능자
+
+ㆍ장기근무 가능자
+
+ㆍ컴퓨터활용능력 우수자",,"",회사 내규에 따름 (면접 후 결정),"",""
+멀티 로봇 스케줄링 엔지니어 채용(경력),경기 시흥시 배곧2로 82,경력,대졸이상,정규직 (수습 3개월) 직급/직책,48385794.0,㈜리보틱스,https://www.jobkorea.co.kr/Recruit/GI_Read/48385794?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=139&sc=630,"주요 업무
+
+- 스케줄링 알고리즘 설계 및 구현: 다양한 작업 요구사항과 제약 조건을 고려한 최적화 스케줄링 알고리즘을 설계하고 구현합니다.
+
+- AI 및 데이터 기반 최적화: 실시간 데이터를 활용하여 예측 및 스케줄링을 개선하는 로직을 개발합니다.
+- 성능 검증 및 튜닝: 시뮬레이션 환경과 실제 로봇 환경에서 스케줄링 알고리즘의 성능을 검증하고 최적화합니다.
+- 로직 개발: 멀티 로봇 환경에서 충돌과 데드락을 방지하는 안전한 자원 및 경로 할당 로직을 설계하고 구현합니다.
+- 운영 지원: 현장에 적용된 스케줄링 시스템에서 발생하는 문제를 분석하고 개선합니다.","자격 요건
+- 경력: 멀티 로봇 또는 다중 에이전트 스케줄링/경로 계획 관련 실무 경험 3년 이상.
+- 학력: 컴퓨터 공학, 산업 공학, 로보틱스 등 관련 학과 학사 이상.
+- 개발 언어: C++ 기반 알고리즘 개발 경험 3년 이상.
+- 기본 지식: 자료구조, 알고리즘 설계, 최적화 기법(Linear Programming, Constraint Programming 등)에 대한 깊은 이해.
+- 수학적 이해: 그래프 이론, 조합 최적화, 확률 모델에 대한 이해.","우대 사항
+- 최적화 라이브러리: OR-Tools, Gurobi, CPLEX 등 최적화 라이브러리 활용 경험.
+- AI 기반 개발: AI 기반 예측 및 스케줄링 모델 개발 경험.
+- 실환경 적용: 대규모 실환경 스케줄링 시스템 적용 경험.
+- 관련 전공 석사",,"",회사 내규에 따름 (면접 후 결정),"",""
+(주)케듀올 AI 개발자,경기 김포시 태장로 755  316호,경력,학력무관,정규직,48374139.0,㈜케듀올(Keduall Corp),https://www.jobkorea.co.kr/Recruit/GI_Read/48374139?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=140&sc=630,"
+담당업무
+
+ㆍ한국어 중심 생성형 AI 서비스 기능 설계·개발: 대화/요약/피드백/자동 채점 등 멀티턴 워크플로 구현
+
+ㆍRAG 시스템 구축·고도화: 문서 파이프라인, 인덱싱(BM25+임베딩), 쿼리 라우팅·리랭킹 실험
+
+ㆍ모델 운영(MLOps): 컨테이너화·배포·모니터링·로깅·성능/비용 최적화와 장애 대응
+
+ㆍ데이터·평가: 오프라인 벤치마크/온라인 A/B, 품질 지표 정의와 샘플셋 관리
+
+ㆍ보안/거버넌스: 개인정보/저작권/레드팀 가이드 준수 및 리뷰 체계화","자격요건
+
+ㆍPython 숙련과 데이터 구조·알고리즘 기본기
+
+ㆍ딥러닝 프레임워크(PyTorch 또는 TensorFlow) 실무 사용 경험
+
+ㆍRAG 기본기: 텍스트 전처리, 임베딩/VectorDB, 하이브리드 검색 개념 이해
+
+ㆍLinux·Git·Shell 기초, Docker 기반 컨테이너화 및 간단한 CI/CD 경험
+
+ㆍHTTP/gRPC 이해와 서비스 로그/메트릭을 통한 이슈 재현·해결 능력","우대사항
+
+ㆍ한국어 NLP 프로젝트 경험(형태소/토크나이저/한국어 평가 태스크)
+
+ㆍ오픈소스 모델 LoRA 또는 풀 파인튜닝 경험, 실험 재현 가능한 스크립트/리그 관리
+
+ㆍLangGraph/LangChain 에이전트 워크플로 설계·운영 경험
+
+ㆍElasticSearch/Opensearch 기반 검색·랭킹·BM25+벡터 하이브리드 운영
+
+ㆍ모델/프롬프트 평가 파이프라인과 A/B 운용 경험
+
+ㆍGCP/AWS에서의 비용 최적화 및 캐시/배치·스트리밍 혼용 설계","BM25, CI/CD, Docker, Git, gRPC, LangChain, MLOps, NLP, Opensearch, PyTorch, TensorFlow","",회사 내규에 따름 (면접 후 결정),"",""
+"생성형 AI 관제 플랫폼 개발(DT, 로봇)",서울 강남구 테헤란로 217  3층,경력,대졸이상,"정규직 (수습 3개월) , 계약직 (협의, 정규직 전환 가능) , 프리랜서 (협의, 정규직 전환 가능)",48297749.0,㈜비전스페이스,https://www.jobkorea.co.kr/Recruit/GI_Read/48297749?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=141&sc=630,"[주요업무]
+
+- 물류 제조 로보틱스 분야 AI 플랫폼 개발 (Physical AI)
+- 로봇 모니터링 관제 서비스 (DT 로봇 공장 통신 MQTT, PLC)
+- 웹 기반 에뮬레이터/시뮬레이션 ( + AI MSA 연계)
+
+- 실시간 대용량 데이터 처리에도 안정적으로 완결성 있는 시스템 및 서빙 로직 개발을 담당합니다.
+
+- 빅데이터 / 자동화 학습 배포 AutoML / MLops
+
+- 인공지능 학습 및 서비스 관련 툴 개발
+
+- 시뮬레이션, 클로링, Data 정제, ML/Data Eng.
+
+- 서버 시스템 아키텍처 / 비즈니스 로직 구현
+
+- 대용량 파일 처리 (압축, 스트리밍)","[자격요건]
+
+- 경력: 실무 경력 3년 이상 (풀스택)
+
+- Node.js, NextJS, ReactJS, Python, FastApi, WebGL ...
+
+- WebRTC ( 미디어 서버) + Yolo 경험 / 가능
+- 소켓통신 TCP/UDP, 멀티플레이어, 챗(룸)
+
+- 실시간 대용량 트래픽 처리 경험 / 가능
+
+- Admin 사용자/관리자 데이터 시각화 백오피스 자동화
+
+- 메시지큐 활용한 비동기 처리(Kafka, SQS, RabbitMQ- RDB, PostgreSQL, MySql)에 경험 / 가능
+
+- Swagger, Git/Docker
+
+- Cloud(AWS, GCP, Asure)
+
+- 생성형 AI (Chat GPT, Gemini, Claude ..) LLM/RAG 자동화 경험 / 가능
+
+- 플랫폼 개발 및 운영(Ads Tech - DSP, SSP, RTB, DMP)에 경험 / 가능
+- 랭체인 및 에이전트 LLM/RAG
+
+- 해외여행 결격사유 없는자","[우대사항]
+- WebGL / WebGPU 시뮬레이션 에디터 개발 가능자
+- Kubernetes 클라우드 환경 운영 경험자
+- 생성형 AI (Chat GPT, Gemini, Claude ..) or MCP 자동화 경험
+
+- 로봇 VLA/LLM/RAG 시스템 구축 경험
+
+- 영상 처리 (CCTV/스트리밍)
+
+- 생성형 Ai 서버 구축 및 데이터 시각화 경험
+
+- CAD DWG/DWF 파일데이터 편집 및 분석 경험자
+
+- 물류 제조 PLC, 로봇 프로토콜 가공(필터링) 또는 연동 개발 경험
+
+- 로봇 하드웨어 설계 제어 관련 경험자
+
+- 빅데이터와 대용량실시간 처리 서비스 구현 경험자
+
+- 시뮬레이션 또는 서비스 기반 플랫폼 개발 경험자
+
+- 유관 분야 현업 경험자","AWS, Claude, Docker, FastApi, GCP, Gemini, Git, GPT, Kafka, Kubernetes, LLM, MLops, MySql, Node.js, PostgreSQL, Python, RAG","",회사 내규에 따름 (면접 후 결정),"",""
+[독파모]AI리서치엔지니어-LLM포스트트레이닝,서울 용인시 수지구,경력1년~10년,학력무관,정규직,48279054.0,Upstage,https://www.jobkorea.co.kr/Recruit/GI_Read/48279054?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=143&sc=630,"이런 업무를 해요
+ㆍReinforcement learning for LLM (math, code, general reasoning, tool use)
+ㆍEfficient & effective reasoning
+ㆍA scalable agentic tool use data synthesis pipeline
+ㆍLanguage-specific reward models
+ㆍPrecise instruction following
+* 기술의 흐름과 상황에 따라서 개발하는 프로젝트는 변화하며, 프로젝트는 각 시점에 LLM 모델 발전에 가장 영향력있는 기술 요소에 집중합니다.","이런 분들을 찾고 있어요
+ㆍ학력 : 학력무관
+ㆍStrongly wanted
+　- LLM post-training/fine-tuning을 수행하여 특정 문제에서 최고 성능을 달성해본 경험
+　- ML과 NLP 토픽으로 국제 학회에서 출판 기록 (1저자 혹은 교신저자)
+ㆍMay be helpful
+　- AI 관련 연구 또는 프로덕트 개발을 리딩한 경험
+　- LLM Post-training을 위한 데이터 수집, 생성, 정제등을 수행해 본 경험
+　- 국제 혹은 국내 AI 대회 (Kaggle 등) 상위권 입상
+　- 0.1%의 성능에 민감하여 제한된 자원과 시간에 최적화를 수행할 수 있는 집중력
+　- 논리적인 사고실험을 수행하고 가설/검증의 방식으로 실험 설계 및 결과를 도출할 수 있는 사고력
+　- 레슨런을 효과적이고 효율적으로 전파하고 논의할 수 있는 의사소통 능력",,"LLM, NLP","","","",""
+AI Agent 개발 테크 리더,서울 서초구,경력5년~10년,학력무관,정규직,48379367.0,㈜메타넷엑스,https://www.jobkorea.co.kr/Recruit/GI_Read/48379367?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=144&sc=630,"이런 업무를 해요
+ㆍAI Agent 및 LLM 기반 서비스의 설계, 개발, 운영 총괄
+ㆍ고객사 환경에 맞춘 맞춤형 모델 커스터마이징 및 통합 개발
+ㆍ주요 Big Account(대형 고객, 주로 그룹사) 대상 기술 PoC 및 솔루션 제안
+ㆍ팀 내 개발자들과 함께 직접 코드를 작성하고 문제를 해결하는 핸즈온 리더 역할 수행
+ㆍ프로젝트 일정, 품질, 리소스 관리 등 엔드투엔드(End-to-End) 개발 리드
+ㆍ고객사 기술 담당자와의 커뮤니케이션 및 기술 협상 주도
+ㆍ기술 문서화 및 내부 개발 가이드 표준화","[자격요건]
+ㆍ머신러닝/딥러닝 관련 경력 5년 이상
+ㆍAI Agent, LLM Application, 혹은 Chat/Action 기반 서비스 개발 경험
+ㆍPython, Node.js, TypeScript 등 하나 이상의 프로그래밍 언어에 능숙
+ㆍOpenAI API, LangChain, RAG, Vector DB 등 AI Framework 활용 경험
+ㆍ고객사 기술 담당자 및 내부 조직과의 원활한 커뮤니케이션/조율 능력
+ㆍAI 솔루션 개발 스타트업 또는 대규모 프로젝트에서의 핸즈온 개발 리딩 경험
+ㆍ시스템 아키텍처 설계, MLOps, API 연동에 대한 이해","이런 분이면 더 좋아요
+ㆍB2B 대형 고객(BIG ACCOUNT) 프로젝트 수행 경험
+ㆍ멀티 에이전트 시스템 또는 Agent Orchestration 경험
+ㆍ모델 파인튜닝 및 Prompt Engineering 경험
+ㆍAWS, GCP, Azure 등 클라우드 환경에서의 배포 및 운영 경험
+ㆍ스타트업/테크 기업의 초기 AI 서비스 빌드업 경험
+ㆍ영어 커뮤니케이션 또는 글로벌 협업 경험","Agent, Azure, GCP, LangChain, LLM, MLOps, Node.js, RAG, TypeScript","","","",""
+[시리즈B유치] AI 웹서비스 풀스택 엔지니어,경기 성남시 수정구,경력10년~20년,대졸이상,정규직 (수습 3개월),48457919.0,㈜소테리아,https://www.jobkorea.co.kr/Recruit/GI_Read/48457919?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=145&sc=630,"이런 업무를 해요
+[LLM Ops 엔지니어 / 책임 ~ 수석급)
+ㆍLLM 서비스 제품화 : 자체 개발 LLM 엔진을 기반으로 한 B2B/B2C 웹 서비스의 프론트엔드 및 백엔드 설계/개발
+ㆍ고객 요구사항 최적화 : 초기 검증 고객(Alpha/Beta)의 피드백을 빠르게 파악하여 서비스 기능으로 구현 및 엔진 성능 개선 제안
+ㆍ엔진 인터페이스 설계 : LLM 엔진의 추론 결과가 사용자에게 최적의 경험(UX)으로 전달되도록 API 엔드포인트 및 스트리밍 인터페이스 최적화
+ㆍ검증 및 모니터링 : 실제 상용화 환경에서 LLM 엔진의 응답 품질과 성능을 모니터링하고 가용성 확보","이런 분들을 찾고 있어요
+ㆍ학력 : 대졸이상
+ㆍ경력 : 풀스택 개발 경력 10년 이상 (또는 그에 준하는 성과를 증명할 수 있는 분)
+ㆍBackend : Python(FastAPI, Django) 기반의 API 서버 설계 및 대용량 데이터 처리 경험
+ㆍFrontend : React, Next.js 등을 활용한 수준 높은 웹 애플리케이션 구현 능력
+ㆍProduct Mindset : 기술적 구현을 넘어, '고객이 진짜로 필요로 하는 서비스'가 무엇인지 고민하고 제품에 투영하시는 분
+ㆍCommunication : AI 모델러와 비즈니스 팀 사이에서 기술적 갭을 메우는 유연한 소통 능력","이런 분이면 더 좋아요
+ㆍAI Product 경험 : LLM을 활용한 서비스(RAG, 에이전트 등) 배포 및 운영 경험
+ㆍ성능 최적화 : LLM 스트리밍(Server-Sent Events), Vector DB 연동, 캐싱 전략 설계 경험
+ㆍ비즈니스 감각 : 초기 스타트업이나 신규 프로젝트에서 상용화까지 이끌어본 경험
+ㆍInfrastructure : AWS/GCP 및 Docker, Kubernetes 기반의 확장성 있는 아키텍처 구축 경험","AWS, Django, Docker, FastAPI, GCP, Kubernetes, LLM, Next.js, Python, RAG, React","","","",""
+멀티 로봇 트래픽제어 엔지니어(경력),경기 시흥시 배곧2로 82,경력,대졸이상,정규직 (수습 3개월) 직급/직책,48385845.0,㈜리보틱스,https://www.jobkorea.co.kr/Recruit/GI_Read/48385845?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=148&sc=630,"주요 업무
+
+- 멀티 로봇 트래픽 제어 알고리즘 설계 및 구현: 다수 로봇이 동시에 이동하는 환경에서 경로, 우선순위, 제약 조건을 고려한 트래픽 제어 알고리즘을 설계하고 구현합니다.
+
+- 충돌·정체 방지 로직 개발: 로봇 간 충돌, 교착 상태(Deadlock), 병목 구간을 예방하기 위한 안전하고 효율적인 제어 로직을 개발합니다.
+
+- AI·데이터 기반 트래픽 최적화: 실시간 로봇 상태 및 운영 데이터를 활용하여 이동 예측, 혼잡 완화, 트래픽 효율을 개선하는 최적화 로직을 개발합니다.
+
+- 시뮬레이션 및 실환경 검증: 시뮬레이션 환경과 실제 로봇 운용 환경에서 트래픽 제어 성능을 검증하고 지속적으로 튜닝합니다.
+
+- 운영 환경 문제 분석 및 개선: 현장 적용된 멀티 로봇 트래픽 제어 시스템의 이슈를 분석하고 안정성과 효율을 향상시킵니다.
+
+- MAPF 알고리즘 구현 경험: Multi-Agent Path Finding(MAPF) 알고리즘을 실제 멀티 로봇 환경에 적용하고 최적화하며, 충돌 및 Deadlock 예방 로직을 통합하고 시뮬레이션과 실환경에서 검증한 경험을 보유합니다.","자격 요건
+
+- 경력: 멀티 로봇, AMR/AGV 또는 다중 에이전트 환경에서 트래픽 제어, 경로 계획 관련 실무 경험 3년 이상
+
+- 학력: 컴퓨터공학, 로보틱스, 전자공학, 산업공학 등 관련 학과 학사 이상
+
+- 개발 언어: C++ 기반 알고리즘 및 시스템 개발 경험 3년 이상
+
+- 기본 지식: 자료구조, 알고리즘 설계, 경로 탐색(A*, Dijkstra 등) 및 최적화 기법에 대한 탄탄한 이해
+
+- 수학적 이해: 그래프 이론, 조합 최적화, 확률적 모델 또는 상태 공간 탐색에 대한 이해.","우대 사항
+- 최적화 라이브러리: OR-Tools, Gurobi, CPLEX 등 최적화 라이브러리를 활용한 경로 계획/트래픽 제어 경험.
+- AI 기반 개발: AI·머신러닝 기반 로봇 이동 예측 및 트래픽 최적화 모델 개발 경험.
+- 실환경 적용: AMR/AGV 등 대규모 멀티 로봇 트래픽 제어 시스템의 현장 적용 경험.
+- 실시간 시스템 개발 경험: RTOS, 실시간 데이터 처리 및 제어 로직 개발 경험.
+- 관련 전공 석사: 로보틱스, 컴퓨터공학, 산업공학 등 관련 전공 석사 이상.",Agent,"",회사 내규에 따름 (면접 후 결정),"",""
+ai 개발 경력자,서울 중구,경력3년~10년,학력무관,정규직,48479812.0,㈜넥서스커뮤니티,https://www.jobkorea.co.kr/Recruit/GI_Read/48479812?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=152&sc=630,"이런 업무를 해요
+1. 음성 처리 시스템 개발
+ㆍ실시간 음성 인식(STT) 시스템 구축 및 최적화
+ㆍ음성 합성(TTS) 엔진 연동 및 자연스러운 발화 품질 개선
+ㆍ음성 스트리밍 처리 및 저지연 파이프라인 구현
+
+2. 대화 AI 개발
+ㆍLLM 기반 대화 시스템 설계 및 구현
+ㆍ의도 분류(Intent Classification) 및 개체명 인식(NER) 모델 개발
+ㆍRAG(Retrieval-Augmented Generation) 시스템 구축
+
+3. 시스템 아키텍처
+ㆍ멀티에이전트 시스템 설계 및 오케스트레이션
+ㆍAPI 서버 개발 및 마이크로서비스 아키텍처 구현
+ㆍ클라우드 인프라 기반 AI 서빙 환경 구축","ㆍ학력 : 학력무관
+ㆍPython 기반 개발 경력 3년 이상
+ㆍSTT, TTS, NLP, LLM 중 1개 이상 분야 실무 경험
+ㆍRESTful API 설계 및 개발 경험
+ㆍGit 기반 협업 경험","이런 분이면 더 좋아요
+ㆍ음성 인식 모델 활용 경험
+ㆍLLM(GPT, Claude, Llama, Qwen 등) 기반 서비스 개발 경험
+ㆍvLLM, TGI 등 LLM 서빙 프레임워크 운영 경험
+ㆍ벡터 DB 및 RAG 파이프라인 구축 경험
+ㆍ실시간 음성 스트리밍 처리 경험
+ㆍAWS/GCP 기반 GPU 인스턴스 운영 경험
+ㆍ한국어 음성/언어 처리 도메인 경험
+ㆍ컨택센터, 고객상담 도메인 이해","Claude, GCP, GPT, LLM, NLP, RAG, 음성 인식","","","",""
+용인세브란스병원 디지털헬스케어 및 정신의학 연구원 모집,경기 용인시 기흥구 동백죽전대로 363  용인세브란스병원,경력무관,대졸이상,계약직 (협의),48318934.0,연세대학교의료원산학협력단,https://www.jobkorea.co.kr/Recruit/GI_Read/48318934?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=153&sc=630,"[업무 내용]
+
+- 프로젝트 관리 및 수행
+
+- UI/UX 스토리보드 기획 및 설계
+
+- 서비스 시나리오 기획 및 분석/설계
+
+- 정부 지원 사업 및 연구 개발 과제 관련 업무
+
+- 관련업무에 대한 벤치마킹 및 분석
+
+- 요구사항 정의, IA, 화면설계, 개발자와의 커뮤니케이션","ㆍ자격요건
+
+- 컴퓨터 공학, 인공지능, 또는 관련 분야 학사 이상 또는 이에 준하는 실무 경험 보유
+- 머신러닝 및 딥러닝 프레임워크에 대한 깊은 이해
+- LLM, RAG, 에이전트 시스템, Prompt Engineering에 대한 이해
+- 클라우드 환경에 대한 이해와 활용 역량
+","[우대 사항]
+
+- 대학, 산학협력단 및 유관기관 행정업무 경험자
+
+- 연구비관리시스템 사용 경험자
+
+- LLM 프롬프트 개발 경험자","LLM, RAG","",회사 내규에 따름 (면접 후 결정),"",""
+백엔드 개발자 채용,서울 구로구 디지털로 272  101호,경력,학력무관,정규직 (수습 3개월),48393484.0,지아이웍스,https://www.jobkorea.co.kr/Recruit/GI_Read/48393484?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=155&sc=630,"담당업무
+
+ㆍ신규 프로젝트 기획 참여 및 백엔드 시스템 설계/개발
+
+ㆍ운영 중인 앱/웹 서비스의 API 설계, 고도화 및 유지보수
+
+ㆍLegacy 시스템 개선 및 트러블 슈팅
+
+ㆍ프론트엔드와 협업하여 요구사항 분석 및 기능 구현
+
+ㆍAWS 클라우드 + 온프레미스(Linux) 환경에서 배포/운영 지원
+
+ㆍ사내 업무툴/외부 시스템 연동 API 개발
+
+ㆍAI 기능 연동(OCR/LLM) 및 파이프라인 구축 지원","자격요건
+
+ㆍJava 및 Spring Boot 프레임워크에 대한 탄탄한 이해와 1년 이상의 해당 업무를 수행한 분
+
+ㆍJPA/Hibernate 등 ORM 사용에 능숙, RDBMS(PostgreSQL/MySQL) 설계 및 쿼리 작성 가능
+
+ㆍRESTful API 설계 경험 및 협업(기획/프론트) 커뮤니케이션 역량
+
+ㆍGit 기반 형상 관리 및 협업에 익숙
+
+ㆍ주도적으로 문제를 파악하고 해결하는 태도
+
+ㆍAWS 및 온프레미스(Linux) 환경에서 서비스 배포/운영 경험(또는 이에 준하는 이해)
+
+ㆍDocker/Nginx 기반 운영 환경에 대한 기본 이해
+
+ㆍ기본적인 인프라 트러블슈팅 역량(로그/모니터링/네트워크 기초)","우대사항
+
+ㆍ특정 언어/프레임워크에 종속되지 않고, 비즈니스 문제 해결을 위해 필요한 기술을 유연하게 습득하고 적용하실 수 있는 분
+
+ㆍVector DB(임베딩/메모리) 설계 및 활용 경험
+
+ㆍ무중단 배포(Blue/Green 등) 전략을 이해하고 적용해 본 경험
+
+ㆍCI/CD 파이프라인 구축 및 운영 경험
+
+ㆍFirebase 연동 및 활용 경험
+
+ㆍ에이전트 기반 개발 경험(Claude Code, Codex CLI 등)
+
+ㆍ정보처리기사 자격증 소지자","Claude, Linux, LLM, MySQL, Nginx, PostgreSQL, Spring","",회사 내규에 따름 (면접 후 결정),"",""
+AI엔지니어 모집(전문연구요원or경력),"경기 과천시 과천대로7나길 60  C동 5층, 6층",경력무관,학력무관,정규직 (수습 3개월),48484425.0,라온피플㈜,https://www.jobkorea.co.kr/Recruit/GI_Read/48484425?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=156&sc=630,"도메인 특화 AI기술연구 및 서비스 개발
+Gen. Ai(VLM, LLM)모델 파인튜닝, 양자화개발
+딥러닝, Vision트랜스포머, 멀티모달 AI 개발
+Mobile, NPU, Edge-device Ai모델 최적화 개발","관련분야 5년 이상(석사 및 박사 과정 포함)
+Python, C/C++, Java중 1개 이상
+GPU Parallelism, Quantization, Continuous Batching 등","컴퓨터공학, 인공지능 관련 전공자 또는 관련학위 보유자
+다양한 프레임워크(TensorRT, Tensorflow, PyTorch, ONNX 등)를 활용한 Ai서빙/배포 경험자
+WebTRC/RTSP스트리밍 등 다채널 동시분석/처리 경험자","LLM, Python, PyTorch, Tensorflow, 멀티모달","","연봉 5,000~8,000만원 (면접 후 결정)","",""
+AI Agent Engineer,서울 강남구,경력3년~7년,학력무관,정규직,48390362.0,파인더갭㈜,https://www.jobkorea.co.kr/Recruit/GI_Read/48390362?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=157&sc=630,"이런 업무를 해요
+ㆍLLM·VLM·Multi-Agent 기반 연구 성과를 실제 서비스 수준으로 구현하고 PoC Product 전환을 주도
+ㆍ모델·데이터·서빙을 통합한 AI 실행 체계 설계 및 SaaS 환경에서의 안정적 운영 구조 구축
+ㆍAgentic Workflow(LangGraph 등)를 활용한 다중 에이전트 아키텍처 설계 및 고도화
+ㆍ자동화·모니터링·배포 체계 구축을 통한 품질·성능·비용 최적화
+ㆍ보안팀·제품팀과 협업하여 AI 기반 보안 자동화 기능의 표준화 및 기술 내재화 추진","이런 분들을 찾고 있어요
+ㆍ학력 : 학력무관
+ㆍComputer Science, AI, Software Engineering 등 관련 전공 또는 이에 준하는 실무 경험
+ㆍ프로덕션 레벨 소프트웨어 엔지니어링 경험(API 설계, 모듈화, 테스트, 배포 등)
+ㆍPyTorch, FastAPI, Node/NestJS 등 주요 AI/백엔드 프레임워크 중 하나 이상 활용 경험
+ㆍGit 기반 협업 환경, PR 리뷰, 코드 품질 관리 경험
+ㆍ연구 결과를 실제 서비스에서 동작하는 제품 형태로 구현할 수 있는 엔지니어링 역량 보유","이런 분이면 더 좋아요
+ㆍLLM·VLM·Agent 기반 시스템 설계 및 최적화 경험
+ㆍ모델 서빙, 경량화, 성능 최적화, 데이터 파이프라인 등 AI 시스템 효율화 경험
+ㆍSaaS/Cloud 환경(AWS/GCP 등)에서 AI 서비스 개발 및 배포 경험
+ㆍLangChain, LangGraph, CrewAI 등 최신 Agentic Workflow 프레임워크 경험
+ㆍRAG, Tool Use, Function Calling 기반 파이프라인 설계·튜닝 경험
+ㆍ자동화·내재화·지식공유(오픈소스, 기술문서, 내부 프레임워크) 경험
+ㆍ보안 자동화, 침투테스트, 취약점 분석 플랫폼 등 관련 도메인 경험","Agent, AWS, FastAPI, GCP, LangGraph, 데이터 파이프라인","","","",""
+로봇 SW 개발 엔지니어/로봇 AI RAG,서울 강남구 테헤란로 217  3층,경력2년~10년,대졸이상,정규직 (수습 3개월),48436502.0,㈜비전스페이스,https://www.jobkorea.co.kr/Recruit/GI_Read/48436502?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=158&sc=630,"[AI 파트]
+ㆍ로봇 학습을 위한 LLM RAG 파인튜닝
+ㆍ멀티 에이전트를 통한 다중 로봇 학습 및 최적화 설계 구현
+ㆍ이미지 영상 처리 학습
+ㆍ로봇 매니퓰레이터 자동화 학습
+ㆍ물류 데이터 최적화 로직","ㆍ학력 : 대졸이상
+　(또는 석사 학위 이상)
+ㆍ로봇 하드웨어 설계 또는 제어 경험자
+ㆍ개인(1인) 포트폴리오 (필수)
+ㆍROS / ROS2 활용
+ㆍC++, Python 등 프로그래밍 능력 (필수)
+ㆍPytorch, Tensorflow 등 딥러닝 프레임워크 활용 능력
+ㆍ서울 강남에서 근무 가능한 분","이런 분이면 더 좋아요
+ㆍ로봇 하드웨어 설계 제어 관련 경험자
+ㆍ컴퓨터공학, 로봇공학, 인공지능 관련 석박, 박사 보유자
+ㆍ휴머노이드 로봇 설계/학습에 대한 이해와 개발 가능자
+ㆍ시뮬레이션 또는 서비스 기반 플랫폼 개발 경험자
+ㆍComputer Vision & lmage Geometry & Deep learning 관련 논문 이해 능력 및 활용 경험에 대한 이해
+ㆍAI, 디지털 트윈 프로젝트 개발 경험 (관련 경력 2년 이상 보유하신 분)
+ㆍVision 및 LiDAR를 활용한 연구 및 경험이 있는 분
+ㆍVisual Feature 기반의 위치추정 알고리즘 활용 및 개선 경험
+ㆍSensor Fusion 기반 Obstacle State Estimation 경험
+ㆍDocker, Git 형상관리 경험
+ㆍ로봇, 기계, 전자, 컴퓨터 공학 등 관련 분야 석사 이상 학위자 우대
+ㆍ유관분야 현업 경험자","Deep learning, Git, LLM, Python, RAG, Tensorflow","","","",""
+[전문연]리서치엔지니어 LLM 포스트트레이닝,서울 용인시 수지구,경력1년~10년,대학원(석사)이상,정규직,48279003.0,Upstage,https://www.jobkorea.co.kr/Recruit/GI_Read/48279003?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=159&sc=630,"이런 업무를 해요
+ㆍReinforcement learning for LLM (math, code, general reasoning, tool use)
+ㆍEfficient & effective reasoning
+ㆍA scalable agentic tool use data synthesis pipeline
+ㆍLanguage-specific reward models
+ㆍPrecise instruction following
+** 기술의 흐름과 상황에 따라서 개발하는 프로젝트는 변화하며, 프로젝트는 각 시점에 LLM 모델 발전에 가장 영향력있는 기술 요소에 집중합니다.","이런 분들을 찾고 있어요
+ㆍ학력 : 대학원(석사)이상
+ㆍStrongly wanted
+　ㆍLLM post-training/fine-tuning을 수행하여 특정 문제에서 최고 성능을 달성해본 경험
+　ㆍML과 NLP 토픽으로 국제 학회에서 출판 기록 (1저자 혹은 교신저자)
+ㆍMay helpful
+　ㆍAI 관련 연구 또는 프로덕트 개발을 리딩한 경험
+　ㆍLLM Post-training을 위한 데이터 수집, 생성, 정제등을 수행해 본 경험
+　ㆍ국제 혹은 국내 AI 대회 (Kaggle 등) 상위권 입상
+　ㆍ0.1%의 성능에 민감하여 제한된 자원과 시간에 최적화를 수행할 수 있는 집중력
+　ㆍ논리적인 사고실험을 수행하고 가설/검증의 방식으로 실험 설계 및 결과를 도출할 수 있는 사고력
+　ㆍ레슨런을 효과적이고 효율적으로 전파하고 논의할 수 있는 의사소통 능력","이런 분이면 더 좋아요
+ㆍ대규모 모델 학습을 위한 프레임워크 사용 경험 (e.g. DeepSpeed)
+ㆍLLM 기반 제품 개발 경험
+ㆍLLM Post-training을 위한 데이터 수집, 정제, 및 annotation 경험
+ㆍAI 및 NLP 관련 국제 학회에서 1저자 혹은 교신저자로 출판 기록
+　ㆍE.g. NeurIPS, ICML, ICLR, ACL, NAACL, EMNLP, AAAI, CVPR, ICCV, ECCV 등
+ㆍ국제 혹은 국내 AI 대회 (Kaggle 등) 상위권 입상
+ㆍ글로벌 고객 대응을 위한 영어 커뮤니케이션 능력","LLM, NLP","","","",""
+[SIZL]AI Research,경기 성남시 수정구 금토로 32  OI Center 409호,경력무관,학력무관,정규직 (수습 3개월),48417405.0,㈜시즐,https://www.jobkorea.co.kr/Recruit/GI_Read/48417405?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=160&sc=630,"▷ 주요업무
+
+ - AI 연구소의 전반적인 기술 전략 수립 및 R&D 로드맵 총괄
+ - LLM 기반 제조 AI 플랫폼의 아키텍처 설계 및 핵심 모듈 개발 리드
+ - 제조 AI(비전, 시계열 등)와 생성형 AI(LLM, RAG) 기술의 융합 방안 연구
+ - 엔지니어링 팀(Junior/Senior)의 기술 리딩, 멘토링 및 성과 관리
+ - 정부 R&D 과제의 기술 총괄(PL) 역할 및 신규 과제 발굴
+ - 사업 기획 리드와 협력하여 신규 AI 솔루션의 기술적 타당성 검토 및 PoC 리딩
+
+ - LangGraph 기반 멀티-에이전트 AI Agent 시스템(Consulting, RAG, Data Query 등) 설계 및 상용화 리딩
+
+ - AI Agent 기반 제조 컨설팅 자동화 프레임워크(Logic Tree, PDCA, Sigma 등) 개발 및 고도화","▷ 자격요건
+
+ - AI/ML 분야 8년 이상 경력 또는 그에 준하는 역량
+ - LLM, RAG, Vector DB 등 생성형 AI 기술에 대한 깊은 이해와 실제 상용화 프로젝트 리딩 경험
+ - AI 팀/조직(5인 이상)을 리드하고 성공적인 결과물을 도출한 경험
+ - 복잡한 비즈니스 문제를 AI 기술로 정의하고 해결책을 설계할 수 있는 역량
+ - 뛰어난 커뮤니케이션 능력 및 유관 부서(사업, 영업)와의 협업 능력","▷ 우대사항
+
+ - 제조 산업 AI 솔루션(스마트팩토리, 품질, 설비 등) 개발 리딩 경험
+ - 대규모 정부 R&D 과제 총괄(PM/PL) 경험
+ - 클라우드(AWS, GCP, Azure) 기반의 대규모 AI 시스템 설계 및 MLOps 파이프라인 구축 경험
+ - AI 관련 유명 학회(NeurIPS, ICML, CVPR 등) 논문 게재 또는 특허 출원 경험","Agent, AWS, Azure, GCP, LangGraph, LLM, MLOps, R, RAG","",회사 내규에 따름 (면접 후 결정),"",""
+능력 있는 AI/데이터 엔지니어를 모십니다 (경력 2년 이상),서울 서초구 서초대로 320  10층,경력2년,대졸이상,정규직 (수습 3개월),48394248.0,㈜로챗,https://www.jobkorea.co.kr/Recruit/GI_Read/48394248?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=161&sc=630,"담당업무
+
+1. GCP 기반 데이터 파이프라인 구축 및 운영 (Core)
+
+RAG 성능 극대화를 위한 데이터 전처리: 비정형 법률 데이터(PDF, HWP 등)의 텍스트 추출, 노이즈 제거 및 메타데이터 구조화
+
+자동화 파이프라인(ETL) 설계: Airflow(Cloud Composer)를 활용하여 정제된 데이터를 BigQuery로 적재하는 워크플로우 구축
+
+검색/RAG 시스템 연동: BigQuery 데이터와 연동된 검색 엔진(Vector Search 등) 데이터스토어 생성 및 인덱싱 최적화
+
+데이터 최신성 유지 및 파이프라인 모니터링
+
+2. LLM 어플리케이션 및 에이전트 개발
+
+LangGraph를 활용한 Multi-Agent 기반의 법률 문서 처리 워크플로우 설계
+
+RAG 시스템 고도화 (맥락을 고려한 Chunking 전략 수립, Hybrid Search 구현)
+
+비용 효율성을 고려한 sLLM(Gemma, Llama3 등) 경량화 모델 도입 검토 및 테스트
+
+3. Full-stack 서비스 기능 개발
+
+
+자동 법률 문서 서비스의 백엔드 API 개발 (Python FastAPI 또는 Node.js)
+
+AI 모델의 출력을 효과적으로 보여주는 프론트엔드 UI 개발 및 연동 (React)
+
+사용자 피드백 루프 설계를 통한 데이터 지속 개선","자격요건
+
+1. 데이터 역량
+
+데이터 전처리 및 텍스트 마이닝 역량이 탁월하신 분
+
+Raw Data(PDF, HWP 등)를 정제하여 LLM이 이해하기 쉬운 형태로 가공해 본 실무 경험
+
+정규식(Regex) 활용 및 비정형 데이터 구조화 능력
+
+2. 클라우드 및 인프라
+
+GCP 및 Cloud AI 생태계 활용 경험이 있으신 분
+
+Airflow(DAG 작성) 운영 경험 및 BigQuery SQL 쿼리 작성 능력
+
+GCP 기반의 검색 서비스 관리 경험
+
+3. 개발 역량
+
+
+Python, Node.js, React, SQL/NoSQL(MongoDB 등)을 활용한 Full-stack 개발 경험
+
+Git을 사용한 형상 관리 및 원활한 협업 능력","우대사항
+
+ㆍ 컴퓨터공학, 등 관련 학과 전공자
+
+ㆍ LangChain / LangGraph 프레임워크를 활용해 복잡한 AI 로직을 구현해 보신 분
+
+ㆍ Cloud Composer(Airflow)를 활용한 대용량 데이터 처리 파이프라인 구축 경험
+
+ㆍ On-premise 또는 Cloud 환경에서 sLLM 파인튜닝(Fine-tuning) 및 서빙 경험
+
+ㆍ Docker, Kubernetes 등 컨테이너 환경에 대한 이해
+
+ㆍ 법률 도메인 또는 문서 자동화 서비스 개발 경험","Agent, Airflow, Docker, ETL, FastAPI, GCP, Kubernetes, LangChain, LangGraph, LLM, MongoDB, Node.js, Python, RAG, React, SQL, Vector Search, 검색 엔진, 데이터 파이프라인","",회사 내규에 따름 (면접 후 결정),"",""
+[뷰어스 사업본부] 프롬프트 엔지니어,서울 서초구,경력1년~3년,학력무관,정규직 (수습 3개월),48373822.0,㈜패스트뷰,https://www.jobkorea.co.kr/Recruit/GI_Read/48373822?Oem_Code=C1&logpath=1&stext=AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8&listno=166&sc=630,"이런 업무를 해요
+ㆍGPT, Claude, Gemini 등 다양한 LLM 환경에서 정확도, 성능, 비용을 고려한 최적의 프롬프트를 개발합니다.
+ㆍ현재 운영 중인 번역 관련 프롬프트를 체계적으로 관리하고 지속적으로 고도화합니다.
+ㆍ프롬프트 성능을 평가하기 위한 지표를 설계하고, 반복적인 테스트를 통해 프롬프트 및 서비스 품질을 개선합니다.
+ㆍ실험 결과를 기반으로 프롬프트 개선 방향을 도출하고, 서비스에 안정적으로 반영합니다.
+ㆍAI를 활용한 다양한 서비스를 구상하고, 실험을 통해 활용방안을 찾습니다","이런 분들을 찾고 있어요
+ㆍ학력 : 학력무관
+ㆍ[중요] 새로운 기술과 방법을 배우는 데 적극적이며, 새로운 시도와 실험을 즐기시는 분
+ㆍ프롬프트/컨텍스트 엔지니어링 실무 경험 1년 이상 또는 이에 준하는 역량을 보유하신 분
+ㆍ대규모 언어 모델(LLM) 및 자연어 처리(NLP)에 대한 기본적인 이해
+ㆍ비즈니스 요구사항을 논리적으로 구조화하여 AI가 실행 가능한 단계로 설계할 수 있는 문제 해결 능력
+ㆍAI 모델의 응답 품질을 정량적으로 평가하고, 반복적인 실험을 통해 지속적으로 개선해본 경험
+
+▶이런 분과 함께 하고 싶어요.
+ㆍ자신이 만든 서비스가 성장하는 과정을 함께 경험하고 싶은 분
+ㆍ기술적 완성도뿐 아니라 제품에 대한 애착을 가지고 개선 아이디어를 제안할 수 있는 분
+ㆍ개인의 성과보다 팀의 목표를 함께 고민하고 협업을 중시하는 분
+ㆍ문제 상황에서도 책임감을 가지고 해결을 끝까지 고민하는 분","이런 분이면 더 좋아요
+ㆍLLM을 활용한 번역 업무 또는 번역 관련 서비스 개발 경험
+ㆍPython, PyTorch 등을 활용한 모델 파인튜닝 경험
+ㆍPoC 단계부터 실제 운영 환경까지 AI 서비스 품질을 설계?검증?개선하는 전 과정을 주도적으로 수행해본 경험
+ㆍJira, Confluence 등 협업 도구 사용 경험
+ㆍBackend 또는 Frontend 개발 경험","Claude, Gemini, LLM, NLP, PyTorch, 자연어 처리","","","",""
+[플랫폼본부] AX-Tech실 AI 에이전트 엔지니어,성남시 분당구,경력3년,학력무관,정규직,,넥슨,https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=275371,"주요 업무
+AI 기반 개발자 서비스 개발 및 운영
+- 개발자의 온보딩과 업무 효율을 돕는 서비스를 주도적으로 개발합니다.
+- LLM 등 외부 AI 서비스를 활용하여 서비스의 핵심 기능을 설계하고 직접 구현합니다.
+- 서비스 목적에 맞춰 효과적인 프롬프트와 에이전트 파이프라인을 설계하고 지속적으로 고도화합니다.
+
+AI 기술 리서치 및 가치 검증
+- 개발 생산성을 극대화할 최신 AI 기술, 모델, 프레임워크를 리서치하고 기술 검증을 통해 실효성을 검증합니다.","지원 자격
+개발 경력 3년 이상이신 분
+Python, TypeScript, C++, C# 중 하나 이상의 언어로 능숙하게 개발 가능하신 분
+특정 기술 스택에 얽매이지 않고, 웹 프론트엔드부터 백엔드, 게임 엔진까지 유연하게 넘나들며 개발할 수 있는 풀스택 역량을 갖추신 분
+AI 기술과 서비스에 대한 깊은 관심과 열정을 바탕으로 스스로 문제를 정의하고 해결하며 빠르게 학습하고 성장하시는 분","우대 사항
+게임 개발 과정을 경험해보셨거나, 이에 대한 이해도가 높으신 분
+Cursor, GitHub Copilot 등 AI 기반 개발 도구 활용에 능숙하며, 이를 통해 실제 개발 생산성을 크게 향상 시켜본 경험이 있으신 분
+LLM 기반의 챗봇, RAG 시스템 등 AI Agent 서비스 개발을 처음부터 끝까지 경험해보신 분
+프롬프트 최적화 경험이 있으신 분
+AWS 운영 경험 또는 DevOps 경험이 있으신 분
+처음 접하는 분야나 코드도 두려움 없이 파악하고 빠르게 기여할 수 있으신 분","Agent, AWS, DevOps, GitHub, LLM, Python, RAG, TypeScript","","","",""

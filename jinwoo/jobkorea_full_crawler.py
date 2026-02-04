@@ -25,7 +25,10 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 load_dotenv()
 
+# 임포트 구문
 # Selenium 사용
+
+### 셀레니움 드라이버 임포트를 시도하라
 try:
     from selenium import webdriver
     from selenium.webdriver.chrome.service import Service
@@ -35,44 +38,74 @@ try:
     from selenium.webdriver.support import expected_conditions as EC
     from webdriver_manager.chrome import ChromeDriverManager
     SELENIUM_AVAILABLE = True
-except ImportError:
+### 에러가 없으면 셀레니움 이 사용가능한 상태로 플래그(불 변수 플래그 패턴)를 설정
+except ImportError as e:
+### 임포트 과정에서 에러가 발생하면 셀레니움 플래그(불 변수 플래그 패턴)를 사용 불가능한, FALSE 상태로 설정
+### 그에 따른 셀레니움 부가 클래스 들도 전부 None 상태로 설정
     SELENIUM_AVAILABLE = False
-    print("[WARN] selenium이 설치되지 않았습니다.")
-    print("설치: pip install selenium webdriver-manager")
+    # Dummy classes for type hints
+    webdriver = None
+    Service = None
+    Options = None
+    By = None
+    WebDriverWait = None
+    EC = None
+    ChromeDriverManager = None
+    print(f"[WARN] selenium이 설치되지 않았습니다: {e}")
+    print("설치: uv pip install selenium webdriver-manager")
+
 
 # Firecrawl 사용 시 필요 (옵션)
+
+### 위 셀레니움과 마찬가지로 인포트를 시도하나 Firecrawl 로드에 문제가 있으면 False로 설정하고 클래스를 비워라
 try:
     from firecrawl import FirecrawlApp
     FIRECRAWL_AVAILABLE = True
 except ImportError:
     FIRECRAWL_AVAILABLE = False
+    FirecrawlApp = None
 
+### JobKoreaFullCrawler 선언
 class JobKoreaFullCrawler:
+
+    ### 모듈의 시작이 되는 init 설정 메소드 선언시에는 최초 자기 자신 (self, 타 언어 this)를 첫 매개변수로 넘겨준다
+    ### 실제로 함수를 호출할 때는 자기 자신을 넘겨주지 않아도된다, api_key 는 firecrawl의 키고 기본 값은 None 이다, 마찬가지로
+    ### use_selenium 의 기본 값을 True로 설정한다
     def __init__(self, api_key=None, use_selenium=True):
+
+        ### 전역변수 설정
         self.api_key = api_key
         self.use_selenium = use_selenium
 
         # 스크립트 파일 위치 기준으로 data 폴더 경로 계산
-        # Jupyter Notebook 환경을 고려하여 __file__ 유무 확인
+        # data 폴더는 jinwoo 폴더 아래에 위치
+
+        ### 현재 파일의 절대 경로를 가져온다(absolute)
         try:
             script_dir = os.path.dirname(os.path.abspath(__file__))
-            project_root = os.path.dirname(script_dir)
+
+        ### 네임 에러의 레퍼런스 내부에는 """ Name not found globally. """ 라고 적혀있다
         except NameError:
             # __file__이 없는 경우 (Jupyter Notebook 등)
-            # 현재 작업 디렉토리에서 프로젝트 루트 찾기
-            current_dir = os.getcwd()
-            if 'jinwoo' in current_dir:
-                project_root = os.path.dirname(current_dir)
-            else:
-                project_root = current_dir
 
-        data_dir = os.path.join(project_root, 'data')
+        ### 현재 실행중인 내 경로를 가져온다
+            script_dir = os.getcwd()
 
+
+        ### data 폴더는 현재 스크립트(jinwoo 폴더) 아래에 위치
+        ### 위에 저장한 경로 + /data 폴더를 가져온다
+        data_dir = os.path.join(script_dir, 'data')
+
+        ### 진행상황을 저장할 파일과 최종 아웃풋 파일 경로를 설정한다
         self.progress_file = os.path.join(data_dir, 'crawl_progress.json')
-        self.output_file = os.path.join(data_dir, 'jobkorea_crawled_complete_2.csv')
+        self.output_file = os.path.join(data_dir, 'jobkorea_crawled_complete_3.csv')
         self.data = []
         
         # Selenium 드라이버 초기화 (우선순위 1)
+
+        ### 이거 진짜 모르겠습니다 : )
+        ### 드라이버나 유즈 셀레니움이나 전역변수인건 다 알겠는데
+        ### chrome_options는 하나도 모르겠습니다
         self.driver = None
         if self.use_selenium and SELENIUM_AVAILABLE:
             try:
@@ -98,45 +131,82 @@ class JobKoreaFullCrawler:
                 self.driver = None
 
         # Firecrawl은 백업용 (우선순위 2)
+        ### 전역변수 (코파일럿 왜 이름 이렇게 붙였을까요?)
         self.app = None
         if not self.driver:
             if not self.api_key:
+                ### 위 if not  코드는 위에서 설명한 전역변수들의 유무니까 설명하지 않겠습니다
+                ### .dotenv 로 환경변수 값 가져오기
                 env_key = os.getenv('FIRECRAWL_API_KEY') or os.getenv('FIRECRAWL_APIKEY')
                 if env_key:
                     self.api_key = env_key
 
+            ### 파이어크롤 사용가능한 상태와 api 키 두개가 다 있어야 파이어 크롤을 시도함
             if FIRECRAWL_AVAILABLE and self.api_key:
                 try:
+                    ### 이건 파이어 크롤 초기화 함수 인거 같습니다
                     self.app = FirecrawlApp(api_key=self.api_key)
                     print("[OK] Firecrawl API 초기화 완료 (백업)")
                 except Exception as e:
                     print(f"[WARN] Firecrawl 초기화 실패: {e}")
 
+        ### 바로 아래 선언된 함수 호출
         self.load_progress()
-    
+
+        ### 메소드(함수) 선언시 최초 매개변수는 클래스 자기 자신
     def load_progress(self):
         """저장된 진행상황 로드"""
         try:
+            ### 이거 수업시간때 했던건데 파일 오픈
             with open(self.progress_file, 'r', encoding='utf-8') as f:
-                self.data = json.load(f)
-            print(f"기존 진행상황 로드: {len(self.data)}개")
+                ### 파일 읽기 대신에 공백 삭제 처리
+                content = f.read().strip()
+                if content:
+                    ### Json 형태로 콘텐츠 로드
+                    loaded_data = json.loads(content)
+                    # 딕셔너리인 경우 리스트로 변환
+                    ### loaded_data 의 형이 dictionary 형인가를 묻고 있습니다
+                    if isinstance(loaded_data, dict):
+                        if loaded_data:  # 빈 딕셔너리가 아닌 경우
+                            print("[WARN] JSON이 딕셔너리 형태입니다. 리스트로 변환합니다.")
+                        self.data = []
+                        print("새로운 크롤링 시작")
+                    ### loaded_data 의 형이 list 형인가를 묻고 있습니다
+                    elif isinstance(loaded_data, list):
+                        self.data = loaded_data
+                        print(f"기존 진행상황 로드: {len(self.data)}개")
+                    else:
+                        print("[WARN] JSON 형식이 올바르지 않습니다. 초기화합니다.")
+                        self.data = []
+                else:
+                    print("[INFO] 진행 파일이 비어있어 초기화합니다.")
+                    self.data = []
         except FileNotFoundError:
             self.data = []
             print("새로운 크롤링 시작")
-    
+        except json.JSONDecodeError as e:
+            print(f"[ERROR] JSON 파싱 실패: {e}")
+            print("[INFO] 새로운 진행 파일로 초기화합니다.")
+            self.data = []
+
+    ### 진행 상황을 저장합니다
     def save_progress(self):
         """진행상황 저장"""
         with open(self.progress_file, 'w', encoding='utf-8') as f:
             json.dump(self.data, f, ensure_ascii=False, indent=2)
-    
+
+    ### 이건 크롤링 코드입니다
     def extract_info(self, markdown, url, orig_title, orig_company):
         """마크다운에서 정보 추출"""
         # 그룹명 제거
+        ### 이거 회사명 바로 아래에 그룹명 붙어있는거 제거하는 코드인거 같습니다 바로 아래 리플레이스와 공백제거가 붙어있네요
         clean_company = orig_company
         for group in ['\n삼성그룹', '\nSK 그룹', '\nKT그룹', '\nCJ그룹', '\nLG그룹', '\n코오롱그룹']:
             clean_company = clean_company.replace(group, '')
         clean_company = clean_company.strip()
-        
+
+
+        ### 회사 정보는 이렇게 가져올겁니다 딕셔너리 형태네요
         info = {
             '채용제목': orig_title,
             '회사': clean_company,
@@ -155,17 +225,21 @@ class JobKoreaFullCrawler:
             '스킬': '',
             '업종': ''
         }
-        
+
+        ### 함수 선언시 받아온 매개변수입니다 매개변수가 비었으면 빈 info 를 반환합니다
         if not markdown:
             return info
         
         # markdown이 dict 형태로 온 경우 처리 (Firecrawl 응답)
+        ### 위 주석을 보니 firecrawl은 딕셔너리로 응답을 하나봅니다...
         if isinstance(markdown, dict):
             markdown = markdown.get('markdown', markdown.get('content', ''))
 
         # markdown 문자열 표현이 포함된 경우 처리
+        ### 마크다운이 왜 markdown= 으로 시작해야되는지는 모르겠습니다 아무래도 firecrawl의 특징인것 같습니다...
         if isinstance(markdown, str) and markdown.startswith("markdown='"):
             # "markdown='..." 형태를 추출
+            ### 정규표현식을 사용하여 마크다운
             match = re.match(r"markdown='(.+)'", markdown, re.DOTALL)
             if match:
                 markdown = match.group(1)
@@ -221,26 +295,6 @@ class JobKoreaFullCrawler:
                 if emp_type and len(emp_type) < 100:
                     info['고용형태'] = emp_type
 
-            # 스킬 - 여러 패턴 시도
-            스킬_패턴 = [
-                r'스킬\s*,?\s*([^\n]+?)(?:\s+우대조건|\s+핵심|로그인|TOP|궁금|기본우대|$)',
-                r'스킬\s*[:\s]*([가-힣A-Za-z0-9,.\s/\-&()]+?)(?:\s+우대조건|\s+근무지|로그인|$)',
-                r'필수스킬[:\s]*([^\n]+)',
-                r'우대스킬[:\s]*([^\n]+)',
-            ]
-
-            for pattern in 스킬_패턴:
-                if match := re.search(pattern, markdown, re.MULTILINE):
-                    skills = match.group(1).strip()
-                    # 맨 앞의 컴마와 공백 제거
-                    skills = skills.lstrip(',').strip()
-                    # 불필요한 텍스트 필터링
-                    if skills and 2 < len(skills) < 300:
-                        # 제외할 키워드
-                        exclude_words = ['로그인', '궁금', 'TOP', '추천공고', '하고 비슷한', '확인해', '기본우대', '장애인', '보훈대상자']
-                        if not any(word in skills for word in exclude_words):
-                            info['스킬'] = skills
-                            break
 
             # 근무지 - Selenium: "근무지주소 서울 동작구..." or Firecrawl
             if match := re.search(r'근무지(?:주소|역)?\s+(.+?)(?:\s+지도보기|\s+인근지하철|$)', markdown, re.DOTALL):
@@ -287,13 +341,17 @@ class JobKoreaFullCrawler:
 
             # 주요업무 / 담당업무 / 업무내용 / 직무내용 / 직무소개
             업무_패턴 = [
-                r'이런\s*업무를?\s*하시게\s*돼요[!]?[:\s]*(.+?)(?=이런\s*경험|자격\s*요건|우대|전형|채용\s*절차|복지|유의사항|꼭\s*읽어|접수|기업정보|$)',
-                r'주요\s*업무[:\s]*(.+?)(?=자격\s*요건|필수|우대|전형|채용|복지|접수|기업|$)',
-                r'담당\s*업무[:\s]*(.+?)(?=자격|필수|우대|전형|채용|복지|접수|기업|$)',
-                r'업무\s*내용[:\s]*(.+?)(?=자격|필수|우대|전형|채용|복지|접수|기업|$)',
-                r'직무\s*내용[:\s]*(.+?)(?=자격|필수|우대|전형|채용|복지|접수|기업|$)',
-                r'직무\s*소개[:\s]*(.+?)(?=자격|필수|우대|전형|채용|복지|접수|기업|$)',
-                r'수행\s*업무[:\s]*(.+?)(?=자격|필수|우대|전형|채용|복지|접수|기업|$)'
+                # 잡코리아 특정 표현
+                r'이런\s*업무를?\s*하시게\s*돼요[!]?[:\s]*(.+?)(?=이런\s*경험|자격\s*요건|우대|전형|채용\s*절차|복지|유의사항|꼭\s*읽어|접수|기업정보|h3|h2|$)',
+                # 일반적인 표현들
+                r'주요\s*업무[:\s]*(.+?)(?=자격\s*요건|필수|우대|전형|채용|복지|접수|기업|h3|h2|$)',
+                r'담당\s*업무[:\s]*(.+?)(?=자격|필수|우대|전형|채용|복지|접수|기업|h3|h2|$)',
+                r'업무\s*내용[:\s]*(.+?)(?=자격|필수|우대|전형|채용|복지|접수|기업|h3|h2|$)',
+                r'직무\s*내용[:\s]*(.+?)(?=자격|필수|우대|전형|채용|복지|접수|기업|h3|h2|$)',
+                r'직무\s*소개[:\s]*(.+?)(?=자격|필수|우대|전형|채용|복지|접수|기업|h3|h2|$)',
+                r'수행\s*업무[:\s]*(.+?)(?=자격|필수|우대|전형|채용|복지|접수|기업|h3|h2|$)',
+                # 리스트 형태로 시작하는 패턴
+                r'(?:주요\s*)?업무[:\s]*\n*\s*[•\-\*]\s*(.+?)(?=자격|필수|우대|전형|채용|복지|h3|h2|$)',
             ]
 
             for pattern in 업무_패턴:
@@ -302,19 +360,24 @@ class JobKoreaFullCrawler:
                     content = re.sub(r'\s+', ' ', content)
                     if 10 < len(content) < 3000:
                         info['주요업무'] = content[:1500]
+                        print(f"  [OK] 주요업무 추출 성공 (길이: {len(content)}자)")
                         break
 
             # 자격요건 / 지원자격 / 필수요건 / 필수자격 / 지원요강 / 필수역량
             자격_패턴 = [
-                r'이런\s*경험을?\s*가지신\s*분을?\s*찾고\s*있어요[!]?[:\s]*(.+?)(?=이런\s*경험이|우대|전형|채용\s*절차|복지|유의사항|꼭\s*읽어|접수|기업정보|$)',
-                r'자격\s*요건[:\s]*(.+?)(?=우대|전형|채용|복지|근무|접수|기업|$)',
-                r'지원\s*자격[:\s]*(.+?)(?=우대|전형|채용|복지|접수|기업|$)',
-                r'지원\s*요강[:\s]*(.+?)(?=우대|전형|채용|복지|접수|기업|$)',
-                r'필수\s*요건[:\s]*(.+?)(?=우대|전형|채용|복지|접수|기업|$)',
-                r'필수\s*자격[:\s]*(.+?)(?=우대|전형|채용|복지|접수|기업|$)',
-                r'필수\s*역량[:\s]*(.+?)(?=우대|전형|채용|복지|접수|기업|$)',
-                r'요구\s*사항[:\s]*(.+?)(?=우대|전형|채용|복지|접수|기업|$)',
-                r'응시\s*자격[:\s]*(.+?)(?=우대|전형|채용|복지|접수|기업|$)'
+                # 잡코리아 특정 표현
+                r'이런\s*경험을?\s*가지신\s*분을?\s*찾고\s*있어요[!]?[:\s]*(.+?)(?=이런\s*경험이|우대|전형|채용\s*절차|복지|유의사항|꼭\s*읽어|접수|기업정보|h3|h2|$)',
+                # 일반적인 표현들
+                r'자격\s*요건[:\s]*(.+?)(?=우대|전형|채용|복지|근무|접수|기업|h3|h2|$)',
+                r'지원\s*자격[:\s]*(.+?)(?=우대|전형|채용|복지|접수|기업|h3|h2|$)',
+                r'지원\s*요강[:\s]*(.+?)(?=우대|전형|채용|복지|접수|기업|h3|h2|$)',
+                r'필수\s*요건[:\s]*(.+?)(?=우대|전형|채용|복지|접수|기업|h3|h2|$)',
+                r'필수\s*자격[:\s]*(.+?)(?=우대|전형|채용|복지|접수|기업|h3|h2|$)',
+                r'필수\s*역량[:\s]*(.+?)(?=우대|전형|채용|복지|접수|기업|h3|h2|$)',
+                r'요구\s*사항[:\s]*(.+?)(?=우대|전형|채용|복지|접수|기업|h3|h2|$)',
+                r'응시\s*자격[:\s]*(.+?)(?=우대|전형|채용|복지|접수|기업|h3|h2|$)',
+                # 리스트 형태
+                r'자격[:\s]*\n*\s*[•\-\*]\s*(.+?)(?=우대|전형|채용|복지|h3|h2|$)',
             ]
 
             for pattern in 자격_패턴:
@@ -325,17 +388,22 @@ class JobKoreaFullCrawler:
                     if 15 < len(content) < 3000:
                         if not (content.startswith('경력') and len(content) < 100):
                             info['자격요건'] = content[:1500]
+                            print(f"  [OK] 자격요건 추출 성공 (길이: {len(content)}자)")
                             break
 
             # 우대사항 / 우대조건 / 우대요건 / 우대역량 / 가산점
             우대_패턴 = [
-                r'이런\s*경험이\s*있다면\s*더욱\s*좋아요[!]?[:\s]*(.+?)(?=전형|채용\s*절차|복지|유의사항|꼭\s*읽어|근무|접수|기업정보|$)',
-                r'우대\s*사항[:\s]*(.+?)(?=전형|채용|복지|근무|접수|기업|유의|$)',
-                r'우대\s*조건[:\s]*(.+?)(?=전형|채용|복지|접수|기업|유의|$)',
-                r'우대\s*요건[:\s]*(.+?)(?=전형|채용|복지|접수|기업|유의|$)',
-                r'우대\s*역량[:\s]*(.+?)(?=전형|채용|복지|접수|기업|유의|$)',
-                r'가산점[:\s]*(.+?)(?=전형|채용|복지|접수|기업|유의|$)',
-                r'우대\s*자격[:\s]*(.+?)(?=전형|채용|복지|접수|기업|유의|$)'
+                # 잡코리아 특정 표현
+                r'이런\s*경험이\s*있다면\s*더욱\s*좋아요[!]?[:\s]*(.+?)(?=전형|채용\s*절차|복지|유의사항|꼭\s*읽어|근무|접수|기업정보|h3|h2|$)',
+                # 일반적인 표현들
+                r'우대\s*사항[:\s]*(.+?)(?=전형|채용|복지|근무|접수|기업|유의|h3|h2|$)',
+                r'우대\s*조건[:\s]*(.+?)(?=전형|채용|복지|접수|기업|유의|h3|h2|$)',
+                r'우대\s*요건[:\s]*(.+?)(?=전형|채용|복지|접수|기업|유의|h3|h2|$)',
+                r'우대\s*역량[:\s]*(.+?)(?=전형|채용|복지|접수|기업|유의|h3|h2|$)',
+                r'가산점[:\s]*(.+?)(?=전형|채용|복지|접수|기업|유의|h3|h2|$)',
+                r'우대\s*자격[:\s]*(.+?)(?=전형|채용|복지|접수|기업|유의|h3|h2|$)',
+                # 리스트 형태
+                r'우대[:\s]*\n*\s*[•\-\*]\s*(.+?)(?=전형|채용|복지|h3|h2|$)',
             ]
 
             for pattern in 우대_패턴:
@@ -344,18 +412,21 @@ class JobKoreaFullCrawler:
                     content = re.sub(r'\s+', ' ', content)
                     if 5 < len(content) < 3000:
                         info['우대사항'] = content[:1500]
+                        print(f"  [OK] 우대사항 추출 성공 (길이: {len(content)}자)")
                         break
 
             # 채용절차 / 전형절차 / 선발절차 / 전형방법 / 지원절차
             절차_패턴 = [
-                r'채용\s*절차[:\s]*(.+?)(?=복지|유의사항|꼭\s*읽어|근무|접수|기업정보|$)',
-                r'전형\s*절차[:\s]*(.+?)(?=복지|유의사항|꼭\s*읽어|근무|접수|기업정보|$)',
-                r'선발\s*절차[:\s]*(.+?)(?=복지|유의|참고|근무|접수|기업|$)',
-                r'전형\s*방법[:\s]*(.+?)(?=복지|유의|참고|근무|접수|기업|$)',
-                r'지원\s*절차[:\s]*(.+?)(?=복지|유의|참고|근무|접수|기업|$)',
-                r'채용\s*과정[:\s]*(.+?)(?=복지|유의|참고|근무|접수|기업|$)',
-                r'전형\s*과정[:\s]*(.+?)(?=복지|유의|참고|근무|접수|기업|$)',
-                r'채용\s*프로세스[:\s]*(.+?)(?=복지|유의|참고|근무|접수|기업|$)'
+                r'채용\s*절차[:\s]*(.+?)(?=복지|유의사항|꼭\s*읽어|근무|접수|기업정보|h3|h2|$)',
+                r'전형\s*절차[:\s]*(.+?)(?=복지|유의사항|꼭\s*읽어|근무|접수|기업정보|h3|h2|$)',
+                r'선발\s*절차[:\s]*(.+?)(?=복지|유의|참고|근무|접수|기업|h3|h2|$)',
+                r'전형\s*방법[:\s]*(.+?)(?=복지|유의|참고|근무|접수|기업|h3|h2|$)',
+                r'지원\s*절차[:\s]*(.+?)(?=복지|유의|참고|근무|접수|기업|h3|h2|$)',
+                r'채용\s*과정[:\s]*(.+?)(?=복지|유의|참고|근무|접수|기업|h3|h2|$)',
+                r'전형\s*과정[:\s]*(.+?)(?=복지|유의|참고|근무|접수|기업|h3|h2|$)',
+                r'채용\s*프로세스[:\s]*(.+?)(?=복지|유의|참고|근무|접수|기업|h3|h2|$)',
+                # 리스트 형태
+                r'(?:전형|채용)\s*절차[:\s]*\n*\s*[•\-\*]\s*(.+?)(?=복지|유의|h3|h2|$)',
             ]
 
             for pattern in 절차_패턴:
@@ -364,18 +435,21 @@ class JobKoreaFullCrawler:
                     content = re.sub(r'\s+', ' ', content)
                     if 5 < len(content) < 2000:
                         info['채용절차'] = content[:800]
+                        print(f"  [OK] 채용절차 추출 성공 (길이: {len(content)}자)")
                         break
 
             # 복지 및 혜택 / 복리후생 / 근무환경 / 인사제도 / 처우
             복지_패턴 = [
-                r'복리후생에\s*대해\s*더\s*알고\s*싶으신가요[?]?[:\s]*(.+?)(?=유의사항|꼭\s*읽어|접수|기업정보|지원방법|$)',
-                r'복지\s*(?:및|,)?\s*혜택[:\s]*(.+?)(?=유의사항|꼭\s*읽어|접수|기업|지원방법|$)',
-                r'복리후생[:\s]*(.+?)(?=유의사항|꼭\s*읽어|접수|기업|지원방법|$)',
-                r'근무\s*환경[:\s]*(.+?)(?=유의사항|꼭\s*읽어|접수|기업|지원방법|$)',
-                r'복지\s*제도[:\s]*(.+?)(?=유의|접수|기업|지원방법|$)',
-                r'인사\s*제도[:\s]*(.+?)(?=유의|접수|기업|지원방법|$)',
-                r'혜택[:\s]*(.+?)(?=유의|접수|기업|지원방법|$)',
-                r'처우[:\s]*(.+?)(?=유의|접수|기업|지원방법|$)'
+                r'복리후생에\s*대해\s*더\s*알고\s*싶으신가요[?]?[:\s]*(.+?)(?=유의사항|꼭\s*읽어|접수|기업정보|지원방법|h3|h2|$)',
+                r'복지\s*(?:및|,)?\s*혜택[:\s]*(.+?)(?=유의사항|꼭\s*읽어|접수|기업|지원방법|h3|h2|$)',
+                r'복리후생[:\s]*(.+?)(?=유의사항|꼭\s*읽어|접수|기업|지원방법|h3|h2|$)',
+                r'근무\s*환경[:\s]*(.+?)(?=유의사항|꼭\s*읽어|접수|기업|지원방법|h3|h2|$)',
+                r'복지\s*제도[:\s]*(.+?)(?=유의|접수|기업|지원방법|h3|h2|$)',
+                r'인사\s*제도[:\s]*(.+?)(?=유의|접수|기업|지원방법|h3|h2|$)',
+                r'혜택[:\s]*(.+?)(?=유의|접수|기업|지원방법|h3|h2|$)',
+                r'처우[:\s]*(.+?)(?=유의|접수|기업|지원방법|h3|h2|$)',
+                # 리스트 형태
+                r'복지[:\s]*\n*\s*[•\-\*]\s*(.+?)(?=유의|h3|h2|$)',
             ]
 
             for pattern in 복지_패턴:
@@ -384,7 +458,119 @@ class JobKoreaFullCrawler:
                     content = re.sub(r'\s+', ' ', content)
                     if 5 < len(content) < 2000:
                         info['복지 및 혜택'] = content[:800]
+                        print(f"  [OK] 복지 및 혜택 추출 성공 (길이: {len(content)}자)")
                         break
+
+            # 스킬 - 여러 패턴 시도
+            print(f"  [DEBUG] 스킬 추출 시작...")
+            스킬_패턴 = [
+                r'스킬\s*,?\s*([^\n]+?)(?:\s+우대조건|\s+핵심|로그인|TOP|궁금|기본우대|$)',
+                r'스킬\s*[:\s]*([가-힣A-Za-z0-9,.\s/\-&()]+?)(?:\s+우대조건|\s+근무지|로그인|$)',
+                r'필수스킬[:\s]*([^\n]+)',
+                r'우대스킬[:\s]*([^\n]+)',
+                r'주요\s*기술\s*스택[:\s]*([^\n]+)',
+                r'기술\s*스택[:\s]*([^\n]+)',
+                r'사용\s*기술[:\s]*([^\n]+)',
+                r'요구\s*기술[:\s]*([^\n]+)',
+            ]
+
+            for pattern in 스킬_패턴:
+                if match := re.search(pattern, markdown, re.MULTILINE | re.IGNORECASE):
+                    skills = match.group(1) if len(match.groups()) > 0 else match.group(0)
+                    skills = skills.strip()
+                    # 맨 앞의 컴마와 공백 제거
+                    skills = skills.lstrip(',').strip()
+                    # 불필요한 텍스트 필터링
+                    if skills and 2 < len(skills) < 300:
+                        # 제외할 키워드
+                        exclude_words = ['로그인', '궁금', 'TOP', '추천공고', '하고 비슷한', '확인해', '기본우대', '장애인', '보훈대상자']
+                        if not any(word in skills for word in exclude_words):
+                            info['스킬'] = skills
+                            print(f"  [OK] 스킬 추출 성공 (패턴 매칭): {skills[:100]}")
+                            break
+
+            # 스킬이 없는 경우, 마크다운에서 기술 스택을 직접 찾기
+            if not info['스킬']:
+                print(f"  [DEBUG] 패턴 매칭 실패, 기술 스택 직접 추출 시도...")
+
+                # 주요 ML/AI 및 일반 개발 기술 스택 키워드
+                tech_patterns = [
+                    r'\bPython\b', r'\bPyTorch\b', r'\bTensorFlow\b', r'\bScikit-learn\b',
+                    r'\bMLflow\b', r'\bAirflow\b', r'\bPySpark\b', r'\bSQL\b',
+                    r'\bDocker\b', r'\bKubernetes\b', r'\bHugging\s+Face\b',
+                    r'\bLLM\b', r'\bRAG\b', r'\bVector\s+Search\b',
+                    r'\bC\+\+\b', r'\bJava\b', r'\bJavaScript\b', r'\bTypeScript\b',
+                    r'\bReact\b', r'\bVue\b', r'\bAngular\b',
+                    r'\bDjango\b', r'\bFlask\b', r'\bFastAPI\b', r'\bSpring\b',
+                    r'\bNode\.js\b', r'\bKeras\b', r'\bNumPy\b', r'\bPandas\b',
+                    r'\bLangChain\b', r'\blanggraph\b', r'\bStreamlit\b', r'\bGradio\b',
+                    r'\bAWS\b', r'\bGCP\b', r'\bAzure\b',
+                    r'\bMachine\s+Learning\b', r'\bDeep\s+Learning\b',
+                    r'\bOrchestration\b', r'\bTracing\b', r'\bEvaluation\b',
+                    r'\bPrompt\s+Engineering\b', r'\bAgent\b',
+                    r'\bElasticsearch\b', r'\bSQLAlchemy\b', r'\bJSON\b',
+                    r'\bSalesforce\b', r'\bGit\b', r'\bLinux\b',
+                    r'\bRedis\b', r'\bMongoDB\b', r'\bPostgreSQL\b', r'\bMySQL\b',
+                ]
+
+                # 전체 마크다운에서 기술 스택 찾기
+                found_techs = []
+                found_techs_lower = []  # 중복 방지용
+
+                for pattern in tech_patterns:
+                    matches = re.finditer(pattern, markdown, re.IGNORECASE)
+                    for match in matches:
+                        tech = match.group(0)
+                        tech_lower = tech.lower()
+                        if tech_lower not in found_techs_lower:
+                            found_techs.append(tech)
+                            found_techs_lower.append(tech_lower)
+
+                print(f"  [DEBUG] 전체에서 발견된 기술: {found_techs}")
+
+                if len(found_techs) >= 1:  # 최소 1개 이상의 기술이 발견된 경우
+                    info['스킬'] = ', '.join(found_techs[:15])  # 최대 15개까지
+                    print(f"  [OK] 스킬 추출 성공 (직접 추출): {info['스킬']}")
+
+            # 스킬이 없는 경우, 주요업무에서 기술 스택 추출 시도
+            if not info['스킬'] and info['주요업무']:
+                print(f"  [DEBUG] 주요업무에서 스킬 추출 시도... (주요업무 길이: {len(info['주요업무'])}자)")
+
+                # 주요 ML/AI 기술 스택 키워드 (정확한 매칭을 위해)
+                tech_patterns = [
+                    r'\bPython\b', r'\bPyTorch\b', r'\bTensorFlow\b', r'\bScikit-learn\b',
+                    r'\bMLflow\b', r'\bAirflow\b', r'\bPySpark\b', r'\bSQL\b',
+                    r'\bDocker\b', r'\bKubernetes\b', r'\bHugging\s+Face\b',
+                    r'\bLLM\b', r'\bRAG\b', r'\bVector\s+Search\b',
+                    r'\bC\+\+\b', r'\bJava\b', r'\bJavaScript\b', r'\bTypeScript\b',
+                    r'\bReact\b', r'\bVue\b', r'\bAngular\b',
+                    r'\bDjango\b', r'\bFlask\b', r'\bFastAPI\b', r'\bSpring\b',
+                    r'\bNode\.js\b', r'\bKeras\b', r'\bNumPy\b', r'\bPandas\b',
+                    r'\bLangChain\b', r'\blanggraph\b', r'\bStreamlit\b', r'\bGradio\b',
+                    r'\bAWS\b', r'\bGCP\b', r'\bAzure\b',
+                    r'\bMachine\s+Learning\b', r'\bDeep\s+Learning\b',
+                    r'\bOrchestration\b', r'\bTracing\b', r'\bEvaluation\b',
+                    r'\bPrompt\s+Engineering\b', r'\bAgent\b'
+                ]
+
+                # 주요업무에서 기술 스택 찾기
+                found_techs = []
+                found_techs_lower = []  # 중복 방지용
+
+                for pattern in tech_patterns:
+                    matches = re.finditer(pattern, info['주요업무'], re.IGNORECASE)
+                    for match in matches:
+                        tech = match.group(0)
+                        tech_lower = tech.lower()
+                        if tech_lower not in found_techs_lower:
+                            found_techs.append(tech)
+                            found_techs_lower.append(tech_lower)
+
+                print(f"  [DEBUG] 주요업무에서 발견된 기술: {found_techs}")
+
+                if len(found_techs) >= 2:  # 최소 2개 이상의 기술이 발견된 경우
+                    info['스킬'] = ', '.join(found_techs[:15])  # 최대 15개까지
+                    print(f"  [OK] 스킬 추출 성공 (주요업무): {info['스킬']}")
 
         except Exception as e:
             print(f"파싱 오류: {e}")
@@ -405,22 +591,26 @@ class JobKoreaFullCrawler:
         if self.driver:
             for attempt in range(max_retries):
                 try:
+                    print(f"  [Selenium] URL 로딩: {url}")
                     self.driver.get(url)
 
                     # 페이지 로딩 대기
                     try:
-                        # 상세 내용이 로드될 때까지 명시적 대기 (최대 10초)
-                        wait = WebDriverWait(self.driver, 10)
+                        # 상세 내용이 로드될 때까지 명시적 대기 (최대 15초)
+                        wait = WebDriverWait(self.driver, 15)
                         wait.until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
                     except:
                         pass
 
+                    # 추가 대기 (JavaScript 실행 완료)
+                    time.sleep(1.5)
+
                     # 페이지 스크롤 (동적 콘텐츠 로드를 위해)
                     try:
                         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                        time.sleep(2)
-                        self.driver.execute_script("window.scrollTo(0, 0);")
                         time.sleep(1)
+                        self.driver.execute_script("window.scrollTo(0, 0);")
+                        time.sleep(0.5)
                     except:
                         pass
 
@@ -428,12 +618,14 @@ class JobKoreaFullCrawler:
                     try:
                         detail_tab = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[contains(text(), '상세요강')]")))
                         detail_tab.click()
-                        time.sleep(2)
+                        print(f"  [OK] 상세요강 탭 클릭 성공")
+                        time.sleep(1.5)
                     except:
+                        print(f"  [INFO] 상세요강 탭 없음 또는 이미 활성화됨")
                         pass  # 탭이 없거나 이미 활성화된 경우
 
-                    # iframe이 로드될 때까지 대기
-                    time.sleep(3)
+                    # iframe이 로드될 때까지 추가 대기
+                    time.sleep(2)
 
                     # iframe 처리 - 상세 내용이 iframe 안에 있을 수 있음
                     detail_text = ""
@@ -442,20 +634,24 @@ class JobKoreaFullCrawler:
                         wait.until(EC.presence_of_element_located((By.TAG_NAME, 'iframe')))
                         iframes = self.driver.find_elements(By.TAG_NAME, 'iframe')
 
-                        print(f"발견된 iframe 개수: {len(iframes)}")
+                        print(f"  발견된 iframe 개수: {len(iframes)}")
 
                         for idx, iframe in enumerate(iframes):
                             iframe_title = iframe.get_attribute('title') or ''
                             iframe_src = iframe.get_attribute('src') or ''
 
-                            print(f"  iframe {idx+1}: title='{iframe_title}', src='{iframe_src[:50] if iframe_src else ''}'...")
+                            print(f"  iframe {idx+1}: title='{iframe_title}', src='{iframe_src[:80] if iframe_src else ''}'...")
 
                             # 상세 모집 요강 iframe 찾기
                             if '상세' in iframe_title or 'GI_Read_Comt_Ifrm' in iframe_src or 'Comt_Ifrm' in iframe_src:
-                                print(f"  [OK] 상세 내용 iframe 발견!")
+                                print(f"  [OK] 상세 내용 iframe 발견! (iframe {idx+1})")
                                 # iframe으로 전환
                                 self.driver.switch_to.frame(iframe)
-                                time.sleep(2)
+                                time.sleep(1.5)
+
+                                # 현재 URL 확인 (디버깅용)
+                                current_url = self.driver.current_url
+                                print(f"  [DEBUG] iframe 내부 URL: {current_url}")
 
                                 # iframe 내부 HTML 가져오기
                                 iframe_html = self.driver.page_source
@@ -469,22 +665,40 @@ class JobKoreaFullCrawler:
                                     detail_content = soup.find('div', class_='content_sec')
                                 if not detail_content:
                                     detail_content = soup.find('div', class_='tempate-detailed-summary-root')
-                                if not detail_content:
-                                    detail_content = soup.find('article', class_='view-detail')
-                                if not detail_content:
-                                    detail_content = soup.find('div', class_='dev-wrap-detailContents')
-                                if not detail_content:
-                                    # iframe body 전체
-                                    detail_content = soup.find('body')
 
                                 if detail_content:
                                     # script, style 태그 제거
-                                    for tag in detail_content.find_all(['script', 'style']):
+                                    for tag in detail_content.find_all(['script', 'style', 'noscript']):
                                         tag.decompose()
 
-                                    # 텍스트 추출
-                                    detail_text = detail_content.get_text(separator='\n', strip=True)
-                                    print(f"  iframe 내용 길이: {len(detail_text)}자")
+                                    # 텍스트 추출 - 구조를 유지하기 위해 h2, h3, ul, li 태그 고려
+                                    text_parts = []
+                                    for element in detail_content.descendants:
+                                        if element.name in ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']:
+                                            # 헤더는 앞뒤로 줄바꿈
+                                            text = element.get_text(strip=True)
+                                            if text:
+                                                text_parts.append(f"\n{text}\n")
+                                        elif element.name == 'li':
+                                            # 리스트 항목은 각각 줄바꿈
+                                            text = element.get_text(strip=True)
+                                            if text:
+                                                text_parts.append(f"• {text}\n")
+                                        elif element.name == 'br':
+                                            text_parts.append('\n')
+                                        elif isinstance(element, str):
+                                            text = element.strip()
+                                            if text and element.parent.name not in ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'li']:
+                                                text_parts.append(text + ' ')
+
+                                    detail_text = ''.join(text_parts)
+                                    detail_text = re.sub(r' +', ' ', detail_text)  # 여러 공백을 하나로
+                                    detail_text = re.sub(r'\n{3,}', '\n\n', detail_text)  # 여러 줄바꿈을 최대 2개로
+                                    detail_text = detail_text.strip()
+
+                                    print(f"  [OK] iframe 텍스트 추출 성공 (길이: {len(detail_text)}자)")
+                                else:
+                                    print(f"  [WARN] iframe 내부에서 상세 내용을 찾을 수 없음")
 
                                 # iframe에서 나오기
                                 self.driver.switch_to.default_content()
@@ -492,7 +706,7 @@ class JobKoreaFullCrawler:
                                 if detail_text and len(detail_text) > 500:
                                     break
                     except Exception as e:
-                        print(f"[WARN] iframe 처리 오류: {e}")
+                        print(f"  [WARN] iframe 처리 오류: {e}")
                         import traceback
                         traceback.print_exc()
                         # iframe에서 빠져나오기
@@ -549,7 +763,7 @@ class JobKoreaFullCrawler:
                 except Exception as e:
                     print(f"[WARN] Selenium 크롤링 오류 (시도 {attempt+1}/{max_retries}): {e}")
                     if attempt < max_retries - 1:
-                        time.sleep(2)
+                        time.sleep(1)
                         continue
                     break
 
@@ -700,24 +914,59 @@ class JobKoreaFullCrawler:
         print("=" * 70)
         
         for idx, row in df.iterrows():
-            print(f"\n[{idx+1}/{len(df)}] 크롤링 중...")
+            print(f"\n{'='*70}")
+            print(f"[{idx+1}/{len(df)}] 크롤링 중...")
+            print(f"URL: {row['url']}")
             print(f"제목: {row['title'][:50]}...")
+            print(f"회사: {row['company']}")
+            print(f"{'='*70}")
 
             # 크롤링
             markdown = self.crawl_url(row['url'])
 
+            # 크롤링 결과 검증
+            if not markdown or len(markdown) < 100:
+                print(f"  [ERROR] 크롤링 실패 또는 내용이 너무 짧음 (길이: {len(markdown) if markdown else 0}자)")
+                # 빈 데이터라도 저장 (URL 정보는 유지)
+                info = self.extract_info(markdown, row['url'], row['title'], row['company'])
+                self.data.append(info)
+                continue
+
             # 정보 추출
             info = self.extract_info(markdown, row['url'], row['title'], row['company'])
+
+            # 추출 결과 검증 - URL 게시글 ID 확인
+            expected_id = re.search(r'GI_Read/(\d+)', row['url'])
+            actual_id = info.get('상세게시글id', '')
+
+            if expected_id and actual_id:
+                if expected_id.group(1) != actual_id:
+                    print(f"  [WARN] 게시글 ID 불일치! 기대: {expected_id.group(1)}, 실제: {actual_id}")
+                else:
+                    print(f"  [OK] 게시글 ID 일치: {actual_id}")
+
+            # 추출된 정보 요약 출력
+            print(f"  추출 결과:")
+            print(f"    - 제목: {info['채용제목'][:40]}...")
+            print(f"    - 회사: {info['회사']}")
+            print(f"    - 근무지: {info['근무지'][:30] if info['근무지'] else '없음'}...")
+            print(f"    - 스킬: {info['스킬'][:40] if info['스킬'] else '없음'}...")
+            print(f"    - 주요업무: {'있음' if info['주요업무'] else '없음'} ({len(info['주요업무'])}자)")
+            print(f"    - 자격요건: {'있음' if info['자격요건'] else '없음'} ({len(info['자격요건'])}자)")
+            print(f"    - 우대사항: {'있음' if info['우대사항'] else '없음'} ({len(info['우대사항'])}자)")
+
             self.data.append(info)
 
-            # 진행상황 저장 (10개마다)
-            if len(self.data) % 10 == 0:
+            # 진행상황 저장 (5개마다)
+            if len(self.data) % 5 == 0:
                 self.save_progress()
-                print(f"[OK] 진행상황 저장: {len(self.data)}개")
+                self.export_csv()  # 중간 저장도 CSV로
+                print(f"  [OK] 진행상황 저장: {len(self.data)}개")
 
-            # API 제한 고려 (분당 12개 제한 = 5초 간격)
-            time.sleep(6)
-        
+            # API 제한 고려 - 각 크롤링 후 대기
+            print(f"  다음 크롤링까지 대기 중...")
+            time.sleep(2.5)
+
         # 최종 저장
         self.save_progress()
         self.export_csv()  # CSV 파일 생성
@@ -757,11 +1006,11 @@ class JobKoreaFullCrawler:
 
 def main():
     print("=" * 70)
-    print("잡코리아 AI 엔지니어 채용공고 크롤러")
+    print("잡코리아 AI 에이전트 채용공고 크롤러")
     print("=" * 70)
     
     # API 키 입력
-    api_key = ""
+    api_key = "fc-e9b3b4d363bd467eaa39f1c6e318925d"
     
     if not api_key:
         print("\n[WARN] API 키가 없으면 크롤링을 진행할 수 없습니다.")
@@ -773,8 +1022,8 @@ def main():
     
     # CSV 파일 경로 - 스크립트 위치 기준으로 계산
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    data_dir = os.path.join(os.path.dirname(script_dir), 'data')
-    csv_path = os.path.join(data_dir, 'jobkorea_crawler_engineer.csv')
+    data_dir = os.path.join(os.path.dirname(script_dir), 'jinwoo/data')
+    csv_path = os.path.join(data_dir, 'jobkorea_crawler_agent.csv')
 
     if not os.path.exists(csv_path):
         print(f"[ERROR] 파일을 찾을 수 없습니다: {csv_path}")
